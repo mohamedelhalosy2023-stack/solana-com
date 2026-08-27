@@ -40,7 +40,7 @@ jobs:
     name: Lint App - ${{ matrix.workspace }}
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         workspace:
           - solana-com
@@ -56,7 +56,7 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
           version: 11.13.0
-          run_install: false
+          run_install: true
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
@@ -77,7 +77,7 @@ jobs:
     name: Lint Package - ${{ matrix.workspace }}
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         workspace:
           - "@solana-com/ui-chrome"
@@ -92,7 +92,7 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
           version: 11.13.0
-          run_install: false
+          run_install: true
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
