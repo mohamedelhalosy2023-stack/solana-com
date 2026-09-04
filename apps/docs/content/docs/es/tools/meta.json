@@ -1,0 +1,15 @@
+{
+  "title": "Herramientas",
+  "root": true,
+  "pages": [
+    "kora",
+    "keychain",
+    "commerce-kit",
+    "solana-pay",
+    "attestations",
+    "private-channels",
+    "surfpool",
+    "litesvm"
+  ],
+  "defaultOpen": true
+}

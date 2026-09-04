@@ -33,10 +33,14 @@ description:
   nghiệm thực tế, được tối ưu hóa cho hệ sinh thái Solana.
 </Card>
 
-## Dùng thử Solana: Chơi 2048
+<Card title="Công cụ" href="/docs/tools">
+  Khám phá tài liệu về các công cụ phát triển Solana.
+</Card>
+
+## Trải nghiệm Solana: Chơi 2048
 
 Chơi 2048 trên Solana, nơi mỗi nước đi gửi một giao dịch. Nhấp "Chơi" để bắt đầu
-với ví devnet đã được nạp tiền và sử dụng các phím mũi tên để chơi. Nếu trên di
+với ví devnet đã được nạp tiền và sử dụng các phím mũi tên để chơi. Nếu dùng di
 động, vuốt để điều khiển các ô.
 
 <Accordions>
@@ -59,12 +63,12 @@ với ví devnet đã được nạp tiền và sử dụng các phím mũi tên
 </Accordion>
 </Accordions>
 
-Được xây dựng bởi [Jonas](https://x.com/SolPlay_jonas), từ nhóm DevRel của
+Được xây dựng bởi [Jonas](https://x.com/SolPlay_jonas), từ đội ngũ DevRel của
 Solana Foundation.
 
 ## Bắt đầu học
 
-Tìm hiểu các khái niệm chính cụ thể cho phát triển Solana.
+Tìm hiểu các khái niệm chính đặc thù trong phát triển Solana.
 
 <Cards>
   <Card title="Tài khoản" href="/docs/core/accounts">
@@ -79,7 +83,7 @@ Tìm hiểu các khái niệm chính cụ thể cho phát triển Solana.
   <Card title="Chương trình" href="/docs/core/programs">
     Hợp đồng thông minh trên Solana
   </Card>
-  <Card title="Địa chỉ dẫn xuất từ chương trình" href="/docs/core/pda">
+  <Card title="Địa chỉ phái sinh từ chương trình" href="/docs/core/pda">
     Cách tạo địa chỉ xác định
   </Card>
   <Card title="Gọi chương trình chéo" href="/docs/core/cpi">
@@ -87,20 +91,18 @@ Tìm hiểu các khái niệm chính cụ thể cho phát triển Solana.
   </Card>
 </Cards>
 
-### Phát triển phía client
+### Phát triển phía Client
 
 Các SDK sau đây là SDK chính thức cho Solana được xây dựng bởi
 [Anza](https://anza.xyz).
 
 #### SDK chính thức
 
-| Ngôn ngữ                 | SDK                                                                         |
-| ------------------------ | --------------------------------------------------------------------------- |
-| Rust                     | [solana_sdk](/docs/clients/official/rust)                                   |
-| Typescript (Client)      | [@solana/client](/docs/clients/official/javascript#solana-client)           |
-| Typescript (React)       | [@solana/react-hooks](/docs/clients/official/javascript#solana-react-hooks) |
-| Typescript (Khuyến nghị) | [@solana/kit](/docs/clients/official/javascript#solana-kit)                 |
-| Typescript (Cũ)          | [@solana/web3.js](/docs/clients/official/javascript#solana-web3js)          |
+| Ngôn ngữ                      | SDK                                                                |
+| ----------------------------- | ------------------------------------------------------------------ |
+| Rust                          | [solana_sdk](/docs/clients/official/rust)                          |
+| Typescript (Được khuyến nghị) | [@solana/kit](/docs/clients/official/javascript#solana-kit)        |
+| Typescript (Kế thừa)          | [@solana/web3.js](/docs/clients/official/javascript#solana-web3js) |
 
 #### SDK cộng đồng
 
@@ -119,29 +121,30 @@ Sau đây là các SDK do cộng đồng đóng góp cho nhiều ngôn ngữ kh�
 
 <Callout type="warn">
   Các SDK của cộng đồng không được đảm bảo luôn cập nhật hoặc bao gồm tất cả các
-  tính năng của SDK chính thức.
+  tính năng của các SDK chính thức.
 </Callout>
 
-## Chạy validator
+## Vận hành một validator
 
 Khám phá những gì cần thiết để vận hành một validator Solana và giúp bảo mật
 mạng lưới.
 
 <Cards>
   <Card title="Validators" href="https://docs.anza.xyz/validator/anatomy">
-    Các node riêng lẻ bảo mật mạng lưới Solana
+    Các nút riêng lẻ bảo mật mạng lưới Solana
   </Card>
   <Card
     title="Yêu cầu hệ thống"
     href="https://docs.anza.xyz/operations/requirements"
   >
-    Yêu cầu phần cứng được khuyến nghị và SOL cần thiết để vận hành validator
+    Yêu cầu phần cứng được khuyến nghị và lượng SOL cần thiết để vận hành một
+    validator
   </Card>
   <Card
-    title="Thiết lập validator"
+    title="Thiết lập Validator"
     href="https://docs.anza.xyz/operations/setup-a-validator"
   >
-    Thiết lập validator và kết nối với cluster lần đầu tiên
+    Thiết lập một validator và kết nối với cluster lần đầu tiên
   </Card>
 </Cards>
 

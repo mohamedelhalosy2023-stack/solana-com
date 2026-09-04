@@ -83,10 +83,21 @@ export const LOGOS = [
     alt: "Fireblocks",
     height: "24px",
   },
+  { src: "/src/img/logos-eco/utila.png", alt: "Utila", height: "24px" },
+  {
+    src: "/src/img/logos-eco/cactus-custody.svg",
+    alt: "Cactus Custody",
+    height: "22px",
+  },
   {
     src: "/src/img/logos-eco/quicknode.svg",
     alt: "QuickNode",
     height: "19px",
+  },
+  {
+    src: "/src/img/logos-eco/validation-cloud.svg",
+    alt: "Validation Cloud",
+    height: "20px",
   },
   {
     src: "/src/img/logos-eco/alchemy.svg",
@@ -129,6 +140,12 @@ export const NODES_LOGOS = [
     alt: "QuickNode",
     height: "19px",
     href: "https://quicknode.com",
+  },
+  {
+    src: "/src/img/logos-eco/validation-cloud.svg",
+    alt: "Validation Cloud",
+    height: "20px",
+    href: "https://validationcloud.io",
   },
 ];
 
@@ -198,6 +215,18 @@ export const INST_LOGOS = [
     alt: "Fireblocks",
     height: "24px",
     href: "https://fireblocks.com",
+  },
+  {
+    src: "/src/img/logos-eco/utila.png",
+    alt: "Utila",
+    height: "24px",
+    href: "https://utila.io",
+  },
+  {
+    src: "/src/img/logos-eco/cactus-custody.svg",
+    alt: "Cactus Custody",
+    height: "22px",
+    href: "https://www.mycactus.com",
   },
 ];
 

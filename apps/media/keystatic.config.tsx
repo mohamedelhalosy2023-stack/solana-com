@@ -6,7 +6,10 @@ import {
   type LocalConfig,
   type GitHubConfig,
 } from "@keystatic/core";
-import { componentBlocks } from "./lib/keystatic/components";
+import {
+  componentBlocks,
+  postComponentBlocks,
+} from "./lib/keystatic/components";
 
 // Keep local filesystem mode for local development only.
 // On Vercel, always use GitHub mode so /keystatic can bootstrap GitHub App setup.
@@ -21,14 +24,32 @@ const localStorage: LocalConfig["storage"] = {
   kind: "local",
 };
 
-const githubStorage: GitHubConfig["storage"] = {
+export const githubStorage: GitHubConfig["storage"] = {
   kind: "github",
   repo: {
     owner: "solana-foundation",
     name: "solana-com",
   },
-  branchPrefix: "staging",
+  // Keep content work isolated to one branch per article or content batch.
+  // Keystatic prepends this value when creating a branch and only lists
+  // matching branches (plus the repository's default branch).
+  branchPrefix: "staging-",
   pathPrefix: "apps/media",
+};
+
+const DEFAULT_AUTHOR = "solana-foundation";
+
+const defaultAuthorRelationship = () => {
+  const author = fields.relationship({
+    label: "Author",
+    collection: "authors",
+    validation: { isRequired: true },
+  });
+
+  return {
+    ...author,
+    defaultValue: () => DEFAULT_AUTHOR,
+  };
 };
 
 // Background options for section blocks (exported for use in components)
@@ -94,10 +115,7 @@ export default config({
             "Required for SEO. Used as meta description, og:description, and twitter:description",
           multiline: true,
         }),
-        author: fields.relationship({
-          label: "Author",
-          collection: "authors",
-        }),
+        author: defaultAuthorRelationship(),
         publishedAt: fields.datetime({
           label: "Publish Date",
           description:
@@ -137,7 +155,7 @@ export default config({
               publicPath: "/uploads/posts",
             },
           },
-          components: componentBlocks,
+          components: postComponentBlocks,
         }),
         cta: fields.relationship({
           label: "CTA",
@@ -146,6 +164,124 @@ export default config({
         switchback: fields.relationship({
           label: "Switchback",
           collection: "switchbacks",
+        }),
+      },
+    }),
+
+    upgrades: collection({
+      label: "Upgrades",
+      slugField: "title",
+      path: "content/upgrades/*",
+      format: { contentField: "body" },
+      entryLayout: "content",
+      schema: {
+        title: fields.slug({
+          name: { label: "Title", validation: { isRequired: true } },
+        }),
+        status: fields.select({
+          label: "Status",
+          options: [
+            { label: "Draft", value: "draft" },
+            { label: "Published", value: "published" },
+          ],
+          defaultValue: "draft",
+        }),
+        description: fields.text({
+          label: "Description",
+          description: "Used as meta description for SEO",
+          multiline: true,
+        }),
+        subtitle: fields.text({
+          label: "Subtitle",
+          description: "Displayed below the title in the hero section",
+        }),
+        badges: fields.array(
+          fields.object({
+            text: fields.text({
+              label: "Text",
+              validation: { isRequired: true },
+            }),
+            color: fields.select({
+              label: "Color",
+              options: [
+                { label: "Green", value: "green" },
+                { label: "Yellow", value: "yellow" },
+                { label: "Red", value: "red" },
+                { label: "Purple", value: "purple" },
+              ],
+              defaultValue: "green",
+            }),
+            variant: fields.select({
+              label: "Variant",
+              options: [
+                { label: "Badge (pill style)", value: "badge" },
+                { label: "Text (plain)", value: "text" },
+              ],
+              defaultValue: "badge",
+            }),
+          }),
+          {
+            label: "Status Badges",
+            itemLabel: (props) => props.fields.text.value || "Badge",
+          },
+        ),
+        metrics: fields.array(
+          fields.object({
+            value: fields.text({
+              label: "Value",
+              validation: { isRequired: true },
+            }),
+            label: fields.text({
+              label: "Label",
+              validation: { isRequired: true },
+            }),
+          }),
+          {
+            label: "Key Metrics",
+            itemLabel: (props) => props.fields.value.value || "Metric",
+          },
+        ),
+        author: defaultAuthorRelationship(),
+        publishedAt: fields.datetime({
+          label: "Publish Date",
+          description:
+            "Date and time in UTC when the upgrade becomes visible on the site.",
+          validation: { isRequired: true },
+        }),
+        categories: fields.array(
+          fields.object({
+            category: fields.relationship({
+              label: "Category",
+              collection: "categories",
+            }),
+          }),
+          {
+            label: "Categories",
+            itemLabel: (props) => props.fields.category.value || "Category",
+          },
+        ),
+        tags: fields.array(
+          fields.object({
+            tag: fields.relationship({
+              label: "Tag",
+              collection: "tags",
+            }),
+          }),
+          {
+            label: "Tags",
+            itemLabel: (props) => props.fields.tag.value || "Tag",
+          },
+        ),
+        body: fields.mdx({
+          label: "Body",
+          options: {
+            table: true,
+            image: {
+              directory: "public/uploads/upgrades",
+              publicPath: "/uploads/upgrades",
+            },
+          },
+          components: componentBlocks,
         }),
       },
     }),

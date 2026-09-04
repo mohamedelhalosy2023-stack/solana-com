@@ -3,20 +3,23 @@
   "private": true,
   "license": "GPL-3.0-or-later",
   "repository": "https://github.com/solana-foundation/solana-com",
+  "engines": {
+    "node": "24.x"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "devDependencies": {
-    "@turbo/gen": "^2.5.8",
+    "@turbo/gen": "^2.9.15",
     "@workspace/config-eslint": "workspace:*",
     "@workspace/config-typescript": "workspace:*",
     "eslint": "^9.39.4",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
     "playwright": "^1.58.2",
-    "prettier": "^3.8.1",
-    "turbo": "latest"
+    "prettier": "^3.8.3",
+    "turbo": "2.10.2"
   },
   "scripts": {
     "build": "turbo run build",
@@ -27,24 +30,19 @@
     "dev:media": "turbo run dev --filter=solana-com-media",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
+    "check-types": "turbo run check-types",
     "test": "turbo run test",
     "i18n:audit": "node ./scripts/i18n/audit-messages.mjs",
+    "i18n:verify-source-locales": "node ./scripts/i18n/verify-source-locales.mjs",
     "i18n": "node ./scripts/i18n/run.mjs all",
     "i18n:ui": "node ./scripts/i18n/run.mjs ui",
     "i18n:docs": "node ./scripts/i18n/run.mjs docs",
     "i18n:prune": "node ./scripts/i18n/prune-messages.mjs",
     "i18n:app": "node ./scripts/i18n/run.mjs app",
-    "clean": "turbo run clean && find . -type d \\( -name 'node_modules' -o -name '.next' -o -name '.turbo'  -o -name '.source' \\) -prune -exec rm -rf '{}' +",
+    "clean": "node ./scripts/clean.mjs",
     "media:optimize-images": "pnpm --filter solana-com-media exec node scripts/optimize-images.mjs",
     "media:check-images": "pnpm --filter solana-com-media exec node scripts/check-images.mjs",
     "prepare": "husky"
   },
-  "packageManager": "pnpm@10.15.1",
-  "pnpm": {
-    "overrides": {
-      "nth-check": "2.1.1",
-      "typescript": "5.8.3",
-      "@react-aria/interactions": "3.25.6"
-    }
-  }
+  "packageManager": "pnpm@11.13.0"
 }

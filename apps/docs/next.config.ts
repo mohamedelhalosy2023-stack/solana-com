@@ -19,8 +19,7 @@ const securityHeaders: Array<{ key: string; value: string }> = [
   },
   {
     key: "Content-Security-Policy",
-    value:
-      "frame-ancestors https://*.builder.io https://builder.io http://localhost:1234",
+    value: `frame-ancestors 'self'`,
   },
 ];
 
@@ -99,19 +98,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cdn.builder.io",
-      },
-      {
-        protocol: "https",
         hostname: "solana-developer-content.vercel.app",
       },
       {
         protocol: "https",
         hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "assets.getriver.io",
       },
       {
         protocol: "https",
@@ -138,6 +129,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "*.vercel.app",
         port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "solana.com",
+        pathname: "/social/**",
       },
     ],
   },
@@ -170,6 +166,10 @@ const nextConfig: NextConfig = {
     scrollRestoration: true,
     // Allow importing/transpiling code from the workspace package
     externalDir: true,
+    // The custom SVG rules disable Next's build worker by default. Keep the
+    // Webpack heap isolated so Vercel has memory available for type-checking.
+    webpackBuildWorker: true,
+    webpackMemoryOptimizations: true,
   },
 
   // Cookbook MDX uses async compile (lazy at request time) and the

@@ -9,6 +9,19 @@ import {
 } from "../utils";
 
 const mediaContentRoot = path.join(repoRoot, "apps", "media", "content");
+const changelogCategorySlug = "changelog";
+
+function isPublishedAtOrBefore(value: unknown, now = new Date()) {
+  if (typeof value !== "string" || !value.trim()) {
+    return false;
+  }
+
+  const publishedAt = new Date(value);
+  return (
+    !Number.isNaN(publishedAt.getTime()) &&
+    publishedAt.getTime() <= now.getTime()
+  );
+}
 
 function parseScalar(value: string) {
   const trimmed = value.trim();
@@ -159,10 +172,15 @@ function getMediaPostEntries() {
       changeFrequency: "daily",
       priority: 0.8,
     }),
+    ...createLocalizedEntries("/changelog", {
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }),
   ];
 
   const postEntries = readContentEntries("posts", {
-    filter: ({ data }) => data.status === "published",
+    filter: ({ data }) =>
+      data.status === "published" && isPublishedAtOrBefore(data.publishedAt),
     mapEntry: ({ data, fileName }) => {
       const slug = String(data.slug || fileName.replace(/\.(mdx|yaml)$/, ""));
       const lastModified = data.publishedAt
@@ -177,7 +195,10 @@ function getMediaPostEntries() {
             ? categoryItem
             : categoryItem?.category || null;
 
-        if (categorySlug) {
+        if (
+          categorySlug &&
+          categorySlug.toLowerCase() !== changelogCategorySlug
+        ) {
           categoryPaths.add(`/news/category/${categorySlug}`);
         }
       }
@@ -238,7 +259,10 @@ function getMediaReportEntries() {
   ];
 
   const reportEntries = readContentEntries("switchbacks", {
-    filter: ({ data }) => Boolean(data.isReport) && data.status === "published",
+    filter: ({ data }) =>
+      Boolean(data.isReport) &&
+      data.status === "published" &&
+      isPublishedAtOrBefore(data.publishedAt),
     mapEntry: ({ data, fileName }) => {
       const slug = String(data.slug || fileName.replace(/\.(mdx|yaml)$/, ""));
       const lastModified = data.publishedAt
@@ -257,12 +281,6 @@ function getMediaReportEntries() {
 }
 
 function getUpgradeEntries() {
-  const upgradesDir = path.join(mediaContentRoot, "upgrades");
-
-  if (!fs.existsSync(upgradesDir)) {
-    return [];
-  }
-
   const entries = [
     ...createLocalizedEntries("/upgrades", {
       changeFrequency: "weekly",
@@ -270,24 +288,24 @@ function getUpgradeEntries() {
     }),
   ];
 
-  for (const fileName of fs.readdirSync(upgradesDir)) {
-    if (!fileName.endsWith(".yaml")) {
-      continue;
-    }
+  const upgradeEntries = readContentEntries("upgrades", {
+    filter: ({ data }) =>
+      data.status === "published" && isPublishedAtOrBefore(data.publishedAt),
+    mapEntry: ({ data, fileName, filePath }) => {
+      const slug = String(data.slug || fileName.replace(/\.(mdx|yaml)$/, ""));
+      const lastModified = data.publishedAt
+        ? new Date(String(data.publishedAt)).toISOString()
+        : getFileLastModified(filePath);
 
-    const slug = fileName.replace(/\.yaml$/, "");
-    const filePath = path.join(upgradesDir, fileName);
-
-    entries.push(
-      ...createLocalizedEntries(`/upgrades/${slug}`, {
-        lastModified: getFileLastModified(filePath),
+      return createLocalizedEntries(`/upgrades/${slug}`, {
+        lastModified,
         changeFrequency: "weekly",
         priority: 0.7,
-      }),
-    );
-  }
+      });
+    },
+  });
 
-  return dedupeEntries(entries);
+  return dedupeEntries([...entries, ...upgradeEntries.flat()]);
 }
 
 export const mediaRoutes: RouteGenerator = () => {

@@ -4,6 +4,357 @@
     "copy": "Bu sayfa mevcut değil — ama ağ asla durmaz. Sizi yolunuza döndürelim.",
     "button": "Ana sayfaya geri dön"
   },
+  "dataDashboard": {
+    "metadata": {
+      "title": "Solana Verileri",
+      "description": "Günde iki kez güncellenen Solana ağı, stablecoin ve DeFi metriklerini keşfedin."
+    },
+    "header": {
+      "eyebrow": "Günde iki kez güncellenen ağ verileri",
+      "title": "Solana verileri",
+      "description": "Önde gelen zincir üstü sağlayıcılardan günde iki kez güncellenen ağ, stablecoin ve DeFi metrikleri."
+    },
+    "controls": {
+      "ariaLabel": "Kontroller",
+      "tabsAriaLabel": "Veri bölümü",
+      "rangeAriaLabel": "Tarih aralığı",
+      "providersLabel": "Sağlayıcılar",
+      "rpcMethodAriaLabel": "RPC yöntemi",
+      "rpcMethodLabel": "Yöntem",
+      "rpcInfraAriaLabel": "RPC altyapısı",
+      "rpcInfraLabel": "Altyapı",
+      "rpcRegionAriaLabel": "RPC bölgesi",
+      "rpcRegionLabel": "Bölge",
+      "rpcTimeframeAriaLabel": "Gösterge paneli zaman aralığı",
+      "rpcTimeframeLabel": "Zaman aralığı"
+    },
+    "tabs": {
+      "overview": {
+        "label": "Genel Bakış",
+        "description": "Temel Solana ağ aktivitesi, ücret, fiyat ve blok üretim metrikleri.",
+        "clarification": "Ücretler yalnızca temel ve öncelik ücretlerinin toplamıdır."
+      },
+      "network": {
+        "label": "Ağ",
+        "description": "Validator, stake, altyapı yoğunlaşması ve ağ fiyat metrikleri.",
+        "clarification": "Tüm metrikler yalnızca aktif (delinquent olmayan) validator'ları kapsar. Günlük değerler epoch sınırlarında dalgalanabilir."
+      },
+      "stablecoins": {
+        "label": "Stablecoin'ler",
+        "description": "Veri sağlayıcılar genelinde stablecoin arzı, transfer ve aktif adres metrikleri.",
+        "clarification": "Raporlama, USD ve USD dışı stablecoin'leri kapsar."
+      },
+      "defi": {
+        "label": "DeFi",
+        "description": "Veri sağlayıcılar genelinde DEX ve Spot İşlem metrikleri."
+      },
+      "rpc": {
+        "label": "RPC",
+        "description": "Solana RPC sağlayıcıları için gecikme metrikleri."
+      },
+      "senders": {
+        "label": "Tx Göndericileri",
+        "description": "Solana işlem gönderme sağlayıcılarında işlem hacmi, bahşişler ve ücret ekonomisi.",
+        "clarification": "İşlemler, seçilen zaman aralığında pozitif bahşiş içeren aktiviteyi temsil eder."
+      }
+    },
+    "summaryAriaLabel": "{tab} özeti",
+    "buildSection": {
+      "title": "Bu verilerden geliştirin",
+      "description": "Ağ, stablecoin ve DeFi aktivitesini üretim iş akışlarına dönüştüren ekipler için ilgili Solana ürünleri.",
+      "previous": "Önceki kaynaklar",
+      "next": "Sonraki kaynaklar",
+      "cards": {
+        "sdp": {
+          "title": "Solana Geliştirici Platformu",
+          "description": "Kurumsal düzeyde API'lerle Solana üzerinde ihraç, ödeme ve işlem iş akışlarını hayata geçirin.",
+          "cta": "SDP'yi Keşfet"
+        },
+        "pay": {
+          "title": "Pay.sh",
+          "description": "Ajanlar, komut satırı araçları ve makine tabanlı ödeme akışları için kullandığın kadar öde API erişimi.",
+          "cta": "Başlayın"
+        },
+        "x402": {
+          "title": "x402 Ödemeleri",
+          "description": "Solana uzlaşımıyla API'ler, web siteleri ve ajanlara açık kaynaklar için internete özgü ödeme altyapısı.",
+          "cta": "x402'yi Aç"
+        },
+        "tokens": {
+          "title": "Tokenlar",
+          "description": "Varlıkları, fiyatları ve piyasa derinliğini karşılaştırmak için Solana likiditesini ve token verilerini bir araya getirin.",
+          "cta": "Tokenları Keşfet"
+        },
+        "aggregator": {
+          "title": "Solana Veri Toplayıcı (SDA)",
+          "description": "Bu paneli destekleyen açık kaynak reposunu keşfedin.",
+          "cta": "Repoyu Görüntüle"
+        },
+        "allium": {
+          "title": "Allium Kurumsal Veri",
+          "description": "Mainnet, devnet ve testnet genelinde Solana kurumsal verilerine erişin.",
+          "cta": "Allium'u Aç"
+        },
+        "dune": {
+          "title": "Dune",
+          "description": "Tokenlar, transferler, protokoller ve aktivite için Solana verilerine, topluluk panolarına ve özenle hazırlanmış tablolara erişin.",
+          "cta": "Dune'u Aç"
+        },
+        "lightspeed": {
+          "title": "Lightspeed",
+          "description": "Blockworks tarafından desteklenen Solana yatırımcı ilişkileri ve kurumsal panolara erişin.",
+          "cta": "Lightspeed'i Aç"
+        },
+        "rpcMonitor": {
+          "title": "RPC Gecikme Monitörü",
+          "description": "Açık kaynak RPC gecikme monitörünü ve sağlayıcı katılım akışını inceleyin.",
+          "cta": "Repoyu görüntüle"
+        },
+        "senderMetrics": {
+          "title": "Tx Gönderici Metrikleri",
+          "description": "Sağlayıcıya göre işlem gönderici kullanımını, bahşişli işlemleri, ücretleri ve bahşişleri görüntüleyin.",
+          "cta": "Paneli aç"
+        }
+      }
+    },
+    "kpisAriaLabel": "Temel metrikler",
+    "chartsAriaLabel": "{tab} grafikleri",
+    "kpis": {
+      "providerTooltip": "Mevcut en son güne ait seçili sağlayıcılar genelinde medyan.",
+      "compositeTooltip": "Bileşik KPI: mevcut en son güne ait {metrics} toplamı.",
+      "metricTooltip": "{metric} için mevcut en son gün.",
+      "metricListSeparator": " + ",
+      "providerSampleTooltip": "En son mevcut örnek için seçili sağlayıcılar arasındaki medyan.",
+      "providerMinimumTooltip": "En son mevcut gün için seçili sağlayıcılar arasındaki minimum.",
+      "providerMinimumSampleTooltip": "En son mevcut örnek için seçili sağlayıcılar arasındaki minimum.",
+      "metricSampleTooltip": "{metric} için en son mevcut örnek."
+    },
+    "loading": {
+      "refreshing": "Veriler yenileniyor"
+    },
+    "methodology": {
+      "ariaLabel": "{metric} için metodolojiye bakın"
+    },
+    "footer": {
+      "allProviders": "Tüm sağlayıcılar",
+      "noProviders": "Hiçbir sağlayıcı seçilmedi",
+      "providerListSeparator": " / ",
+      "lastDays": "Son {days, plural, one {# gün} other {# gün}}",
+      "refreshCadence": "ET saat 10:00 ve 22:00'den sonra günde iki kez yenilenir",
+      "lastRefreshed": "Son yenilenme",
+      "lagNotice": "Tüm araçların yenileme programlarını desteklemek için 1 gün gecikmeli.",
+      "source": "Veri toplayıcı",
+      "backfillRequests": "Geçmiş veri talepleri",
+      "backfillCadence": "Geçmiş veri dolumu her ayın 1'inde aylık olarak desteklenir.",
+      "lastHours": "Son {hours, plural, one {# saat} other {# saat}}",
+      "lastTimeframe": "Son {timeframe}",
+      "rpcRefreshCadence": "RPC gecikmesi her dakika yenilenir",
+      "senderRefreshCadence": "İşlem gönderici metrikleri her dakika yenilenir",
+      "rpcFilter": "{infra} üzerinde {region} bölgesinde {method}",
+      "rpcSource": "Grafana Cloud Prometheus",
+      "senderSource": "Grafana gönderici panosu",
+      "ossRepo": "OSS repo",
+      "addRpcProvider": "RPC'nizi ekleyin"
+    },
+    "errors": {
+      "title": "Veriler kullanılamıyor",
+      "defaultUnavailable": "Solana verileri şu anda kullanılamıyor.",
+      "invalidResponse": "Solana verileri geçersiz bir yanıt döndürdü."
+    },
+    "empty": {
+      "noDataForSelection": "Bu seçim için veri yok",
+      "selectAtLeastOneSeries": "En az bir seri seçin"
+    },
+    "legend": {
+      "selectAll": "Tümünü seç",
+      "deselectAll": "Tüm seçimi kaldır"
+    },
+    "valueLabels": {
+      "count": "Sayı",
+      "computeUnits": "Hesaplama Birimleri",
+      "feesSol": "Ücretler (SOL)",
+      "percent": "Yüzde",
+      "sol": "SOL",
+      "usd": "USD",
+      "milliseconds": "ms"
+    },
+    "charts": {
+      "stablecoin-supply": {
+        "title": "Arz"
+      },
+      "stablecoin-transfer-count": {
+        "title": "Transfer Sayısı"
+      },
+      "stablecoin-active-addresses": {
+        "title": "Aktif Adresler"
+      },
+      "stablecoin-transfer-volume": {
+        "title": "Transfer Hacmi"
+      },
+      "stablecoin-count": {
+        "title": "Stablecoin Sayısı"
+      },
+      "transaction-count": {
+        "title": "İşlem Sayısı (Toplam)"
+      },
+      "sol-price": {
+        "title": "SOL Fiyatı"
+      },
+      "avg-cost-units": {
+        "title": "Hesaplama Birimleri"
+      },
+      "daily-fees": {
+        "title": "Ücretler"
+      },
+      "successful-transactions": {
+        "title": "Oy Dışı İşlem Sayısı (Başarılı)"
+      },
+      "failed-transactions": {
+        "title": "Oy Dışı İşlem Sayısı (Başarısız)"
+      },
+      "vote-transactions": {
+        "title": "İşlem Sayısı (Oy)"
+      },
+      "slots": {
+        "title": "Slot'lar"
+      },
+      "fee-payers": {
+        "title": "Ücret Ödeyenler"
+      },
+      "total-stake": {
+        "title": "Toplam Stake"
+      },
+      "validator-count": {
+        "title": "Validator Sayısı"
+      },
+      "top-asn-share": {
+        "title": "İlk 3 ASN Payı"
+      },
+      "sol-price-network": {
+        "title": "SOL Fiyatı (Ağ)"
+      },
+      "dex-volume": {
+        "title": "DEX Hacmi"
+      },
+      "dex-transactions": {
+        "title": "DEX İşlemleri"
+      },
+      "dex-count": {
+        "title": "DEX Sayısı"
+      },
+      "dex-traders": {
+        "title": "DEX Yatırımcıları"
+      },
+      "rpc-error-rate": {
+        "title": "Hata Oranı",
+        "caption": "Uygun istekler üzerindeki saatlik hatalar · hata türleri için noktalara gelin · düşük daha iyidir"
+      },
+      "rpc-avg-latency": {
+        "title": "Ort. Gecikme",
+        "caption": "Canlı 5 dakikalık ortalama · düşük daha iyidir"
+      },
+      "rpc-p50-latency": {
+        "title": "P50 Gecikme",
+        "caption": "Saatlik P50 · son 6 saat · düşük daha iyidir"
+      },
+      "rpc-p95-latency": {
+        "title": "P95 Gecikme",
+        "caption": "Saatlik P95 · son 6 saat · düşük daha iyidir"
+      },
+      "rpc-p99-latency": {
+        "title": "P99 Gecikme",
+        "caption": "Saatlik P99 · son 6 saat · düşük daha iyidir"
+      },
+      "sender-transactions-over-time": {
+        "title": "Sağlayıcıya göre zaman içindeki bahşişli işlemler"
+      },
+      "sender-transactions": {
+        "title": "Sağlayıcıya göre bahşişli işlemler"
+      },
+      "sender-total-tips": {
+        "title": "Sağlayıcıya göre toplam bahşişler"
+      },
+      "sender-total-fees": {
+        "title": "Sağlayıcıya göre toplam ücretler"
+      }
+    },
+    "senderEconomics": {
+      "ariaLabel": "İşlem gönderici sağlayıcı ekonomisi",
+      "title": "Sağlayıcı ekonomisi",
+      "rangeTotal": "Seçilen zaman aralığı",
+      "provider": "Sağlayıcı",
+      "transactions": "İşlemler",
+      "totalTips": "Toplam bahşişler (SOL)",
+      "totalFees": "Toplam ücretler (SOL)",
+      "medianTip": "Medyan bahşiş (lamport)",
+      "medianFee": "Medyan ücret (lamport)"
+    },
+    "barChart": {
+      "ariaLabel": "En son örneğe göre sıralanmış sağlayıcı değerleri"
+    },
+    "rpcErrors": {
+      "timeout": {
+        "label": "Zaman aşımı",
+        "description": "10 saniyelik süre içinde yanıt alınamadı."
+      },
+      "transport": {
+        "label": "Bağlantı başarısız",
+        "description": "DNS, TLS veya bağlantı düzeyinde hata."
+      },
+      "http_5xx": {
+        "label": "Sunucu hatası",
+        "description": "Sağlayıcı HTTP 500–599 döndürdü."
+      },
+      "http_429": {
+        "label": "Hız sınırlandırıldı",
+        "description": "Sağlayıcı HTTP 429 döndürdü. Bu genellikle tarafsız atlanan bir sonuç olarak değerlendirilir."
+      },
+      "http_4xx": {
+        "label": "İstemci hatası",
+        "description": "Sağlayıcı başka bir HTTP 4xx döndürdü. Bu genellikle tarafsız atlanan bir sonuç olarak değerlendirilir."
+      },
+      "rpc_block_unavailable": {
+        "label": "Blok kullanılamıyor",
+        "description": "Düğüm, istenen bloğa sahip değil (-32004)."
+      },
+      "rpc_node_unhealthy": {
+        "label": "Düğüm geride",
+        "description": "Düğüm sağlıksız veya kümeden geride (-32005)."
+      },
+      "rpc_slot_skipped": {
+        "label": "slot atlandı",
+        "description": "Atlanmış bir slot, bunu döndürmemesi gereken bir yöntem için döndürüldü (-32007/-32009)."
+      },
+      "rpc_tx_history_unavailable": {
+        "label": "Geçmiş kullanılamıyor",
+        "description": "İşlem geçmişi mevcut değil (-32011)."
+      },
+      "rpc_method_not_found": {
+        "label": "Yöntem desteklenmiyor",
+        "description": "Sağlayıcı bu yöntemi desteklemiyor (-32601)."
+      },
+      "rpc_invalid_params": {
+        "label": "Geçersiz parametreler",
+        "description": "Sağlayıcı istek parametrelerini reddetti (-32602)."
+      },
+      "rpc_error": {
+        "label": "RPC hatası",
+        "description": "Başka bir JSON-RPC hatası döndürüldü."
+      },
+      "decode": {
+        "label": "Hatalı biçimli yanıt",
+        "description": "HTTP 200 yanıtı geçerli bir JSON-RPC değildi."
+      },
+      "empty": {
+        "label": "Boş sonuç",
+        "description": "HTTP 200 yanıtı kullanılabilir veri içermiyordu."
+      },
+      "stale": {
+        "label": "Eski veri",
+        "description": "Yanıt slotu, zincir ucunu bütçesinin ötesinde geride bıraktı."
+      }
+    }
+  },
   "titles": {
     "404": "404: Bulunamadı",
     "newsletter": "Bülten",
@@ -160,7 +511,7 @@
     "copied": "Kopyalandı!",
     "subscribe": "Şimdi Abone Olun",
     "submit-event": "Luma takvimine etkinlik gönder",
-    "host-event": "River'da etkinlik düzenle",
+    "follow-luma": "Luma’da takip et",
     "search": "Arama",
     "askAI": "Yapay zekaya sor",
     "searchOrAskAI": "Ara veya yapay zekaya sor",
@@ -582,6 +933,7 @@
       "documentation": "Dokümantasyon",
       "rpc": "API",
       "payments": "Ödemeler",
+      "tools": "Araçlar",
       "guides": "Rehberler",
       "terminology": "Terminoloji",
       "bootcamp": "Bootcamp",
@@ -589,7 +941,14 @@
       "cookbook": "Cookbook",
       "templates": "Şablonlar",
       "toolkit": "Toolkit",
-      "skills": "Yetenekler"
+      "skills": "Yetenekler",
+      "data": "Veri",
+      "tokenization": "Tokens",
+      "defi": "DeFi",
+      "resources": "Resources",
+      "quickstart": "Start here",
+      "concepts": "Concepts",
+      "finance": "Finans"
     },
     "carousel": {
       "prev": "Önceki",
@@ -600,8 +959,14 @@
     "description": "En son temel ve topluluk tabanlı Solana etkinliklerine göz atın. Bir etkinliğe gelin ve Solana geliştiricileriyle tanışın!",
     "title": "Solana, gerçek hayatta",
     "signup": "RSVP",
+    "meta": {
+      "seoTitle": "Solana Etkinlikleri: meetup, konferans ve workshoplar",
+      "seoDescription": "Yaklaşan Solana etkinliklerini, topluluk buluşmalarını, konferansları ve workshopları bulun. RSVP yapın, Luma takvimlerini takip edin ve yakınınızdaki geliştiricilerle tanışın."
+    },
     "archive": {
       "page-title": "Etkinlik Arşivi",
+      "eyebrow": "Etkinlikler — Arşiv",
+      "back-to-events": "Etkinliklere dön",
       "title": "Geçmiş Etkinlikler",
       "subtitle": "Topluluğunuzdaki Solana geliştiricilerinin daha önce nerede buluştuğunu görün!",
       "archive": "Arşivde geçmiş etkinlikleri görün",
@@ -612,12 +977,17 @@
     "hero": {
       "title": "Solana, gerçek hayatta",
       "subtitle": "Topluluğunuzdaki Solana geliştiricileriyle tanışın. Bir buluşmaya gelin!",
+      "eyebrow": "Solana — Etkinlikler",
+      "upcoming": "Yaklaşan",
+      "past-events": "Geçmiş etkinlikler",
+      "next": "Sıradaki",
       "virtual": "Sanal",
       "in-person": "Yüz Yüze",
       "hacker": "Hacker House",
       "all-events": "Tüm etkinlikleri görüntüle"
     },
     "community": {
+      "label": "Topluluk",
       "heading": "Topluluk etkinlikleri",
       "description": "Solana topluluğundan buluşmalar, inşa alanları ve daha fazlası. Bu etkinlikler Solana Vakfı tarafından düzenlenmemektedir.",
       "help": "Biraz yardıma mı ihtiyacınız var? <meetupLink>buluşma kılavuzuna</meetupLink>."
@@ -625,6 +995,14 @@
     "us": {
       "heading": "Solanamerica",
       "description": "ABD'deki Seçkin Solana Topluluk Etkinlikleri Listesi."
+    },
+    "featured": {
+      "label": "Öne çıkan"
+    },
+    "empty": {
+      "upcoming": "Yaklaşan etkinlik yok.",
+      "community": "Şu anda planlanmış topluluk etkinliği yok.",
+      "archive": "Şu anda kullanılabilir arşivlenmiş etkinlik yok."
     },
     "detail": {
       "action": "Detaylar"
@@ -638,11 +1016,1111 @@
       "venue": "Konum"
     }
   },
+  "navigationHubs": {
+    "useSolana": {
+      "metaTitle": "Solana Kullan",
+      "metaDescription": "Bir cüzdan kur, Solana temellerini öğren, güvende kal ve denemek için uygulamalar bul.",
+      "eyebrow": "Solana Kullan",
+      "title": "Solana'yı güvenle kullanmaya başla",
+      "description": "Bir cüzdan seç, SOL ve ücretlerin nasıl çalıştığını öğren, daha güvenli imzalama alışkanlıkları edin ve denemek için uygulamalar ile topluluklar bul.",
+      "primaryCta": {
+        "title": "Cüzdanları karşılaştır"
+      },
+      "secondaryCta": {
+        "title": "Temelleri öğren"
+      },
+      "metrics": [
+        {
+          "value": "01",
+          "label": "Cüzdan seç",
+          "description": "Cüzdanları platform, özellikler ve güvenlik ihtiyaçlarına göre karşılaştır."
+        },
+        {
+          "value": "02",
+          "label": "İlk adımları öğren",
+          "description": "Cüzdanlar, transferler, ücretler, token'lar, staking, DeFi, NFT'ler ve uygulamalar hakkında başlangıç derslerini takip et."
+        },
+        {
+          "value": "03",
+          "label": "Güvenli alışkanlıklar edin",
+          "description": "Uygulamalara bağlanmadan, işlem imzalamadan veya varlık taşımadan önce güvenlik temellerini oku."
+        },
+        {
+          "value": "04",
+          "label": "Uygulamaları keşfet",
+          "description": "Öğrendiklerini uygulamalar, staking, etkinlikler ve Solana topluluğunu keşfetmek için kullan."
+        }
+      ],
+      "overview": {
+        "eyebrow": "Kullanıcı yolculuğu",
+        "title": "İlk cüzdanından ilk işlemine geç.",
+        "description": "Bu merkez, başlangıç kaynaklarını net bir sırayla sunar: cüzdan kurulumu, SOL ve ücretler, transferler, staking, token'lar, uygulamalar ve güvenlik.",
+        "points": [
+          {
+            "title": "Önce cüzdan",
+            "description": "Cüzdanın varlıklarını tutar, işlemleri imzalar ve seni Solana uygulamalarına bağlar."
+          },
+          {
+            "title": "Sonra temel bilgiler",
+            "description": "SOL'un ne işe yaradığını, ücretlerin ve transferlerin nasıl çalıştığını ve token'lar ile staking'in nereye uyduğunu öğren."
+          },
+          {
+            "title": "Daha fazla işlemden önce güvenlik",
+            "description": "Sık sık imzalamaya başlamadan önce seed ifadelerini, bağlantıları, onayları ve uygulama bağlantılarını gözden geçir."
+          }
+        ]
+      },
+      "pathwaysEyebrow": "Buradan başla",
+      "pathwaysHeading": "Solana'daki ilk adımınızı seçin.",
+      "directoryEyebrow": "Kaynaklar",
+      "pathways": [
+        {
+          "eyebrow": "İlk cüzdan",
+          "title": "Solana uygulamaları için bir cüzdan seçin.",
+          "description": "Cüzdanları karşılaştırın, ardından anahtarların, hesapların ve onayların nasıl çalıştığını öğrenin.",
+          "cta": "Cüzdanları karşılaştır",
+          "links": [
+            {
+              "title": "Cüzdan bulucu"
+            },
+            {
+              "title": "Cüzdan nedir?"
+            },
+            {
+              "title": "Cüzdanlar"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Temel kavramlar",
+          "title": "SOL, ücretler, token'lar ve transferlerin nasıl çalıştığını öğrenin.",
+          "description": "Yeni uygulamaları kullanmadan önce Solana temellerini, ücretleri, token'ları ve transferleri öğrenin.",
+          "cta": "Öğrenme yolunu aç",
+          "links": [
+            {
+              "title": "Solana nedir?"
+            },
+            {
+              "title": "İşlem ücretleri"
+            },
+            {
+              "title": "Token'lar"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Uygulama keşfi",
+          "title": "Uygulamalar, staking ve etkinlikler keşfedin.",
+          "description": "Cüzdanları, ücretleri ve imzalama güvenliğini anladıktan sonra tüketici uygulamalarını ve staking'i keşfedin.",
+          "cta": "Tüketici uygulamalarını keşfet",
+          "links": [
+            {
+              "title": "Tüketici uygulamaları"
+            },
+            {
+              "title": "Staking"
+            },
+            {
+              "title": "Etkinlikler"
+            }
+          ]
+        }
+      ],
+      "feature": {
+        "eyebrow": "Önce güvenlik",
+        "title": "Uygulamalara bağlanmadan önce cüzdan güvenliğini inceleyin",
+        "description": "Onayları, seed ifadelerini, bağlantıları ve yaygın dolandırıcılıkları kontrol etmek için güvenlik kılavuzunu kullanın.",
+        "cta": "Kılavuzu oku"
+      },
+      "resourceHeading": "Solana kaynaklarını kullanın",
+      "resourceDescription": "Yeni Solana kullanıcıları için cüzdan kurulumu, başlangıç dersleri, güvenlik kılavuzları ve bağlantılar.",
+      "sections": [
+        {
+          "title": "Cüzdanlar ve katılım",
+          "description": "İlk işlemleriniz için hesap kurulumu ve temel bilgilerle başlayın.",
+          "links": [
+            {
+              "title": "Cüzdanlar",
+              "description": "Solana cüzdanlarının uygulamalar, ödemeler ve anahtarlarla nasıl çalıştığını öğrenin."
+            },
+            {
+              "title": "Cüzdan dizini",
+              "description": "Cüzdanları platforma, özelliklere ve güvenlik seçeneklerine göre filtreleyin."
+            },
+            {
+              "title": "Solana nedir?",
+              "description": "Ağa ve sağladığı olanaklara yönelik başlangıç kılavuzu."
+            },
+            {
+              "title": "Başlarken",
+              "description": "Temel Solana kullanımına yönlendiren bir giriş noktası."
+            },
+            {
+              "title": "Cüzdan nedir?",
+              "description": "Cüzdanların anahtarları nasıl sakladığı ve uygulamalara nasıl bağlandığı."
+            },
+            {
+              "title": "SOL gönderme ve alma",
+              "description": "Temel bir transferin nasıl işlediği."
+            }
+          ]
+        },
+        {
+          "title": "Güvenlik, ücretler ve tokenlar",
+          "description": "İşlem imzalama ve değer transferi için temel konular.",
+          "links": [
+            {
+              "title": "Güvende kalmak",
+              "description": "Cüzdanlar, bağlantılar, onaylar ve uygulamalar için güvenlik alışkanlıkları."
+            },
+            {
+              "title": "İşlem ücretleri",
+              "description": "Ağı kullandığınızda ücretlerin nasıl işlediği."
+            },
+            {
+              "title": "Solana tokenlarına giriş",
+              "description": "Token türleri ve davranışlarına ilişkin sade bir rehber."
+            },
+            {
+              "title": "Staking",
+              "description": "Staking ve validator'lar hakkında öğrenmeye başlayın."
+            },
+            {
+              "title": "Staking nedir?",
+              "description": "Staking'e yeni başlayanlar için genel bir bakış."
+            },
+            {
+              "title": "Tüketici uygulamaları",
+              "description": "Solana üzerindeki uygulamalar, sosyal deneyimler, oyunlar ve topluluklar."
+            }
+          ]
+        },
+        {
+          "title": "Öğrenmeye devam et",
+          "description": "Solana ekosisteminde neler olduğunu öğrenmek için daha fazla bağlantı.",
+          "links": [
+            {
+              "title": "Öğren",
+              "description": "Yeni başlayanlar için tam öğrenme yolu."
+            },
+            {
+              "title": "Solana uygulamalarını keşfetme",
+              "description": "Uygulama kategorilerine nasıl göz atılır."
+            },
+            {
+              "title": "Etkinlikler",
+              "description": "Buluşmalar, konferanslar ve topluluk etkinlikleri."
+            },
+            {
+              "title": "Haberler",
+              "description": "Solana ekosistemi ve Vakfı'ndan güncellemeler."
+            }
+          ]
+        }
+      ]
+    },
+    "enterprise": {
+      "metaTitle": "Kurumsal Kuruluşlar için Solana",
+      "metaDescription": "Ödemeler, stablecoin'ler, tokenizasyon, ağ kanıtı ve kurumsal kullanım senaryoları için Solana'yı keşfedin.",
+      "eyebrow": "Kurumsal",
+      "title": "Solana'yı iş amaçlı kullanım için değerlendirin",
+      "description": "Ödemeler, stablecoin'ler, tokenize edilmiş varlıklar, finansal altyapı, gizlilik, ağ performansı ve ekiplerin geliştirme için ihtiyaç duyduğu belgeleri inceleyin.",
+      "primaryCta": {
+        "title": "Kurumsal çözümleri keşfedin"
+      },
+      "secondaryCta": {
+        "title": "Ağ kaynaklarını görüntüleyin"
+      },
+      "metrics": [
+        {
+          "value": "Kullanım senaryoları",
+          "label": "Ödemeler ve uzlaşma",
+          "description": "Ödemeler, stablecoin'ler, ticaret araçları ve Solana Developer Platform hakkında bilgi edinin."
+        },
+        {
+          "value": "Varlıklar",
+          "label": "Tokenizasyon ve gerçek dünya varlıkları",
+          "description": "Tokenize edilmiş varlıkları, gerçek dünya varlıklarını, Token Extensions ve dijital varlık araçlarını keşfedin."
+        },
+        {
+          "value": "Araştırma",
+          "label": "Raporlar ve araştırmalar",
+          "description": "Ağ sağlığı, performans, enerji kullanımı, gizlilik ve ekosistem aktivitesi hakkındaki raporları okuyun."
+        },
+        {
+          "value": "Geliştir",
+          "label": "Belgeler ve araçlar",
+          "description": "Ödeme belgelerini, Token Extensions kaynaklarını, RPC kaynaklarını ve iş ortağı araçlarını bulun."
+        }
+      ],
+      "overview": {
+        "eyebrow": "Değerlendirme yolu",
+        "title": "İş senaryosundan kanıta, kanıttan geliştirme planına geçin.",
+        "description": "Kullanım senaryosuyla başlayın, ardından raporları, validator'ları, gizlilik seçeneklerini, belgeleri ve araçları inceleyin.",
+        "points": [
+          {
+            "title": "İş senaryoları",
+            "description": "Ödemeler, stablecoin'ler, tokenize edilmiş varlıklar ve finansal altyapının her biri için örnekler ve araçlar içeren sayfalar mevcuttur."
+          },
+          {
+            "title": "Teknik kanıtlar",
+            "description": "Ağ, validator, rapor, araştırma, gizlilik ve RPC kaynakları, ekiplerin uygunluğu değerlendirmesine yardımcı olur."
+          },
+          {
+            "title": "Geliştirme planı",
+            "description": "Ödemeler, token'lar, Solana Pay, Kora, Commerce Kit ve RPC sağlayıcılarına ilişkin belgeler, ekiplerin geliştirmeye başlamasına yardımcı olur."
+          }
+        ]
+      },
+      "pathwaysEyebrow": "Değerlendirme yolları",
+      "pathwaysHeading": "Önce değerlendirmek istediğiniz iş yolunu seçin.",
+      "directoryEyebrow": "Kaynak dizini",
+      "pathways": [
+        {
+          "eyebrow": "Para transferi",
+          "title": "Ödemeleri, stablecoin'leri ve uzlaşmayı inceleyin.",
+          "description": "Kurumsal ödemeler ve stabilcoinlerle başlayın, ardından ödeme dokümanlarını ve araçlarını keşfedin.",
+          "cta": "Ödeme çözümlerini aç",
+          "links": [
+            {
+              "title": "Kurumsal ödemeler"
+            },
+            {
+              "title": "Stabilcoinler"
+            },
+            {
+              "title": "Ödeme dokümanları"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Varlık çıkar",
+          "title": "Tokenizasyonu ve dijital varlıkları keşfedin.",
+          "description": "Bağlam için tokenizasyon ve gerçek dünya varlıkları sayfalarını inceleyin, ardından Token Extensions'ı gözden geçirin.",
+          "cta": "Tokenizasyonu aç",
+          "links": [
+            {
+              "title": "Tokenizasyon"
+            },
+            {
+              "title": "Gerçek dünya varlıkları"
+            },
+            {
+              "title": "Token Extensions"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Hazırlığı kontrol et",
+          "title": "Ağ, gizlilik ve araştırmaları inceleyin.",
+          "description": "Raporları, validator bilgilerini, gizlilik kaynaklarını ve ağ kaynaklarını bulun.",
+          "cta": "Raporları görüntüle",
+          "links": [
+            {
+              "title": "Ağ merkezi"
+            },
+            {
+              "title": "Raporlar"
+            },
+            {
+              "title": "Gizlilik"
+            }
+          ]
+        }
+      ],
+      "feature": {
+        "eyebrow": "Ağ kanıtı",
+        "title": "Solana'yı değerlendirmek için raporları ve araştırmaları kullanın",
+        "description": "Yayımlanan raporlar, araştırmalar ve validator kaynakları, ekiplerin ağı anlamasına yardımcı olur.",
+        "cta": "Raporları görüntüle"
+      },
+      "resourceHeading": "Kurumsal kaynaklar",
+      "resourceDescription": "Solana'yı değerlendiren ekipler için çözüm sayfaları, dokümanlar ve araştırmalar.",
+      "sections": [
+        {
+          "title": "İş çözümleri",
+          "description": "Ödemeler, stabilcoinler, ticaret, tokenizasyon ve gerçek dünya varlıklarına yönelik sayfalar.",
+          "links": [
+            {
+              "title": "Kurumsal genel bakış",
+              "description": "Solana'yı değerlendiren kuruluşlar için başlangıç noktası."
+            },
+            {
+              "title": "Kurumsal ödemeler",
+              "description": "Ödeme altyapısı, stabilcoin mutabakatı ve iş akışları."
+            },
+            {
+              "title": "Ticaret araçları",
+              "description": "Ticaret ve ödeme kabul işlemleri için araçlar."
+            },
+            {
+              "title": "Stabilcoinler",
+              "description": "Stabilcoin ihracı ve dağıtımı."
+            },
+            {
+              "title": "Tokenizasyon",
+              "description": "Tokenize varlıklar, sermaye piyasaları ve piyasaya erişim."
+            },
+            {
+              "title": "Gerçek dünya varlıkları",
+              "description": "Varlık tokenizasyonu kullanım senaryoları ve örnekleri."
+            }
+          ]
+        },
+        {
+          "title": "Finansal altyapı",
+          "description": "Ödemeler, sermaye piyasaları, DeFi, kurumlar ve altyapı ekipleri için yollar.",
+          "links": [
+            {
+              "title": "Solana Geliştirici Platformu",
+              "description": "Finansal ürünler için API'ler ve altyapı."
+            },
+            {
+              "title": "Dijital varlıklar",
+              "description": "Bireysel ve kurumsal ürünler için dijital varlık araçları."
+            },
+            {
+              "title": "DeFi",
+              "description": "Açık finansal piyasalar ve likidite."
+            },
+            {
+              "title": "Finansal altyapı",
+              "description": "Altyapı ekipleri için finansal kullanım senaryoları."
+            },
+            {
+              "title": "Finansal kurumlar",
+              "description": "Finansal kurumlar için örnekler ve kaynaklar."
+            },
+            {
+              "title": "DePIN",
+              "description": "Fiziksel altyapıyı token ödülleriyle buluşturan ağlar."
+            }
+          ]
+        },
+        {
+          "title": "Araştırma ve kanıt",
+          "description": "İnceleme için ağ, validator, rapor, araştırma ve gizlilik kaynakları.",
+          "links": [
+            {
+              "title": "Ağ merkezi",
+              "description": "Validator'lar, RPC, durum, gezginler, raporlar ve araştırma."
+            },
+            {
+              "title": "Validator'lar",
+              "description": "Validator'ların Solana ağını çalıştırmaya nasıl yardımcı olduğu."
+            },
+            {
+              "title": "Raporlar",
+              "description": "Ağ, ekosistem ve araştırma raporları."
+            },
+            {
+              "title": "Araştırma",
+              "description": "Ağ sağlığı ve performansı üzerine araştırmalar."
+            },
+            {
+              "title": "Gizlilik",
+              "description": "Gizlilik araçları ve gizli token kaynakları."
+            }
+          ]
+        }
+      ]
+    },
+    "products": {
+      "metaTitle": "Solana Ürünleri",
+      "metaDescription": "Solana Developer Platform, Pay.sh, Solana Data, Tokens API, x402, Agent Registry, Skills, Actions and blinks, Solana Pay, Commerce Kit, Kora, RPC sağlayıcıları ve dokümantasyonu bulun.",
+      "eyebrow": "Ürünler",
+      "title": "Geliştirme için Solana ürün ve araçlarını keşfedin",
+      "description": "Solana üzerinde geliştirme yapmak için API'leri, veri ürünlerini, ajan araçlarını, ödeme sistemlerini, işlem bağlantılarını, ticaret araçlarını ve dokümantasyonu keşfedin.",
+      "primaryCta": {
+        "title": "Solana Developer Platform"
+      },
+      "secondaryCta": {
+        "title": "Ajan araçlarını keşfet"
+      },
+      "metrics": [
+        {
+          "value": "Platform",
+          "label": "Finansal ürün API'leri",
+          "description": "Solana Developer Platform; ihraç, ödeme ve işlem için API'ler içerir."
+        },
+        {
+          "value": "Ajanlar",
+          "label": "Kimlik ve beceriler",
+          "description": "Ajan Kaydı ve Beceriler, geliştiricilerin kimlik, güven ve bağlam eklemesine yardımcı olur."
+        },
+        {
+          "value": "Ödemeler",
+          "label": "x402 ve Solana Pay",
+          "description": "x402, Solana Pay, Commerce Kit ve Kora, ödeme ve web ödemelerini destekler."
+        },
+        {
+          "value": "Geliştir",
+          "label": "Veri ve dokümantasyon",
+          "description": "Solana Data, Tokens API, geliştirici dokümantasyonu, RPC sağlayıcıları ve kılavuzlar, ekiplerin geliştirmeye başlamasına yardımcı olur."
+        }
+      ],
+      "overview": {
+        "eyebrow": "Ürün haritası",
+        "title": "Platform, ajan ve ödeme araçlarının sade bir haritası.",
+        "description": "Platform API'leri, veri ürünleri, ajan araçları veya ödeme ürünleriyle başlayın, ardından geliştirme yapmak için dokümantasyonu kullanın.",
+        "points": [
+          {
+            "title": "Platform katmanı",
+            "description": "Solana Developer Platform, Solana Data, Tokens API ve RPC kaynakları; finansal, ödeme ve veri yoğun ürünleri destekler."
+          },
+          {
+            "title": "Ajan katmanı",
+            "description": "x402, Ajan Kaydı, Beceriler ve AI kaynakları, ajanların kimlik, güven, bağlam ve ödemeleri kullanmasına yardımcı olur."
+          },
+          {
+            "title": "İşlem katmanı",
+            "description": "Actions, blinks, Solana Pay, Commerce Kit, Kora ve token belgeleri, kullanıcıya yönelik işlem akışları oluşturmaya yardımcı olur."
+          }
+        ]
+      },
+      "pathwaysEyebrow": "Ürün yolları",
+      "pathwaysHeading": "Ekibinizin ihtiyaç duyduğu araç setini seçin.",
+      "directoryEyebrow": "Ürün dizini",
+      "pathways": [
+        {
+          "eyebrow": "Platform API'leri",
+          "title": "İhraç ve ödeme API'leri ile finansal ürünler geliştirin.",
+          "description": "Solana Geliştirici Platformu ile başlayın, ardından ödeme, token ve RPC belgelerini kullanın.",
+          "cta": "Platformu aç",
+          "links": [
+            {
+              "title": "SDP"
+            },
+            {
+              "title": "Ödeme dokümanları"
+            },
+            {
+              "title": "RPC sağlayıcıları"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Ajan ürünleri",
+          "title": "Kimlik, güven ve ödemelerle ajanlar oluşturun.",
+          "description": "Kimlik için Agent Registry'yi, bağlam için Skills'i ve ücretli API'ler ile kaynaklar için x402'yi kullanın.",
+          "cta": "Ajan araçlarını aç",
+          "links": [
+            {
+              "title": "Agent Registry"
+            },
+            {
+              "title": "Skills"
+            },
+            {
+              "title": "x402"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Kullanıcı işlemleri",
+          "title": "İşlem bağlantıları ve ödeme akışları oluşturun.",
+          "description": "Actions ve blinks, işlemleri paylaşılabilir kılar. Solana Pay, Commerce Kit ve Kora ödeme süreçlerini destekler.",
+          "cta": "İşlemleri keşfet",
+          "links": [
+            {
+              "title": "Actions ve blinks"
+            },
+            {
+              "title": "Solana Pay"
+            },
+            {
+              "title": "Kora"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Veri ürünleri",
+          "title": "Ağ verilerini ve token API'lerini keşfedin.",
+          "description": "Ağ metrikleri için Solana Data'yı, piyasa ve token verileri için Tokens API'yi ve ücretli API iş akışları için Pay.sh'ı kullanın.",
+          "cta": "Solana Data'yı Aç",
+          "links": [
+            {
+              "title": "Solana Data"
+            },
+            {
+              "title": "Pay.sh"
+            },
+            {
+              "title": "Tokens API"
+            }
+          ]
+        }
+      ],
+      "feature": {
+        "eyebrow": "Öne çıkan ürün",
+        "title": "Solana'da x402 ödemelerini başlatın",
+        "description": "x402, API'lerin ve web sitelerinin içerik sunmadan önce ödeme talep etmesini sağlar. Solana, hızlı ve düşük maliyetli uzlaşmayı gerçekleştirir.",
+        "cta": "x402'yi aç"
+      },
+      "resourceHeading": "Ürün kaynakları",
+      "resourceDescription": "Solana üzerinde geliştirme yapmak için platform API'leri, veri ürünleri, ajan araçları, ödeme ürünleri ve dokümantasyon.",
+      "sections": [
+        {
+          "title": "Platformlar ve araçlar",
+          "description": "Finansal API'ler, ajanlar, yapay zeka araçları ve işlem bağlantıları için ürünler.",
+          "links": [
+            {
+              "title": "Solana Geliştirici Platformu",
+              "description": "Finansal ürünler için API'ler."
+            },
+            {
+              "title": "x402",
+              "description": "Web için ödeme kaynakları ve ekosistem araçları."
+            },
+            {
+              "title": "Agent Registry",
+              "description": "Yapay zeka ajanları için zincir üstü kimlik ve güven araçları."
+            },
+            {
+              "title": "Beceriler",
+              "description": "Solana üzerinde geliştirme yapan yapay zeka ajanları için kullanıma hazır bilgiler."
+            },
+            {
+              "title": "Actions and blinks",
+              "description": "Paylaşılabilir işlemler ve uygulama eylemleri."
+            },
+            {
+              "title": "Ajanlar ve Yapay Zeka",
+              "description": "Yapay zeka araçları, ajan kitleri ve örnekler."
+            }
+          ]
+        },
+        {
+          "title": "Geliştirici ve ödeme araçları",
+          "description": "Gerçek ürün akışları oluşturmak için belgeler ve ödeme araçları.",
+          "links": [
+            {
+              "title": "Commerce Kit",
+              "description": "Ticaret araçları belgeleri."
+            },
+            {
+              "title": "Kora",
+              "description": "Ücret desteği ve ödeme işleme araçları."
+            },
+            {
+              "title": "Solana Pay",
+              "description": "Solana Pay ve ödeme akışları için belgeler."
+            },
+            {
+              "title": "RPC sağlayıcıları",
+              "description": "Uygulamalar için RPC sağlayıcı seçenekleri."
+            },
+            {
+              "title": "Ödeme araçları",
+              "description": "Ödeme araçları ve ekosistem kaynakları."
+            },
+            {
+              "title": "Token Extensions",
+              "description": "Mint'ler ve hesaplar için ekstra token özellikleri."
+            },
+            {
+              "title": "Dijital varlıklar",
+              "description": "Dijital varlık ürünleri ve araç kaynakları."
+            }
+          ]
+        },
+        {
+          "title": "Ürünlerle geliştirin",
+          "description": "Kod yazmaya hazır geliştiriciler için başlangıç noktaları.",
+          "links": [
+            {
+              "title": "Belgeler",
+              "description": "Resmi Solana geliştirici belgeleri."
+            },
+            {
+              "title": "Ödeme belgeleri",
+              "description": "Ödeme kılavuzları ve üretim rehberliği."
+            },
+            {
+              "title": "Token belgeleri",
+              "description": "Token programları, uzantılar ve hesap temelleri."
+            },
+            {
+              "title": "RPC sağlayıcıları",
+              "description": "Genel ve özel RPC sağlayıcı seçenekleri."
+            },
+            {
+              "title": "Geliştirici kılavuzları",
+              "description": "Ürün ve uygulama geliştirme kılavuzları."
+            }
+          ]
+        },
+        {
+          "title": "Veri ve API ürünleri",
+          "description": "Ağ, token ve ücretli kaynak iş akışları için panolar ve API ürünleri.",
+          "links": [
+            {
+              "title": "Solana Data",
+              "description": "Ağ, stablecoin ve DeFi metrikleri."
+            },
+            {
+              "title": "Pay.sh",
+              "description": "Ajanlar ve komut satırı araçları için kullandıkça öde API erişimi."
+            },
+            {
+              "title": "Tokens API",
+              "description": "Solana uygulamaları için token, fiyat ve likidite API'leri."
+            }
+          ]
+        }
+      ]
+    },
+    "ecosystem": {
+      "metaTitle": "Solana Ekosistemi",
+      "metaDescription": "Solana ağ kaynaklarını, etkinliklerini, topluluğunu, haberlerini, podcast'lerini, raporlarını, araştırmalarını ve ekosistem kategorilerini keşfedin.",
+      "eyebrow": "Ekosistem",
+      "title": "Solana geliştiricilerini, etkinlikleri ve kategorileri keşfedin",
+      "description": "DePIN, DeSci, BTCFi, oyun, içerik üreticileri ve girişim fikirleri gibi alanlara ait ağ kaynakları, etkinlikler, medya, araştırmalar ve sayfalar bulun.",
+      "primaryCta": {
+        "title": "Etkinlikleri keşfet"
+      },
+      "secondaryCta": {
+        "title": "Ağ merkezini görüntüle"
+      },
+      "metrics": [
+        {
+          "value": "Ağ",
+          "label": "Validator'lar, RPC ve durum",
+          "description": "validator'ları, RPC sağlayıcılarını, durum sayfalarını, gezginleri, raporları ve araştırmaları bulun."
+        },
+        {
+          "value": "Topluluk",
+          "label": "Etkinlikler ve medya",
+          "description": "Etkinlikleri, haberleri, podcast'leri, Breakpoint'i, Accelerate'i ve topluluk kanallarını takip edin."
+        },
+        {
+          "value": "Kategoriler",
+          "label": "Kullanım alanları",
+          "description": "DePIN, DeSci, BTCFi, oyun, içerik üreticileri ve başlangıç programlarını keşfedin."
+        },
+        {
+          "value": "Araştırma",
+          "label": "Raporlar ve araştırmalar",
+          "description": "Ekosistemi daha iyi anlamak için raporları ve araştırmaları kullanın."
+        }
+      ],
+      "overview": {
+        "eyebrow": "Keşif",
+        "title": "Doğru ekosistem kaynağını bulun.",
+        "description": "Bu merkez; ziyaretçilerin doğru yere daha hızlı ulaşabilmesi için ağ, etkinlikler, medya, araştırma ve kategori sayfalarını bir araya getirir.",
+        "points": [
+          {
+            "title": "Ağ bağlamı",
+            "description": "Validator'lar, RPC sağlayıcıları, gezginler, durum, raporlar ve araştırmalar ağın nasıl çalıştığını gösterir."
+          },
+          {
+            "title": "Topluluk etkinliği",
+            "description": "Etkinlikler, Breakpoint, Accelerate, haberler, podcast'ler ve topluluk sayfaları insanların nerede bir araya geldiğini ve yayın yaptığını gösterir."
+          },
+          {
+            "title": "Kategori keşfi",
+            "description": "DePIN, DeSci, BTCFi, oyun, içerik üreticileri ve girişim fikirleri için sayfaları inceleyin."
+          }
+        ]
+      },
+      "pathwaysEyebrow": "Keşfet",
+      "pathwaysHeading": "Ekosistemi nasıl keşfetmek istediğinizi seçin.",
+      "directoryEyebrow": "Ekosistem dizini",
+      "pathways": [
+        {
+          "eyebrow": "Ağ kaynakları",
+          "title": "Ağı inceleyin.",
+          "description": "Ağ merkeziyle başlayın, ardından validator'ları, RPC sağlayıcılarını, durumu, raporları ve araştırmaları keşfedin.",
+          "cta": "Ağ merkezini aç",
+          "links": [
+            {
+              "title": "Ağ"
+            },
+            {
+              "title": "Validators"
+            },
+            {
+              "title": "Raporlar"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Topluluk programları",
+          "title": "Etkinlikleri, güncellemeleri ve kişileri keşfedin.",
+          "description": "Programlar, sohbetler ve duyurular için etkinliklerden, haberlerden ve podcast'lerden yararlanın.",
+          "cta": "Etkinlikleri aç",
+          "links": [
+            {
+              "title": "Etkinlikler"
+            },
+            {
+              "title": "Haberler"
+            },
+            {
+              "title": "Podcast'ler"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Kategori keşfi",
+          "title": "Ekosistem kategorilerini ve girişim fikirlerini keşfedin.",
+          "description": "Fiziksel altyapı, bilim, Bitcoin, oyunlar, içerik üreticileri ve kurucu fırsatlarına yönelik sayfaları inceleyin.",
+          "cta": "Kategorilere göz at",
+          "links": [
+            {
+              "title": "DePIN"
+            },
+            {
+              "title": "Oyun"
+            },
+            {
+              "title": "İçerik Üreticileri"
+            }
+          ]
+        }
+      ],
+      "feature": {
+        "eyebrow": "Etkinlik",
+        "title": "Breakpoint",
+        "description": "Solana'nın büyük ekosistem etkinliğini ve ilgili topluluk programlarını takip edin.",
+        "cta": "Breakpoint'i Aç"
+      },
+      "resourceHeading": "Ekosistem kaynakları",
+      "resourceDescription": "Solana'yı keşfetmek için ağ kaynakları, etkinlikler, topluluk kanalları, medya ve kategori sayfaları.",
+      "sections": [
+        {
+          "title": "Ağ",
+          "description": "Solana'yı anlamak ve incelemek için kaynaklar.",
+          "links": [
+            {
+              "title": "Ağ merkezi",
+              "description": "Validator'lar, RPC sağlayıcıları, durum, raporlar ve araştırmalar tek bir yerde."
+            },
+            {
+              "title": "Validators",
+              "description": "Validator kaynakları ve katılım bilgileri."
+            },
+            {
+              "title": "RPC sağlayıcıları",
+              "description": "Genel ve özel RPC sağlayıcı seçenekleri."
+            },
+            {
+              "title": "Raporlar",
+              "description": "Araştırma ve raporlar."
+            },
+            {
+              "title": "Araştırma",
+              "description": "Analiz ve ağ araştırması."
+            },
+            {
+              "title": "Durum",
+              "description": "Canlı ağ durumu."
+            }
+          ]
+        },
+        {
+          "title": "Etkinlikler ve topluluk",
+          "description": "Duyuruları takip etmek, geliştiricilerle tanışmak ve ekosistem hikayelerini keşfetmek için platformlar.",
+          "links": [
+            {
+              "title": "Etkinlikler",
+              "description": "Yaklaşan ekosistem ve topluluk etkinlikleri."
+            },
+            {
+              "title": "Etkinlik arşivi",
+              "description": "Geçmiş etkinlikler ve programlar."
+            },
+            {
+              "title": "Accelerate",
+              "description": "Kurucular, geliştiriciler ve ekosistem ekipleri için konferans programları."
+            },
+            {
+              "title": "Breakpoint",
+              "description": "Solana'nın amiral gemisi ekosistem buluşması."
+            },
+            {
+              "title": "Topluluk",
+              "description": "Topluluk kanalları, kaynaklar ve katılım yolları."
+            },
+            {
+              "title": "Haberler",
+              "description": "Ekosistem haberleri ve duyuruları."
+            },
+            {
+              "title": "Podcast'ler",
+              "description": "Geliştiriciler ve katkıda bulunanlarla sohbetler."
+            }
+          ]
+        },
+        {
+          "title": "Kategoriler ve programlar",
+          "description": "Solana üzerinde geliştirilen kullanım senaryoları, girişim fikirleri ve topluluklar.",
+          "links": [
+            {
+              "title": "DePIN",
+              "description": "Solana üzerindeki fiziksel altyapı ağları."
+            },
+            {
+              "title": "DeSci",
+              "description": "Bilim finansmanı, koordinasyon ve bilgi paylaşımı."
+            },
+            {
+              "title": "BTCFi",
+              "description": "Solana üzerinde Bitcoin finansmanı ve sarılmış BTC."
+            },
+            {
+              "title": "Oyun ve eğlence",
+              "description": "Oyunlar, eğlence ve etkileşimli deneyimler."
+            },
+            {
+              "title": "Sanatçılar ve içerik üreticileri",
+              "description": "İçerik üretici araçları, dijital sanat, topluluklar ve sahiplik."
+            }
+          ]
+        }
+      ]
+    },
+    "network": {
+      "metaTitle": "Solana Ağı",
+      "metaDescription": "Solana validator'larını, RPC sağlayıcılarını, durum sayfalarını, raporları ve araştırmaları bulun.",
+      "eyebrow": "Ağ",
+      "title": "Solana ağını anlayın",
+      "description": "Solana'yı işletmek veya değerlendirmek için validator'ları, RPC sağlayıcılarını, gezginleri, canlı durumu, raporları ve araştırmaları bulun.",
+      "primaryCta": {
+        "title": "validator ol"
+      },
+      "secondaryCta": {
+        "title": "Durumu görüntüle"
+      },
+      "metrics": [
+        {
+          "value": "İşlet",
+          "label": "Validator'lar",
+          "description": "validator'ların işlemleri nasıl işlediğini ve ağın güvenliğini sağlamaya nasıl yardımcı olduğunu öğrenin."
+        },
+        {
+          "value": "Bağlan",
+          "label": "RPC sağlayıcıları",
+          "description": "Uygulamalar için genel uç noktaları, özel hizmetleri ve sağlayıcı seçeneklerini karşılaştırın."
+        },
+        {
+          "value": "İncele",
+          "label": "Gezginler ve durum",
+          "description": "Aktiviteyi ve kullanılabilirliği izlemek için gezginleri ve durum sayfalarını kullanın."
+        },
+        {
+          "value": "Değerlendir",
+          "label": "Raporlar ve araştırmalar",
+          "description": "Ağ sağlığı, performans, enerji kullanımı, gizlilik ve ekosistem aktivitesi hakkında bilgi edinin."
+        }
+      ],
+      "overview": {
+        "eyebrow": "Ağ operasyonları",
+        "title": "İş için doğru ağ kaynağını bulun.",
+        "description": "Katılımı öğrenmek için validator sayfalarını, uygulamaları bağlamak için RPC kaynaklarını, aktiviteyi incelemek için durum sayfalarını ve arka plan bilgisi için raporları kullanın.",
+        "points": [
+          {
+            "title": "Çalıştır veya destekle",
+            "description": "Validator ve delegasyon kaynakları, operatörlerin ağı çalıştırmaya nasıl yardımcı olduğunu açıklar."
+          },
+          {
+            "title": "Uygulamaları bağla",
+            "description": "RPC kaynakları, güvenilir erişime ihtiyaç duyan uygulamalar için sağlayıcı seçeneklerini açıklar."
+          },
+          {
+            "title": "Gözlemle ve değerlendir",
+            "description": "Durum sayfaları, gezginler, raporlar ve araştırmalar ağda neler olduğunu gösterir."
+          }
+        ]
+      },
+      "pathwaysEyebrow": "Ağ yolları",
+      "pathwaysHeading": "İhtiyacınız olan ağ kaynağını seçin.",
+      "directoryEyebrow": "Ağ dizini",
+      "pathways": [
+        {
+          "eyebrow": "Operatörler",
+          "title": "Bir validator çalıştırın veya inceleyin.",
+          "description": "Validatorların ne yaptığını, hangi kaynakların mevcut olduğunu ve belgelere nereden ulaşabileceğinizi öğrenin.",
+          "cta": "Validatorları aç",
+          "links": [
+            {
+              "title": "Validator'lar"
+            },
+            {
+              "title": "Belgeler"
+            },
+            {
+              "title": "Araştırma"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Geliştiriciler",
+          "title": "Uygulamaları doğru RPC sağlayıcısı üzerinden bağlayın.",
+          "description": "Genel uç noktaları, sağlayıcı seçeneklerini, özel hizmetleri ve performans dengelerini karşılaştırmak için RPC genel bakışını kullanın.",
+          "cta": "RPC kaynaklarını aç",
+          "links": [
+            {
+              "title": "RPC sağlayıcıları"
+            },
+            {
+              "title": "RPC belgeleri"
+            },
+            {
+              "title": "Geliştirici belgeleri"
+            }
+          ]
+        },
+        {
+          "eyebrow": "Değerlendiriciler",
+          "title": "Durum, raporlar ve araştırmaları inceleyin.",
+          "description": "Ağ sağlığını daha net görmek için mevcut durumu kontrol edin ve raporları okuyun.",
+          "cta": "Raporları görüntüle",
+          "links": [
+            {
+              "title": "Durum"
+            },
+            {
+              "title": "Raporlar"
+            },
+            {
+              "title": "Araştırma"
+            }
+          ]
+        }
+      ],
+      "feature": {
+        "eyebrow": "Kaynaklar",
+        "title": "Ağ raporlarını inceleyin",
+        "description": "Raporlar ve araştırmalar; ağ sağlığını, performansını, enerji kullanımını, gizliliği ve ekosistem etkinliğini kapsar.",
+        "cta": "Raporları görüntüle"
+      },
+      "resourceHeading": "Ağ kaynakları",
+      "resourceDescription": "Solana için validator, RPC, gezgin, durum, rapor ve araştırma bağlantıları.",
+      "sections": [
+        {
+          "title": "İşlet ve geliştir",
+          "description": "Validator'lar ve uygulama ekipleri için araçlar ve belgeler.",
+          "links": [
+            {
+              "title": "Validator'lar",
+              "description": "Validator katılımı, eğitim ve destek."
+            },
+            {
+              "title": "RPC sağlayıcıları",
+              "description": "Genel ve özel RPC sağlayıcı seçenekleri."
+            },
+            {
+              "title": "Belgeler",
+              "description": "Resmi geliştirici belgeleri."
+            },
+            {
+              "title": "RPC belgeleri",
+              "description": "RPC yöntemleri, yapıları ve API referansları."
+            }
+          ]
+        },
+        {
+          "title": "İncele",
+          "description": "Aktivite, işlemler, hesaplar ve erişilebilirliği izlemek için gezginler ve durum sayfaları.",
+          "links": [
+            {
+              "title": "Solscan",
+              "description": "Harici Solana blok gezgini."
+            },
+            {
+              "title": "Solana Explorer",
+              "description": "İşlemler, hesaplar, tokenlar ve kümeler için gezgin."
+            },
+            {
+              "title": "Helius Orb",
+              "description": "Helius tarafından sunulan hızlı, insan tarafından okunabilir Solana blok gezgini."
+            },
+            {
+              "title": "OKX Explorer",
+              "description": "OKX tarafından sunulan Solana blok zinciri gezgini."
+            },
+            {
+              "title": "Durum",
+              "description": "Mevcut ağ durumu ve olaylar."
+            }
+          ]
+        },
+        {
+          "title": "Öğren ve değerlendir",
+          "description": "Ağ sağlığı, performans, gizlilik ve ekosistem hakkında raporlar ve araştırmalar.",
+          "links": [
+            {
+              "title": "Raporlar",
+              "description": "Yayımlanmış ağ, ekosistem ve araştırma raporları."
+            },
+            {
+              "title": "Araştırma",
+              "description": "Performans ve ağ altyapısına ilişkin araştırmalar."
+            },
+            {
+              "title": "Gizlilik",
+              "description": "Gizli token ve gizlilik kaynakları."
+            },
+            {
+              "title": "Ekosistem",
+              "description": "Ağ, medya ve etkinlikler için ekosistem bağlantıları."
+            }
+          ]
+        }
+      ]
+    }
+  },
   "footer": {
-    "foundation": "Yönetici",
+    "logoAriaLabel": "Solana Vakfı",
     "copyright": "© {currentYear} Solana Vakfı. Tüm hakları saklıdır.",
+    "useSolana": {
+      "heading": "Solana'yı Kullan",
+      "hub": "Solana'yı Kullan",
+      "wallets": "Cüzdanlar",
+      "learn": "Öğren",
+      "staking": "Staking"
+    },
+    "build": {
+      "heading": "Geliştir",
+      "developers": "Geliştirici merkezi",
+      "docs": "Belgeler",
+      "guides": "Kılavuzlar",
+      "templates": "Şablonlar"
+    },
+    "agents": {
+      "heading": "Yapay zeka ajanları",
+      "llms": "llms.txt",
+      "fullDocs": "llms-full.txt",
+      "skill": "SKILL.md",
+      "skills": "Ajan becerileri"
+    },
+    "enterprise": {
+      "heading": "Kurumsal",
+      "hub": "Kurumsal",
+      "payments": "Kurumsal ödemeler",
+      "tokenization": "Tokenizasyon",
+      "reports": "Raporlar"
+    },
+    "products": {
+      "heading": "Ürünler",
+      "hub": "Ürünler",
+      "sdp": "Solana Geliştirici Platformu",
+      "x402": "x402",
+      "agentRegistry": "Ajan Kaydı",
+      "skills": "Beceriler"
+    },
+    "ecosystem": {
+      "heading": "Ekosistem",
+      "hub": "Ekosistem",
+      "network": "Ağ",
+      "events": "Etkinlikler",
+      "community": "Topluluk",
+      "news": "Haberler",
+      "newsletter": "Bülten"
+    },
     "solana": {
-      "heading": "Solana",
+      "heading": "Vakıf",
       "grants": "Hibeler",
       "media": "Medya Kiti",
       "careers": "Kariyer",
@@ -741,6 +2219,335 @@
     }
   },
   "nav": {
+    "useSolana": {
+      "title": "Solana'yı Kullan",
+      "banner": {
+        "title": "Solana'yı Kullan",
+        "description": "Başlamak için cüzdanlar, güvenlik, öğrenme kaynakları ve uygulamalar.",
+        "cta": "Buradan başlayın"
+      },
+      "wallets": {
+        "title": "Cüzdanlar ve katılım",
+        "items": {
+          "wallets": {
+            "title": "Cüzdanlar",
+            "description": "Size uygun bir cüzdan bulun"
+          },
+          "learn": {
+            "title": "Temel bilgileri öğrenin",
+            "description": "Başlangıç dostu Solana rehberleriyle başlayın"
+          },
+          "whatIsSolana": {
+            "title": "Solana nedir?",
+            "description": "Ağı ve nasıl kullanıldığını anlayın"
+          }
+        }
+      },
+      "safety": {
+        "title": "Güvenlik, tokenlar ve uygulamalar",
+        "items": {
+          "gettingStarted": {
+            "title": "Başlarken"
+          },
+          "walletBasics": {
+            "title": "Cüzdan nedir?"
+          },
+          "sendReceive": {
+            "title": "SOL gönderme ve alma"
+          },
+          "fees": {
+            "title": "İşlem ücretleri"
+          },
+          "safety": {
+            "title": "Güvende kalmak"
+          },
+          "tokens": {
+            "title": "Solana tokenları"
+          },
+          "staking": {
+            "title": "Staking"
+          },
+          "consumer": {
+            "title": "Tüketici uygulamaları"
+          }
+        }
+      }
+    },
+    "build": {
+      "title": "Geliştir",
+      "start": {
+        "title": "Geliştirmeye başla",
+        "items": {
+          "docs": {
+            "title": "Belgeler",
+            "description": "Solana geliştiricileri için resmi dokümantasyon"
+          },
+          "quickstart": {
+            "title": "Hızlı başlangıç",
+            "description": "İlk Solana projenizi oluşturun ve çalıştırın"
+          },
+          "installation": {
+            "title": "Kurulum ve yapılandırma",
+            "description": "Solana CLI ve yerel araçları kurun"
+          },
+          "hub": {
+            "title": "Geliştirici merkezi",
+            "description": "Geliştirici kaynaklarını ve giriş noktalarını keşfedin"
+          }
+        }
+      },
+      "resources": {
+        "title": "Araçlar ve referanslar",
+        "items": {
+          "guides": {
+            "title": "Rehberler"
+          },
+          "cookbook": {
+            "title": "Cookbook"
+          },
+          "templates": {
+            "title": "Şablonlar"
+          },
+          "data": {
+            "title": "Veri"
+          },
+          "rpcDocs": {
+            "title": "RPC belgeleri"
+          },
+          "rpcProviders": {
+            "title": "RPC sağlayıcıları"
+          },
+          "financeDocs": {
+            "title": "Finans belgeleri"
+          }
+        }
+      },
+      "useCases": {
+        "title": "Kullanım senaryosuna göre geliştir",
+        "items": {
+          "payments": {
+            "title": "Ödemeler"
+          },
+          "defi": {
+            "title": "DeFi"
+          },
+          "gaming": {
+            "title": "Oyun"
+          },
+          "tokenExtensions": {
+            "title": "Token Extensions"
+          },
+          "actions": {
+            "title": "Eylemler ve blink'ler"
+          },
+          "ai": {
+            "title": "Ajanlar ve Yapay Zeka"
+          }
+        }
+      }
+    },
+    "enterprise": {
+      "title": "Kurumsal",
+      "business": {
+        "title": "İş çözümleri",
+        "items": {
+          "overview": {
+            "title": "Kurumsal genel bakış"
+          },
+          "institutionalPayments": {
+            "title": "Kurumsal ödemeler"
+          },
+          "commerceTooling": {
+            "title": "Ticaret araçları"
+          },
+          "stablecoins": {
+            "title": "Stablecoin'ler"
+          },
+          "tokenization": {
+            "title": "Tokenizasyon"
+          },
+          "realWorldAssets": {
+            "title": "Gerçek dünya varlıkları"
+          },
+          "digitalAssets": {
+            "title": "Dijital varlıklar"
+          },
+          "defi": {
+            "title": "İnternet sermaye piyasaları / DeFi"
+          },
+          "financialInfrastructure": {
+            "title": "Finansal altyapı"
+          },
+          "financialInstitutions": {
+            "title": "Finansal kurumlar"
+          }
+        }
+      },
+      "proof": {
+        "title": "Doğrulama ve kanıt",
+        "items": {
+          "network": {
+            "title": "Ağ merkezi"
+          },
+          "validators": {
+            "title": "Validators"
+          },
+          "reports": {
+            "title": "Raporlar"
+          },
+          "research": {
+            "title": "Araştırma"
+          },
+          "privacy": {
+            "title": "Gizlilik"
+          }
+        }
+      }
+    },
+    "products": {
+      "title": "Ürünler",
+      "surfaces": {
+        "title": "Platformlar ve ürün arayüzleri",
+        "items": {
+          "overview": {
+            "title": "Ürünlere genel bakış",
+            "description": "Ürün arayüzlerini ve araçları keşfedin"
+          },
+          "sdp": {
+            "title": "Solana Geliştirici Platformu",
+            "description": "Kurumsal düzeyde API'ler ve altyapı"
+          },
+          "x402": {
+            "title": "x402",
+            "description": "Solana üzerindeki x402 için ürün kaynakları"
+          },
+          "agentRegistry": {
+            "title": "Ajan Kayıt Defteri",
+            "description": "Zincir üstü kimliğe sahip ajanları bulun"
+          },
+          "skills": {
+            "title": "Beceriler",
+            "description": "Ajanlara hazır Solana iş akışlarını yükleyin"
+          },
+          "actions": {
+            "title": "Eylemler ve blinks",
+            "description": "Zincir üstü eylemleri paylaşılabilir bağlantılara dönüştürün"
+          },
+          "ai": {
+            "title": "Ajanlar ve Yapay Zeka",
+            "description": "Yapay zeka ve ajan destekli uygulamalar için araçlar"
+          }
+        }
+      },
+      "tools": {
+        "title": "Geliştirici ve ödeme araçları",
+        "items": {
+          "commerceKit": {
+            "title": "Commerce Kit"
+          },
+          "kora": {
+            "title": "Kora"
+          },
+          "solanaPay": {
+            "title": "Solana Pay"
+          },
+          "rpcProviders": {
+            "title": "RPC sağlayıcıları"
+          },
+          "paymentsTooling": {
+            "title": "Ödeme araçları"
+          },
+          "tokenExtensions": {
+            "title": "Token Extensions"
+          },
+          "digitalAssets": {
+            "title": "Dijital varlıklar"
+          }
+        }
+      }
+    },
+    "ecosystem": {
+      "title": "Ekosistem",
+      "network": {
+        "title": "Ağ",
+        "items": {
+          "network": {
+            "title": "Ağ merkezi"
+          },
+          "validators": {
+            "title": "Validator'lar"
+          },
+          "rpc": {
+            "title": "RPC sağlayıcıları"
+          },
+          "reports": {
+            "title": "Raporlar"
+          },
+          "research": {
+            "title": "Araştırma"
+          },
+          "status": {
+            "title": "Durum"
+          }
+        }
+      },
+      "community": {
+        "title": "Etkinlikler ve topluluk",
+        "items": {
+          "events": {
+            "title": "Etkinlikler"
+          },
+          "archive": {
+            "title": "Etkinlik arşivi"
+          },
+          "accelerate": {
+            "title": "Accelerate"
+          },
+          "breakpoint": {
+            "title": "Breakpoint"
+          },
+          "community": {
+            "title": "Topluluk"
+          },
+          "news": {
+            "title": "Haberler"
+          },
+          "podcasts": {
+            "title": "Podcast'ler"
+          }
+        }
+      },
+      "categories": {
+        "title": "Kategoriler ve programlar",
+        "items": {
+          "depin": {
+            "title": "DePIN"
+          },
+          "desci": {
+            "title": "DeSci"
+          },
+          "btcfi": {
+            "title": "BTCFi"
+          },
+          "gaming": {
+            "title": "Oyun ve eğlence"
+          },
+          "creators": {
+            "title": "Sanatçılar ve içerik üreticileri"
+          },
+          "founders": {
+            "title": "Girişimler için Talep"
+          }
+        }
+      },
+      "promo": {
+        "title": "Breakpoint 2026",
+        "description": "Solana ekosistemi Londra'da bir araya geliyor.",
+        "location": "Londra, Birleşik Krallık",
+        "date": "15-17 Kas, 2026",
+        "cta": "Bilet Al"
+      }
+    },
     "learn": {
       "title": "Öğren",
       "start": {
@@ -1508,25 +3315,238 @@
   },
   "wallets": {
     "meta": {
-      "title": "Solana Cüzdanları - Daha Güçlü, Programlanabilir Bir Blockchain Yolu",
-      "description": "Solana cüzdanları sadece saklama hizmeti sunmaz - web3 uygulamaları ve hizmetlerine açılan bir kapıdır. Özel bir çözüm oluşturun veya mevcut bir Solana uygulamasıyla tekliflerinizi artırın."
+      "title": "Solana Cüzdanları: Özellikleri ve Platformları Karşılaştırın",
+      "description": "Solana cüzdanlarını platform, saklama, güvenlik, staking, NFT'ler, ödemeler ve daha fazlasına göre karşılaştırın. İhtiyaçlarınıza uygun cüzdanı bulmak için dizini filtreleyin."
     },
     "hero": {
-      "eyebrow": "Cüzdan Bulucu",
-      "headline": "Size Uygun Bir Cüzdan Bulun",
-      "body": "İhtiyaçlarınıza uygun bir cüzdan bulmak için gerekli özellikleri seçin."
+      "eyebrow": "Cüzdan dizini",
+      "headline": "<strong>Solana'yı nasıl kullandığınıza</strong> uygun bir cüzdan bulun",
+      "body": "Cüzdan; varlıklarınızı tuttuğunuz, işlemleri onayladığınız ve uygulamalara bağlandığınız yerdir. Solana cüzdanlarını platform, saklama yöntemi ve sizin için önemli olan özelliklere göre karşılaştırın.",
+      "findWallet": "Cüzdan bul",
+      "learnBasics": "Temelleri öğren",
+      "buildWithWallets": "Cüzdanlarla geliştir"
+    },
+    "featured": {
+      "ariaLabel": "Öne çıkan cüzdanlar",
+      "label": "Öne Çıkan",
+      "allWallets": "{count, plural, one {# cüzdan} other {# cüzdan}}"
     },
     "filters": {
       "all-wallets": "Tüm cüzdanlar"
     },
     "grid": {
-      "title": "Solana Cüzdanları",
-      "no-results": "Sonuç bulunamadı!",
-      "reset-filters": "Filtreleri sıfırla"
+      "title": "Solana cüzdanlarını karşılaştırın",
+      "no-results": "Bu filtrelere uyan cüzdan bulunamadı",
+      "reset-filters": "Filtreleri temizle"
     },
     "card": {
-      "view-details": "Detayları Görüntüle"
-    }
+      "view-details": "Detayları Görüntüle",
+      "platformPending": "Platform bilgileri bekleniyor"
+    },
+    "directory": {
+      "eyebrow": "Dizin",
+      "audience": {
+        "title": "Ne tür bir cüzdana ihtiyacınız var?",
+        "description": "Bir başlangıç noktası seçin, ardından yalnızca önemli olan seçenekleri filtreleyin.",
+        "allDescription": "Tüm dizini keşfedin",
+        "categories": {
+          "consumer": {
+            "label": "Günlük cüzdanlar",
+            "description": "Uygulama, token ve koleksiyon öğeleri kullanın"
+          },
+          "hardware": {
+            "label": "Donanım cüzdanları",
+            "description": "Anahtarlarınızı özel bir cihazda saklayın"
+          },
+          "institutional": {
+            "label": "Ekipler ve kurumlar",
+            "description": "Politika ve ortak onayları yönetin"
+          },
+          "payments": {
+            "label": "Ödemeler",
+            "description": "Satın al, sat, öde ve ödeme al"
+          },
+          "infrastructure": {
+            "label": "Geliştirici araçları",
+            "description": "API'ler, SDK'lar ve gömülü cüzdanlar"
+          }
+        }
+      },
+      "popularNeeds": {
+        "label": "Popüler ihtiyaçlar",
+        "options": {
+          "non_custodial": "Öz-saklama",
+          "buy_crypto": "Kripto satın al",
+          "card_spending": "Kart harcaması",
+          "staking": "SOL stake et",
+          "hold_nfts": "NFT'leri görüntüle",
+          "hardware": "Donanım desteği",
+          "multi_sig": "Multisig"
+        }
+      },
+      "search": {
+        "label": "Cüzdan adı veya özelliğe göre ara",
+        "placeholder": "Cüzdan adı veya özelliğe göre ara",
+        "clear": "Aramayı temizle",
+        "active": "Arama: \"{query}\""
+      },
+      "view": {
+        "ariaLabel": "Sonuç görünümünü seçin",
+        "grid": "Izgara",
+        "gridAria": "Izgara görünümü",
+        "list": "Liste",
+        "listAria": "Liste görünümü"
+      },
+      "filters": {
+        "more": "Daha fazla filtre",
+        "activeAria": "Etkin filtreler",
+        "selected": "Seçildi",
+        "clearAll": "Tümünü temizle",
+        "close": "Filtreleri kapat",
+        "heading": "Sonuçları daralt",
+        "description": "Eşleşmelerinizi daraltmak için gereksinimler ekleyin.",
+        "reset": "Sıfırla",
+        "devicePlatform": "Cihaz ve platform",
+        "devicePlatformHint": "Cüzdana erişmek veya entegre etmek istediğiniz yer.",
+        "showWallets": "{count, plural, one {# cüzdan göster} other {# cüzdan göster}}",
+        "resultCountAria": "{count, plural, one {# sonuç} other {# sonuç}}",
+        "platformGroups": {
+          "apps": "Uygulamalar ve cihazlar",
+          "extensions": "Tarayıcı uzantıları",
+          "developers": "Geliştiriciler için"
+        },
+        "featureGroups": {
+          "ownership": {
+            "label": "Sahiplik ve kurtarma",
+            "description": "Cüzdana ve varlıklarına erişimin nasıl kontrol edildiği."
+          },
+          "everyday": {
+            "label": "Günlük kullanım",
+            "description": "Cüzdanınızdan yapmak isteyebileceğiniz yaygın işlemler."
+          },
+          "solana": {
+            "label": "Solana deneyimleri",
+            "description": "Solana uygulamaları, token'ları ve ödemeleri için geliştirilmiş özellikler."
+          },
+          "security": {
+            "label": "Güvenlik ve paylaşımlı kontrol",
+            "description": "Varlıklar, ekipler ve hazineler için ek koruma."
+          },
+          "builders": {
+            "label": "Geliştirici yetenekleri",
+            "description": "Uygulamalara cüzdan deneyimleri entegre etmek için altyapı."
+          },
+          "networks": {
+            "label": "Ağlar",
+            "description": "Cüzdanın diğer zincirleri de destekleyip desteklemediğini seçin."
+          }
+        }
+      },
+      "results": {
+        "ariaLabel": "Cüzdan sonuçları",
+        "showing": "Toplam {total} cüzdandan <strong>{visible}</strong> tanesi gösteriliyor",
+        "noResultsDescription": "Bir filtreyi kaldırın veya mevcut seçimi temizleyin.",
+        "disclaimer": "Cüzdan listeleri, süregelen ekosistem araştırmaları aracılığıyla güncellenmektedir. Bu listede yer almak yalnızca bilgilendirme amaçlıdır ve Solana Vakfı tarafından onaylandığı anlamına gelmez."
+      }
+    },
+    "taxonomy": {
+      "categories": {
+        "consumer": "Cüzdanlar",
+        "hardware": "Donanım",
+        "infrastructure": "Geliştirici araçları",
+        "institutional": "Kurumsal",
+        "payments": "Ödemeler"
+      },
+      "platforms": {
+        "ios": "iOS",
+        "android": "Android",
+        "chrome": "Chrome",
+        "firefox": "Firefox",
+        "brave": "Brave",
+        "edge": "Edge",
+        "desktop": "Masaüstü",
+        "web": "Web",
+        "hardware": "Donanım",
+        "api": "API",
+        "sdk": "SDK"
+      },
+      "features": {
+        "custodial": "Emanetli",
+        "non_custodial": "Öz-saklama",
+        "te": "Token Extensions",
+        "blinks_and_actions": "Blinks and Actions",
+        "solana_pay": "Solana Pay",
+        "buy_crypto": "Kripto satın al",
+        "sell_crypto": "Kripto sat",
+        "get_paid": "Ödeme al",
+        "card_spending": "Kart harcaması",
+        "hold_nfts": "NFT'ler",
+        "mpc": "MPC",
+        "gas_abstraction": "Gas soyutlama",
+        "social_recovery": "Sosyal kurtarma",
+        "staking": "Staking",
+        "spending_limits": "Harcama limitleri",
+        "open_source": "Açık kaynak",
+        "hardware": "Donanım desteği",
+        "private_key_infrastructure": "Anahtar altyapısı",
+        "multi_chain": "Çoklu zincir",
+        "solana_native": "Solana native",
+        "multi_sig": "Çoklu imza"
+      }
+    },
+    "methodology": {
+      "eyebrow": "Araştırma ve güvenlik",
+      "title": "Bu dizin nasıl yönetilir",
+      "updated": "Dizin güncellendi",
+      "reviewTitle": "Neyi inceliyoruz",
+      "reviewBody": "Listeler, Solana desteği, erişim platformları, saklama modeli ve filtrelerde gösterilen özellikler açısından kamuya açık cüzdan ürün sayfaları ve belgeleriyle karşılaştırılarak kontrol edilir.",
+      "qualificationTitle": "Cüzdanlar nasıl nitelendiriliyor",
+      "qualificationBody": "Bir listenin kamuya açık bir ürün veya geliştirici sitesine ve Solana için belgelenmiş desteğe ihtiyacı vardır. Kategoriler mevcut işlevselliği tanımlar; sıralama veya onay niteliği taşımaz.",
+      "safetyTitle": "Bağlanmadan önce doğrulayın",
+      "safetyBody": "Cüzdan ürünleri değişebilir. Sağlayıcının resmi alan adında olduğunuzu doğrulayın, saklama ve kurtarma modelini inceleyin ve varlıkları taşımadan önce küçük bir miktarla test edin.",
+      "correction": "Düzeltme bildirin"
+    },
+    "learn": {
+      "ariaLabel": "Cüzdanlar hakkında bilgi edinin",
+      "eyebrow": "Öğren",
+      "title": "Cüzdanlara yeni misiniz? Buradan başlayın",
+      "allGuides": "Tüm öğrenme rehberleri",
+      "resources": {
+        "whatIsWallet": {
+          "topic": "Temel bilgiler",
+          "title": "Cüzdan nedir?",
+          "description": "Cüzdanların anahtarlarınızı nasıl sakladığını, işlemleri nasıl imzaladığını ve uygulamalara nasıl bağlandığını — ve birini güvenli şekilde nasıl kuracağınızı öğrenin."
+        },
+        "sendingSol": {
+          "topic": "İlk adımlar",
+          "title": "SOL gönderme ve alma",
+          "description": "İlk transferinizi yapın: adreslerin nasıl çalıştığını, ne kadar ücret beklemeniz gerektiğini ve işlemlerin saniyeler içinde nasıl onaylandığını öğrenin."
+        },
+        "stayingSafe": {
+          "topic": "Güvenlik",
+          "title": "Solana'da güvende kalmak",
+          "description": "seed ifadenizi koruyun, yaygın dolandırıcılıkları fark edin ve onaylamadan önce işlemleri gözden geçirin."
+        },
+        "staking": {
+          "topic": "Kazanç",
+          "title": "Staking nedir?",
+          "description": "Ağın güvenliğine katkıda bulunarak ödül kazanın; staking desteği sunan bu dizindeki cüzdanlar aracılığıyla doğrudan erişin."
+        }
+      }
+    },
+    "builders": {
+      "eyebrow": "Geliştiriciler için",
+      "title": "Solana üzerinde cüzdan deneyimleri geliştirin",
+      "description": "Frontend'inizde Wallet Standard cüzdanlarını bağlayın ya da gömülü, yönetilen ve kurumsal cüzdan deneyimleri için üretim imzalama altyapısını tercih edin.",
+      "commerceKitWalletConnection": "Commerce Kit cüzdan bağlantısı",
+      "productionSigning": "Üretim imzalama",
+      "grant": "Hibe başvurusunda bulunun"
+    },
+    "schema": {
+      "aboutName": "Solana cüzdanları",
+      "listName": "Solana cüzdan dizini"
+    },
+    "socialImageAlt": "Solana cüzdanlarının anahtarları nasıl sakladığı, varlıkları nasıl tuttuğu, işlemleri nasıl imzaladığı ve uygulamalara nasıl bağlandığı"
   },
   "wallets-landing": {
     "meta": {
@@ -2616,7 +4636,7 @@
         },
         "custody": {
           "question": "Hangi saklama çözümleri mevcut?",
-          "answer": "Solana'yı destekleyen başlıca kurumsal saklama sağlayıcıları şunlardır: Fireblocks, Anchorage, BitGo, Coinbase, Copper, Crypto Finance ve Gemini. Bu sağlayıcılar sigorta kapsamı, düzenleyici uyumluluk (SOC2, nitelikli saklayıcı statüsü), kurumsal SLA'lar ve ticaret/uzlaşma sistemleriyle entegrasyon sunar."
+          "answer": "Solana'yı destekleyen başlıca kurumsal saklama sağlayıcıları şunlardır: Fireblocks, Anchorage, BitGo, Coinbase, Copper, Crypto Finance ve Gemini. Bu sağlayıcılar sigorta kapsamı, mevzuat uyumluluğu (SOC2, nitelikli saklama statüsü), kurumsal SLA'lar ve alım-satım/takas sistemleriyle entegrasyon sunmaktadır. Uygulama düzeyinde imzalama için Solana Keychain, Fireblocks, bulut KMS (AWS ve GCP), HashiCorp Vault ve yönetilen cüzdan hizmetleri dahil olmak üzere bu altyapıların pek çoğu için tek bir arayüz sağlar; böylece kodu değiştirmeden sağlayıcı değiştirebilirsiniz."
         },
         "compliance": {
           "question": "Hangi uyumluluk özellikleri mevcut?",
@@ -2639,6 +4659,10 @@
         "token-extensions": {
           "title": "Token Extensions",
           "description": "Uyumluluk ve programlanabilirlik özelliklerine derinlemesine bakış."
+        },
+        "keychain": {
+          "title": "Keychain — Güvenli İmzalama",
+          "description": "KMS, HSM ve kurumsal saklama altyapıları genelinde birleşik imzalama."
         },
         "grants": {
           "title": "Hibe Programı",
@@ -3272,7 +5296,7 @@
       },
       "5": {
         "title": "Geliştiriciler Actions ve blinks'i uygulamalarına nasıl entegre edebilir?",
-        "body": "<p>Geliştiriciler, Solana Actions Specification'a uygun bağımsız API'ler olarak actions oluşturur ve ardından bunları bir actions.json dosyası kullanarak mevcut site URL'lerine bağlayabilir.</p><p>Blinks, tam nitelikli URL'lerdir. Bir blink olarak kendi kendine kaydolmak için alan adının kökünde (örneğin, solanapay.com/actions.json) bir actions.json dosyası yayınlanmalıdır.</p><p>Lansman itibarıyla, her üç uzantı da (Phantom, Backpack, Dialect) <a href=\"http://x.com\" rel=\"noopener noreferrer\" target=\"_blank\">X</a>'te <em>yalnızca</em> kayıtlı (\"güvenilir\") Actions URL'lerini açacaktır. Bunu etkinleştirmek için geliştiricilerin Actions'larını <a href=\"http://dial.to/register\" rel=\"noopener noreferrer\" target=\"_blank\">Dialect Actions Registry</a>'ye kaydetmeleri gerekir.</p><p>Geliştiriciler, blink'in nasıl görüneceği de dahil olmak üzere tüm uçtan uca akışı <a href=\"http://dial.to\" rel=\"noopener noreferrer\" target=\"_blank\">dial.to</a>'da Actions URL'lerini girerek test edebilir.</p><p>Ayrıca, blinks'i destekleyen istemciler oluşturmak veya <a href=\"https://x.com/\" rel=\"noopener noreferrer\" target=\"_blank\">X</a> gibi mevcut sitelere blinks ekleyen cüzdan chrome uzantıları oluşturmak isteyen geliştiriciler için bir dizi kütüphane ve SDK bulunmaktadır. Bu kütüphaneler, minimum çabayla blinks'i işleyen ve stilize eden uygulamalar oluşturmayı mümkün kılar.</p><p>Actions ve blinks hakkında daha fazla bilgi için <a href=\"https://solana.com/docs/advanced/actions\" rel=\"noopener noreferrer\" target=\"_blank\">resmi Solana belgelerini</a> ve kaydedilmiş <a href=\"https://youtu.be/kCht01Ycif0\" rel=\"noopener noreferrer\" target=\"_blank\">geliştirici atölyesini</a> ziyaret edin.</p>"
+        "body": "<p>Geliştiriciler, Solana Actions Specification'a uygun bağımsız API'ler olarak actions oluşturur ve ardından bunları bir actions.json dosyası kullanarak mevcut site URL'lerine bağlayabilir.</p><p>Blinks, tam nitelikli URL'lerdir. Bir blink olarak kendi kendine kaydolmak için alan adının kökünde (örneğin, solanapay.com/actions.json) bir actions.json dosyası yayınlanmalıdır.</p><p>Lansman itibarıyla, her üç uzantı da (Phantom, Backpack, Dialect) <a href=\"http://x.com\" rel=\"noopener noreferrer\" target=\"_blank\">X</a>'te <em>yalnızca</em> kayıtlı (\"güvenilir\") Actions URL'lerini açacaktır. Bunu etkinleştirmek için geliştiricilerin Actions'larını <a href=\"http://dial.to/register\" rel=\"noopener noreferrer\" target=\"_blank\">Dialect Actions Registry</a>'ye kaydetmeleri gerekir.</p><p>Geliştiriciler, blink'in nasıl görüneceği de dahil olmak üzere tüm uçtan uca akışı <a href=\"http://dial.to\" rel=\"noopener noreferrer\" target=\"_blank\">dial.to</a>'da Actions URL'lerini girerek test edebilir.</p><p>Ayrıca, blinks'i destekleyen istemciler oluşturmak veya <a href=\"https://x.com/\" rel=\"noopener noreferrer\" target=\"_blank\">X</a> gibi mevcut sitelere blinks ekleyen cüzdan chrome uzantıları oluşturmak isteyen geliştiriciler için bir dizi kütüphane ve SDK bulunmaktadır. Bu kütüphaneler, minimum çabayla blinks'i işleyen ve stilize eden uygulamalar oluşturmayı mümkün kılar.</p><p>Actions ve blinks hakkında daha fazla bilgi için <a href=\"https://solana.com/docs/tools/actions\" rel=\"noopener noreferrer\" target=\"_blank\">resmi Solana belgelerini</a> ve kaydedilmiş <a href=\"https://youtu.be/kCht01Ycif0\" rel=\"noopener noreferrer\" target=\"_blank\">geliştirici atölyesini</a> ziyaret edin.</p>"
       },
       "6": {
         "title": "Actions ve blinkler güvenli mi?",
@@ -3288,7 +5312,7 @@
       },
       "9": {
         "title": "Chrome uzantım yoksa ne olur?",
-        "body": "<p>Bir Action bir blink aracılığıyla paylaşıldığında, blink bir Chrome uzantısı eksik olduğunda bir <a href=\"https://solana.com/docs/advanced/actions#blinks\" rel=\"noopener noreferrer\" target=\"_blank\">geçiş imzalama sayfası</a> sağlamalıdır. Bu geçiş siteleri, e-postalar veya telefon numaralarıyla ilişkili gömülü cüzdanlara erişimle birlikte tipik \"cüzdana bağlan\" akışını görüntüler.</p>"
+        "body": "<p>Bir Action bir blink aracılığıyla paylaşıldığında, blink bir Chrome uzantısı eksik olduğunda bir <a href=\"https://solana.com/docs/tools/actions#blinks\" rel=\"noopener noreferrer\" target=\"_blank\">geçiş imzalama sayfası</a> sağlamalıdır. Bu geçiş siteleri, e-postalar veya telefon numaralarıyla ilişkili gömülü cüzdanlara erişimle birlikte tipik \"cüzdana bağlan\" akışını görüntüler.</p>"
       },
       "10": {
         "title": "Birden fazla cüzdan tıklamayı engellerse ne olur?",
@@ -3335,7 +5359,7 @@
           },
           "5": {
             "title": "Token'larımı nasıl stake ederim?",
-            "body": "<p>SOL token'larını stake etmek için staking'i destekleyen bir cüzdan kullanmalısınız. Şu anda tüm cüzdanlar staking'i desteklememektedir. SolFlare.com, staking'i destekleyen kullanıcı dostu bir cüzdandır. Staking'i destekleyen cüzdanların listesi için&nbsp;<a href=\"https://solana.com/docs/economics/staking#supported-wallets\" rel=\"noopener noreferrer\" target=\"_blank\">resmi dokümanlara göz atın.</a></p><p>Cüzdanınızdaki SOL token'ları önce bir stake hesabına taşınmalıdır. İstediğiniz kadar stake hesabı oluşturabilir ve her stake hesabına istediğiniz kadar SOL yatırabilirsiniz. Her yeni stake hesabının benzersiz bir adresi vardır ve tek bir cüzdan birçok farklı stake hesabını yönetebilir veya “yetkilendirebilir”. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/docs/economics/staking/stake-accounts\" rel=\"noopener noreferrer\" target=\"_blank\">stake hesap yapısı</a>&nbsp;hakkındaki dokümanlara göz atın.</p><p>Staking ödülleri kazanmak için (mainnet beta'da enflasyon etkinleştirilmişse), bir stake hesabındaki token'ların bir validator'a delege edilmesi gerekir. Tek bir stake hesabı aynı anda yalnızca tek bir validator'a delege edilebilir, bu nedenle farklı validator'lara delege etmek istiyorsanız token'larınızı birden fazla stake hesabı arasında bölmeniz gerekir.</p>"
+            "body": "<p>SOL token'larını stake etmek için staking'i destekleyen bir cüzdan kullanmalısınız. Şu anda tüm cüzdanlar staking'i desteklememektedir. SolFlare.com, staking'i destekleyen kullanıcı dostu bir cüzdandır. Staking'i destekleyen cüzdanların listesi için&nbsp;<a href=\"https://solana.com/docs/references/staking#supported-wallets\" rel=\"noopener noreferrer\" target=\"_blank\">resmi dokümanlara göz atın.</a></p><p>Cüzdanınızdaki SOL token'ları önce bir stake hesabına taşınmalıdır. İstediğiniz kadar stake hesabı oluşturabilir ve her stake hesabına istediğiniz kadar SOL yatırabilirsiniz. Her yeni stake hesabının benzersiz bir adresi vardır ve tek bir cüzdan birçok farklı stake hesabını yönetebilir veya “yetkilendirebilir”. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts\" rel=\"noopener noreferrer\" target=\"_blank\">stake hesap yapısı</a>&nbsp;hakkındaki dokümanlara göz atın.</p><p>Staking ödülleri kazanmak için (mainnet beta'da enflasyon etkinleştirilmişse), bir stake hesabındaki token'ların bir validator'a delege edilmesi gerekir. Tek bir stake hesabı aynı anda yalnızca tek bir validator'a delege edilebilir, bu nedenle farklı validator'lara delege etmek istiyorsanız token'larınızı birden fazla stake hesabı arasında bölmeniz gerekir.</p>"
           },
           "6": {
             "title": "Solana'daki validator'lar hakkında nereden bilgi edinebilirim?",
@@ -3347,11 +5371,11 @@
           },
           "8": {
             "title": "Bir stake hesabına nasıl token eklerim?",
-            "body": "<p>İlk kez bir stake hesabı oluşturduğunuzda, hesabı kaç SOL token ile fonlamak istediğinizi belirtirsiniz ve bu tokenlar ana cüzdan hesabınızdan çekilerek yeni stake hesabına yatırılır.</p><p>Tokenlar ayrıca, cüzdanınızın transfer veya gönder özelliğini kullanarak ve stake hesabınızın adresini sağlayarak, herhangi bir zamanda önceden var olan bir stake hesabına da aktarılabilir. Zaten delege edilmiş bir stake hesabına token aktarırsanız, bu yeni tokenlar otomatik olarak delege edilmez.</p><p>Delege edilmiş bir stake hesabınız varsa ve belirli bir validator'a delegasyonunuzu artırmak istiyorsanız, en iyi uygulama ek stake miktarıyla yeni bir stake hesabı oluşturmak ve bu hesabı aynı validator'a delege etmektir.</p><p>Örnek: Tek bir validator'a delege edilen stake'i artırma</p><ul><li>Kullanıcının 1000 SOL bakiyeli bir cüzdanı var.</li><li>Kullanıcı cüzdan arayüzünü kullanarak 100 SOL ile bir stake hesabı oluşturur, ardından stake hesabındaki tokenları Validator A'ya delege eder.</li><li>Cüzdan bakiyesi artık 900 SOL'dir ve cüzdan ayrıca 100 SOL bakiyeli bir stake hesabını kontrol eder.</li><li>Stake hesabı, cüzdan arayüzünde ve Explorer'da “Etkinleştiriliyor” olarak görünür. “Aktif” olduğunda, stake edilmiş tokenlar ödüller için uygun hale gelir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/staking/#overview/delegation-timing-considerations\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Daha sonra kullanıcı Validator A'ya delegasyonunu artırmak ister, bu nedenle cüzdan arayüzünü kullanarak 50 SOL ile ikinci bir stake hesabı oluşturur, ardından yeni stake hesabındaki tokenları Validator A'ya delege eder.</li><li>Cüzdan bakiyesi artık 850 SOL'dir ve cüzdan ayrıca sırasıyla 100 ve 50 SOL'lik, her biri Validator A'ya delege edilmiş 2 stake hesabını kontrol eder.</li></ul><p>Zaten delege edilmiş bir stake hesabına token aktarırsanız, bu yeni tokenlar otomatik olarak delege edilmez. Bu yeni tokenların da delege edilmesini ve ödül kazanmasını sağlamak için tüm hesabın delegasyonunu kaldırmanız, ardından aynı hesabı yeniden delege etmeniz gerekir. Delegasyonu kaldırma ve yeniden delege etme işleminin&nbsp;<a href=\"https://solana.com/staking/#overview/delegation-timing-considerations\" rel=\"noopener noreferrer\" target=\"_blank\">etkili olması birkaç gün sürebileceğinden</a>, orijinal stake'iniz bu geçiş döneminde ödül kazanmayacaktır.</p><p>Bu nedenle, SOL'u yalnızca ilk oluşturulduğunda veya delege edilmediği durumlarda bir stake hesabına aktarmanızı öneririz.</p>"
+            "body": "<p>İlk kez bir stake hesabı oluşturduğunuzda, hesabı kaç SOL token ile fonlamak istediğinizi belirtirsiniz ve bu tokenlar ana cüzdan hesabınızdan çekilerek yeni stake hesabına yatırılır.</p><p>Tokenlar ayrıca, cüzdanınızın transfer veya gönder özelliğini kullanarak ve stake hesabınızın adresini sağlayarak, herhangi bir zamanda önceden var olan bir stake hesabına da aktarılabilir. Zaten delege edilmiş bir stake hesabına token aktarırsanız, bu yeni tokenlar otomatik olarak delege edilmez.</p><p>Delege edilmiş bir stake hesabınız varsa ve belirli bir validator'a delegasyonunuzu artırmak istiyorsanız, en iyi uygulama ek stake miktarıyla yeni bir stake hesabı oluşturmak ve bu hesabı aynı validator'a delege etmektir.</p><p>Örnek: Tek bir validator'a delege edilen stake'i artırma</p><ul><li>Kullanıcının 1000 SOL bakiyeli bir cüzdanı var.</li><li>Kullanıcı cüzdan arayüzünü kullanarak 100 SOL ile bir stake hesabı oluşturur, ardından stake hesabındaki tokenları Validator A'ya delege eder.</li><li>Cüzdan bakiyesi artık 900 SOL'dir ve cüzdan ayrıca 100 SOL bakiyeli bir stake hesabını kontrol eder.</li><li>Stake hesabı, cüzdan arayüzünde ve Explorer'da “Etkinleştiriliyor” olarak görünür. “Aktif” olduğunda, stake edilmiş tokenlar ödüller için uygun hale gelir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts#delegation-warmup-and-cooldown\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Daha sonra kullanıcı Validator A'ya delegasyonunu artırmak ister, bu nedenle cüzdan arayüzünü kullanarak 50 SOL ile ikinci bir stake hesabı oluşturur, ardından yeni stake hesabındaki tokenları Validator A'ya delege eder.</li><li>Cüzdan bakiyesi artık 850 SOL'dir ve cüzdan ayrıca sırasıyla 100 ve 50 SOL'lik, her biri Validator A'ya delege edilmiş 2 stake hesabını kontrol eder.</li></ul><p>Zaten delege edilmiş bir stake hesabına token aktarırsanız, bu yeni tokenlar otomatik olarak delege edilmez. Bu yeni tokenların da delege edilmesini ve ödül kazanmasını sağlamak için tüm hesabın delegasyonunu kaldırmanız, ardından aynı hesabı yeniden delege etmeniz gerekir. Delegasyonu kaldırma ve yeniden delege etme işleminin&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts#delegation-warmup-and-cooldown\" rel=\"noopener noreferrer\" target=\"_blank\">etkili olması birkaç gün sürebileceğinden</a>, orijinal stake'iniz bu geçiş döneminde ödül kazanmayacaktır.</p><p>Bu nedenle, SOL'u yalnızca ilk oluşturulduğunda veya delege edilmediği durumlarda bir stake hesabına aktarmanızı öneririz.</p>"
           },
           "9": {
             "title": "Mevcut bir stake hesabından token'ları nasıl çıkarabilirim?",
-            "body": "<p>Token'lar bir stake hesabından yalnızca şu anda delege edilmediğinde çekilebilir. Bir stake hesabı ilk kez delege edilmediğinde, “devre dışı bırakılıyor” veya “soğuma aşamasında” olarak kabul edilir. Token'lar, bir kısmı veya tamamı devre dışı bırakılmayı tamamlayıp “inaktif” olarak kabul edilene ve dolayısıyla artık potansiyel staking ödülleri kazanmayı durdurana kadar hesaptan çekilemez. Bu geçiş sürecinin ne kadar sürebileceğine ilişkin ayrıntılar için lütfen&nbsp;<a href=\"https://solana.com/staking/#overview/delegation-timing-considerations\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</p><p>Bir stake hesabındaki token'lar inaktif hale geldiğinde, ana cüzdan adresinize veya başka bir adrese anında geri çekilebilir.</p><p>Örnek: Bir stake hesabından tüm token'ları çekme</p><ul><li>Kullanıcının 900 SOL bakiyeli bir cüzdanı ve bir validator'a delege edilmiş 100 SOL'luk tek bir stake hesabı var.</li><li>Kullanıcı, stake delegasyonunu devre dışı bırakmak için cüzdan arayüzünü kullanır. Stake hesabı, cüzdan arayüzünde ve Explorer'da “devre dışı bırakılıyor” olarak görünür. “İnaktif” veya “delege edilmemiş” durumuna geldiğinde, stake edilmiş token'lar ödül kazanmayı durdurur ve çekilebilir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/staking/#overview/delegation-timing-considerations\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Kullanıcı, tüm token'larını ana cüzdan hesabına geri çekmek için cüzdan arayüzünü kullanabilir. Cüzdan bakiyesi artık 1.000 SOL gösterir ve stake hesabı kapatılır.</li></ul><p>Belirli bir validator'a atanan delege edilmiş stake miktarını, tüm bakiyenizi devre dışı bırakmadan (ve dolayısıyla delegasyon kesinti süresi boyunca potansiyel ödülleri kaçırmadan) azaltmak istiyorsanız, mevcut bir stake hesabını iki hesaba bölebilir ve birini delege etmekten çıkarırken diğer hesabı delege edilmiş ve sürekli olarak ödüller için uygun bırakabilirsiniz.</p><p>Örnek: Belirli bir validator'a stake edilen delegasyonu azaltma</p><ul><li>Kullanıcının 800 SOL bakiyeli bir cüzdanı ve bir validator'a delege edilmiş 200 SOL'luk tek bir stake hesabı var.</li><li>Kullanıcı, validator'a delege edilen stake miktarını 100 SOL azaltmak istiyor.</li><li>Stake hesabını “bölmek” için cüzdan arayüzünü kullanın ve bölünecek miktar olarak 100 SOL belirtin.</li><li>Artık her biri 100 SOL olan ve her biri aynı validator'a delege edilmiş 2 stake hesabı var.</li><li>Kullanıcı daha sonra stake delegasyonlarından birini devre dışı bırakmak için cüzdan arayüzünü kullanabilir. Stake hesabı, cüzdan arayüzünde ve Explorer'da “devre dışı bırakılıyor” olarak görünür. “İnaktif” veya “delege edilmemiş” durumuna geldiğinde, stake edilmiş token'lar ödül kazanmayı durdurur ve çekilebilir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/staking/#overview/delegation-timing-considerations\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Hesap inaktif hale geldiğinde, kullanıcı hesabı farklı bir validator'a delege etmeyi, token'ları ana cüzdana geri çekmeyi veya inaktif stake hesabını daha da bölerek birden fazla farklı validator'a delege etmeyi seçebilir.</li></ul><p>Kilidi olan bir stake hesabındaki token'lar, o hesabın delegasyon durumundan bağımsız olarak, kilit süresi dolana kadar çekilemez. Kilit süresi dolduktan sonra, delege edilmemiş token'lar hemen çekilebilir. Hesap sahibinin hesabın kilidini özel olarak açmak için herhangi bir işlem yapması gerekmez.</p><p><br></p>"
+            "body": "<p>Token'lar bir stake hesabından yalnızca şu anda delege edilmediğinde çekilebilir. Bir stake hesabı ilk kez delege edilmediğinde, “devre dışı bırakılıyor” veya “soğuma aşamasında” olarak kabul edilir. Token'lar, bir kısmı veya tamamı devre dışı bırakılmayı tamamlayıp “inaktif” olarak kabul edilene ve dolayısıyla artık potansiyel staking ödülleri kazanmayı durdurana kadar hesaptan çekilemez. Bu geçiş sürecinin ne kadar sürebileceğine ilişkin ayrıntılar için lütfen&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts#delegation-warmup-and-cooldown\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</p><p>Bir stake hesabındaki token'lar inaktif hale geldiğinde, ana cüzdan adresinize veya başka bir adrese anında geri çekilebilir.</p><p>Örnek: Bir stake hesabından tüm token'ları çekme</p><ul><li>Kullanıcının 900 SOL bakiyeli bir cüzdanı ve bir validator'a delege edilmiş 100 SOL'luk tek bir stake hesabı var.</li><li>Kullanıcı, stake delegasyonunu devre dışı bırakmak için cüzdan arayüzünü kullanır. Stake hesabı, cüzdan arayüzünde ve Explorer'da “devre dışı bırakılıyor” olarak görünür. “İnaktif” veya “delege edilmemiş” durumuna geldiğinde, stake edilmiş token'lar ödül kazanmayı durdurur ve çekilebilir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts#delegation-warmup-and-cooldown\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Kullanıcı, tüm token'larını ana cüzdan hesabına geri çekmek için cüzdan arayüzünü kullanabilir. Cüzdan bakiyesi artık 1.000 SOL gösterir ve stake hesabı kapatılır.</li></ul><p>Belirli bir validator'a atanan delege edilmiş stake miktarını, tüm bakiyenizi devre dışı bırakmadan (ve dolayısıyla delegasyon kesinti süresi boyunca potansiyel ödülleri kaçırmadan) azaltmak istiyorsanız, mevcut bir stake hesabını iki hesaba bölebilir ve birini delege etmekten çıkarırken diğer hesabı delege edilmiş ve sürekli olarak ödüller için uygun bırakabilirsiniz.</p><p>Örnek: Belirli bir validator'a stake edilen delegasyonu azaltma</p><ul><li>Kullanıcının 800 SOL bakiyeli bir cüzdanı ve bir validator'a delege edilmiş 200 SOL'luk tek bir stake hesabı var.</li><li>Kullanıcı, validator'a delege edilen stake miktarını 100 SOL azaltmak istiyor.</li><li>Stake hesabını “bölmek” için cüzdan arayüzünü kullanın ve bölünecek miktar olarak 100 SOL belirtin.</li><li>Artık her biri 100 SOL olan ve her biri aynı validator'a delege edilmiş 2 stake hesabı var.</li><li>Kullanıcı daha sonra stake delegasyonlarından birini devre dışı bırakmak için cüzdan arayüzünü kullanabilir. Stake hesabı, cüzdan arayüzünde ve Explorer'da “devre dışı bırakılıyor” olarak görünür. “İnaktif” veya “delege edilmemiş” durumuna geldiğinde, stake edilmiş token'lar ödül kazanmayı durdurur ve çekilebilir. Daha fazla ayrıntı için&nbsp;<a href=\"https://solana.com/docs/references/staking/stake-accounts#delegation-warmup-and-cooldown\" rel=\"noopener noreferrer\" target=\"_blank\">zamanlama hususları</a>&nbsp;bölümüne bakın.</li><li>Hesap inaktif hale geldiğinde, kullanıcı hesabı farklı bir validator'a delege etmeyi, token'ları ana cüzdana geri çekmeyi veya inaktif stake hesabını daha da bölerek birden fazla farklı validator'a delege etmeyi seçebilir.</li></ul><p>Kilidi olan bir stake hesabındaki token'lar, o hesabın delegasyon durumundan bağımsız olarak, kilit süresi dolana kadar çekilemez. Kilit süresi dolduktan sonra, delege edilmemiş token'lar hemen çekilebilir. Hesap sahibinin hesabın kilidini özel olarak açmak için herhangi bir işlem yapması gerekmez.</p><p><br></p>"
           },
           "10": {
             "title": "Delegasyon zamanlama hususları",
@@ -3368,7 +5392,7 @@
         "items": {
           "0": {
             "title": "Staking ödüllerimi nasıl tahmin edebilir ve görüntüleyebilirim?",
-            "body": "<p>Staking ödülleri epoch başına bir kez hesaplanır ve verilir. Bir epoch yaklaşık 2 gün sürer. Belirli bir epoch'ta tahakkuk eden ödüller, bir sonraki epoch'un ilk bloğunda tüm validator'lara ve delegatörlere verilir. Staking getirisi yıllık bir rakam olarak sunulur, ancak bu sayı her epoch'ta enflasyon oranı ve toplam aktif stake sürekli değiştiği için değişir. Staking getirisi ve tam enflasyon tasarımı burada detaylandırılmıştır:</p><p><a href=\"https://solana.com/docs/economics/inflation/terminology\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>RESMİ DOKÜMANTASYON</strong></a></p><p><img src=\"/src/img/staking/validator1.png\"></p><p>Stake edilen toplam SOL'un çeşitli modellerine göre staking getirisinin tahminleri burada incelenebilir:</p><p><a href=\"https://solana.shinyapps.io/inflation-proposal/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>STAKING GETİRİSİ MODELLERİ</strong></a></p><p>Bir delegatörün tek bir stake hesabında tek bir epoch'ta görebileceği SOL miktarını tahmin etmek için:</p><p><img src=\"/src/img/staking/validator3.png\"></p>"
+            "body": "<p>Staking ödülleri epoch başına bir kez hesaplanır ve verilir. Bir epoch yaklaşık 2 gün sürer. Belirli bir epoch'ta tahakkuk eden ödüller, bir sonraki epoch'un ilk bloğunda tüm validator'lara ve delegatörlere verilir. Staking getirisi yıllık bir rakam olarak sunulur, ancak bu sayı her epoch'ta enflasyon oranı ve toplam aktif stake sürekli değiştiği için değişir. Staking getirisi ve tam enflasyon tasarımı burada detaylandırılmıştır:</p><p><a href=\"https://solana.com/docs/references/terminology#inflation\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>RESMİ DOKÜMANTASYON</strong></a></p><p><img src=\"/src/img/staking/validator1.png\"></p><p>Stake edilen toplam SOL'un çeşitli modellerine göre staking getirisinin tahminleri burada incelenebilir:</p><p><a href=\"https://solana.shinyapps.io/inflation-proposal/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>STAKING GETİRİSİ MODELLERİ</strong></a></p><p>Bir delegatörün tek bir stake hesabında tek bir epoch'ta görebileceği SOL miktarını tahmin etmek için:</p><p><img src=\"/src/img/staking/validator3.png\"></p>"
           },
           "1": {
             "title": "Validator çalışma süresi nedir?",
@@ -4146,116 +6170,170 @@
   },
   "real-world-assets-solution": {
     "meta": {
-      "title": "Gerçek Dünya Varlıkları",
-      "description": "Dünya çapında tek durum blockchain protokolü olan Solana, anlık, programlanabilir, sınır ötesi mutabakat ile gerçek zamanlı değişimleri mümkün kılar."
+      "title": "Real World Assets",
+      "description": "Tokens.xyz aracılığıyla sunulan hazine bonoları, ETF'ler, metaller ve tokenize hisseler dahil olmak üzere Solana üzerindeki tokenize edilmiş gerçek dünya varlıklarını keşfedin ve bunlarla geliştirme yapın."
     },
     "hero": {
-      "eyebrow": "Gerçek dünya varlıkları, zincir üzerinde",
-      "headline": "Gerçek dünya varlıkları için anlık, sınır ötesi mutabakatlar parmaklarınızın ucunda.",
-      "body": "<p>Piyasa saatlerinin veya tatillerin ticareti engellemesi konusunda bir daha endişelenmeyin. Dünya çapında tek durum blockchain protokolü olan Solana, anlık, programlanabilir, sınır ötesi mutabakat ile gerçek zamanlı değişimleri mümkün kılar.</p>"
-    },
-    "buttons": {
-      "learnMore": "Daha fazla bilgi edinin",
-      "exploreRwa": "Solana'da RWA'yı keşfedin",
-      "getStarted": "BAŞLAYIN",
-      "read": "OKUYUN",
-      "seeDocs": "Dokümanlara bakın"
-    },
-    "stats": {
-      "0": {
-        "description": "ortalama mutabakat süresi",
-        "value": "400 ms"
-      },
-      "1": {
-        "description": "ortalama işlem ücreti",
-        "value": "$0.013"
-      },
-      "2": {
-        "description": "dünya çapında ticaret",
-        "value": "24/7"
+      "title": "Real-world assets. \nAt internet speed.",
+      "subtitle": "Tokenized treasuries, ETFs, metals, and stocks are live on Solana. Tokens.xyz makes them discoverable by asset, issuer, liquidity, and route.",
+      "reportEyebrow": "Real-World Assets on Solana",
+      "reportDescription": "Talk with Solana Foundation about issuance, liquidity, compliance, and distribution.",
+      "emailCta": "Connect",
+      "stats": {
+        "0": {
+          "label": "Tokenized value indexed"
+        },
+        "1": {
+          "label": "Assets indexed"
+        },
+        "2": {
+          "label": "24h RWA volume"
+        },
+        "3": {
+          "label": "24/7 market access"
+        }
       }
     },
-    "trustbar": {
-      "eyebrow": "DÜNYANIN HER YERİNDEN ŞİRKETLERİN ARAÇLARINI VE ENTEGRASYONLARINI GÜÇLENDİRİYOR"
+    "features": {
+      "title": "<light>What are</light> RWAs on Solana?",
+      "description": "Real-world assets on Solana include tokenized treasuries, public-market funds, ETFs, commodities, and equities that can move through wallets, DeFi, and institutional infrastructure. <tokensLink>Tokens.xyz</tokensLink> organizes those products at the asset level, so users and builders can compare variants, issuers, liquidity, and market data without hunting through individual mint addresses.",
+      "cta": "Explore Tokens.xyz"
     },
-    "headings": {
-      "futureOfTrading": {
-        "headline": "Ticaretin geleceği Solana'da",
-        "body": "Artık varsayımları beklemeye gerek yok. Solana geliştiricileri, gerçek dünya varlıklarını bugün tokenize etmek için ihtiyacınız olan araçları oluşturdu. Protokolün temel yeniliklerini kullanarak — son derece hızlı uzlaşma süreleri, yüksek verim, düşük ücretler ve Token Extensions ile Solana Permissioned Environments gibi araçlar — ekipler zaten Solana ile gerçek dünya varlık yönetiminin yeni nesline inşa ediyorlar."
+    "projects": {
+      "title": "<light>Where RWA <br></br>liquidity</light> moves",
+      "jupiter": {
+        "name": "Jupiter",
+        "description": "Jupiter routes the public-market RWA surface into Solana swaps, lending, and portfolio flows, including tokenized equity and ETF collateral markets.",
+        "stat": "SPYx",
+        "statLabel": "RWA collateral route"
       },
-      "complianceTooling": {
-        "headline": "Uyumluluk araçları"
+      "kamino": {
+        "name": "Kamino",
+        "description": "Kamino connects tokenized asset exposure with borrowing, collateral, and institutional lending markets across Solana DeFi.",
+        "stat": "$1B+",
+        "statLabel": "RWA market size"
       },
-      "tokenization": {
-        "headline": "Tokenizasyon"
+      "raydium": {
+        "name": "Raydium",
+        "description": "Raydium supplied early onchain liquidity for xStocks, helping tokenized equities and ETFs trade like native Solana assets.",
+        "stat": "DEX",
+        "statLabel": "Secondary liquidity"
       },
-      "companiesUsingSolana": {
-        "headline": "Şirketlerin Solana'yı nasıl kullandığını görün"
+      "loopscale": {
+        "name": "Loopscale",
+        "description": "Loopscale aggregates RWA settlement liquidity and fixed-yield markets, including PRISM flows that began with Apollo's ACRED strategy.",
+        "stat": "PRISM",
+        "statLabel": "RWA settlement liquidity"
       },
-      "learnFromDevelopers": {
-        "headline": "Solana geliştiricilerinden öğrenin"
+      "franklinTempleton": {
+        "name": "Franklin Templeton",
+        "description": "Franklin Templeton's BENJI/FOBXX money market fund is one of the tokenized treasury products anchoring institutional RWA credibility.",
+        "stat": "BENJI",
+        "statLabel": "Money market fund"
+      },
+      "blackrock": {
+        "name": "BlackRock",
+        "description": "BlackRock's BUIDL fund crossed $550M in assets on Solana, showing how tokenized treasuries can become institutional collateral.",
+        "stat": "BUIDL",
+        "statLabel": "Tokenized treasury fund"
+      },
+      "apollo": {
+        "name": "Apollo",
+        "description": "Apollo's ACRED private credit strategy is part of the RWA settlement and credit infrastructure expanding across Solana.",
+        "stat": "ACRED",
+        "statLabel": "Tokenized private credit"
       }
     },
-    "complianceCards": {
-      "spes": {
-        "heading": "Solana Permissioned Environments (SPE'ler)",
-        "body": "Özel gereksinimler için özel bir SVM ortamı oluşturun. SPE'ler, benzersiz iş ihtiyaçları için eşsiz Solana teknolojisinden yararlanır."
+    "products": {
+      "title": "RWA product surface",
+      "description": "Public-market RWAs drive live volume, with treasuries, funds, and metals expanding the institutional base.",
+      "equities": {
+        "title": "High-volume tokenized equities",
+        "description": "SpaceX, Circle, NVIDIA, Tesla, MicroStrategy, Robinhood, and other equity markets are the highest-volume RWA surface in the live asset audit."
       },
+      "etfs": {
+        "title": "Tokenized ETFs",
+        "description": "SPY and QQQ lead ETF activity, with xStocks and Ondo bringing public-market ETF exposure into Solana wallets, DeFi, and routing surfaces."
+      },
+      "metals": {
+        "title": "Metals and commodities",
+        "description": "Silver and gold markets are expanding through XAG, GLD, Matrixdock XAUm, Oro, and new physical-asset launches covered in Solana News."
+      },
+      "treasuries": {
+        "title": "Treasuries and funds",
+        "description": "BUIDL, BENJI, WisdomTree funds, Libre/Hamilton Lane, Etherfuse Stablebonds, and Apollo ACRED are stronger issuance and AUM examples than 24h flow examples."
+      },
+      "marketData": {
+        "title": "Asset-level market data",
+        "description": "Asset-level discovery resolves canonical assets, variants, ranked markets, charts, and risk context across Solana's expanding RWA universe."
+      }
+    },
+    "compliance": {
+      "title": "Built for compliant issuance",
+      "description": "Tokenizing regulated assets needs controls at the protocol layer. Solana's token program gives issuers the compliance primitives institutions require.",
       "tokenExtensions": {
-        "heading": "Token Extensions",
-        "body": "Token Extensions, token seviyesinde karmaşık davranışlar için tasarlanmış zengin işlevselliği açığa çıkarır — yerel faiz getiren, token-gating ve daha fazlası gibi kullanım senaryolarını mümkün kılar."
+        "title": "Token Extensions",
+        "description": "Transfer hooks, permanent delegate, and default account state let issuers enforce transfer rules, freezes, and allowlists natively at the token level."
       },
-      "kycWithTransferHooks": {
-        "heading": "Transfer hook'ları ile KYC",
-        "body": "Müşterilerinizi doğrulayın. Transfer hook'ları token uzantısı gibi yerel araçlar, basit KYC uyumluluğuna olanak tanır — üçüncü taraf bir program kullanmanıza gerek kalmaz."
+      "permissioned": {
+        "title": "Permissioned environments",
+        "description": "Solana Permissioned Environments run KYC-gated, regulated venues with institutional controls while settling on the same high-performance network."
+      },
+      "identity": {
+        "title": "Onchain identity and KYC",
+        "description": "Transfer hooks enforce allowlists and per-wallet eligibility, so only verified participants can hold or move regulated assets."
+      },
+      "confidential": {
+        "title": "Confidential transfers",
+        "description": "Encrypted balances and amounts keep institutional positions private while staying auditable to authorized parties and regulators."
       }
     },
-    "tokenizationCards": {
-      "metaplexNFTs": {
-        "heading": "Metaplex NFT'leri",
-        "body": "Gerçek dünya varlıklarını temsil eden özniteliklere sahip değiştirilemez token'lar basın."
-      },
-      "compressedNFTs": {
-        "heading": "Sıkıştırılmış NFT'ler",
-        "body": "Solana'da durum sıkıştırma kullanarak yüz dolar karşılığında milyonlarca NFT basın."
-      },
-      "bridgesplit": {
-        "heading": "Bridgesplit",
-        "body": "Kullanıcıların varlıkları parçalamasını kolaylaştırın."
-      }
+    "videoPlayer": {
+      "title": "RWAs moving onchain",
+      "subtitle": "Hear from the teams and market builders bringing traditional assets into internet capital markets.",
+      "moreVideos": "More Videos",
+      "videos": [
+        {
+          "title": "The institutions are here",
+          "description": "Visa, VanEck, Ondo Finance, Galaxy Digital, Loopscale, Franklin Templeton",
+          "alt": "Institutions video thumbnail"
+        },
+        {
+          "title": "The future of digital assets",
+          "description": "Roger Bayston, Franklin Templeton EVP",
+          "alt": "Future of Digital Assets video thumbnail"
+        },
+        {
+          "title": "Internet capital markets",
+          "description": "Akshay BD, Solana Foundation nCMO",
+          "alt": "Internet Capital Markets video thumbnail"
+        },
+        {
+          "title": "Solana and R3",
+          "description": "David Rutter, CEO, R3",
+          "alt": "Solana and R3 video thumbnail"
+        }
+      ]
     },
-    "caseStudyCards": {
-      "credix": {
-        "heading": "Credix",
-        "body": "Credix, Solana kullanarak Brezilya'da varlıkların tokenizasyonunu mümkün kıldı — yerel nüfusun varlıklara erişmesini ve dünyanın en maliyetli kredilerinden bazılarından kaçınmasını sağladı.",
-        "eyebrow": "VAKA ÇALIŞMASI"
-      },
-      "homebase": {
-        "heading": "Homebase ve gayrimenkul",
-        "eyebrow": "Vaka çalışması"
-      },
-      "baxus": {
-        "heading": "Baxus ve içkiler",
-        "eyebrow": "Ekip"
-      }
+    "news": {
+      "title": "<light>What's</light> moving RWAs"
     },
-    "developerCards": {
-      "introToDevelopment": {
-        "heading": "Solana geliştirmeye giriş"
-      },
-      "developmentCourse": {
-        "heading": "Solana geliştirme kursu"
-      },
-      "bootcamp": {
-        "heading": "Solana bootcamp"
-      },
-      "moreTools": {
-        "heading": "Daha fazla Solana geliştirici aracı"
-      }
-    },
-    "conversionPanel": {
-      "heading": "Solana, gerçek dünya varlıklarını zincir üzerine getirmek için inşa edildi",
-      "body": "Token'laştırılmış RWA'yı işletmenizle bugün nasıl entegre edeceğinizi öğrenin."
+    "cta": {
+      "reportTitle": "Bring real-world assets to Solana",
+      "reportDescription": "Connect with the Solana Foundation team about issuance, compliance, market data, liquidity, and distribution.",
+      "downloadReport": "Connect",
+      "whatElseTitle": "Explore more institutional infrastructure",
+      "items": [
+        {
+          "label": "Tokenization"
+        },
+        {
+          "label": "Token Extensions"
+        },
+        {
+          "label": "Financial Institutions"
+        }
+      ]
     }
   },
   "gaming-and-entertainment-solution": {
@@ -6003,6 +8081,76 @@
       "url": "https://solanafoundation.typeform.com/predictionhack"
     }
   },
+  "epoch1000": {
+    "meta": {
+      "title": "Epoch 1000 Kutlaması",
+      "description": "Solana mainnet'in 1.000. epoch'unu kutlayın. Canlı geri sayımı takip edin, bir cüzdanın ilk epoch'unu kontrol edin ve bir hayatta kalma kartı paylaşın.",
+      "openGraphTitle": "EPOCH1000 — Solana'nın 1.000. epoch'u",
+      "openGraphDescription": "Solana mainnet'in epoch 1000'e ulaşmasını kutlayın. Cüzdanınız kaç epoch hayatta kaldı?"
+    },
+    "page": {
+      "checkerLink": "Cüzdanı kontrol et",
+      "title": "EPOCH <gradient>1000</gradient>",
+      "description": "Solana mainnet'in 1.000 epoch'a ulaşmasının canlı kutlaması. Geri sayımı takip edin, ardından cüzdanınızın ilk ne zaman katıldığını kontrol edin."
+    },
+    "card": {
+      "meta": {
+        "title": "Solana'da {survived} epoch süredir varım",
+        "description": {
+          "withFirstEpoch": "Solana'da {survived} epoch süredir, epoch {firstEpoch}'dan beri varım. {tierLine}",
+          "withoutFirstEpoch": "Solana'da {survived} epoch süredir varım. {tierLine}"
+        }
+      },
+      "eyebrow": "Epoch 1000",
+      "heading": "{survived} epoch derinindeyim",
+      "summary": {
+        "defaultWallet": "adres gizli",
+        "withFirstEpoch": "Solana'da <strong>{survived}</strong> epoch derinindeyim. Kanıt: <wallet>{walletLabel}</wallet> / epoch {firstEpoch}'dan beri.",
+        "withoutFirstEpoch": "Solana'da <strong>{survived}</strong> epoch derinindeyim. Kanıt: <wallet>{walletLabel}</wallet>."
+      },
+      "imageAlt": "Solana yaş kartı: Solana'da {survived} epoch, {tier}",
+      "ctaCheck": "Kendininkini yap",
+      "ctaExplore": "Keşfet",
+      "privacyNote": "Cüzdan bağlantısı yok.",
+      "og": {
+        "epoch1000": "Epoch 1000",
+        "walletAge": "Solana'da bulunduğum süre",
+        "epochsOld": "epoch",
+        "sinceEpoch": "epoch {epoch}'dan beri",
+        "startEpoch": "epoch 0",
+        "endEpoch": "epoch 1000",
+        "proof": "kanıt: {wallet}",
+        "anonymousWallet": "gizli",
+        "footerUrl": "solana.com/epoch1000"
+      },
+      "tiers": {
+        "genesis": {
+          "name": "Genesis Sınıfı",
+          "line": "Neredeyse herkesten önce buradaydın."
+        },
+        "diamond": {
+          "name": "Elmas Sınıfı",
+          "line": "Baskı altında şekillendi."
+        },
+        "obsidian": {
+          "name": "Obsidyen Sınıfı",
+          "line": "Ayı piyasasının ateşinde soğudu."
+        },
+        "veteran": {
+          "name": "Veteran Sınıfı",
+          "line": "Bir şeyler gördü."
+        },
+        "survivor": {
+          "name": "Hayatta Kalan Sınıfı",
+          "line": "Hâlâ burada. Hâlâ erkenden."
+        },
+        "settler": {
+          "name": "Yerleşimci Sınıfı",
+          "line": "Hoş geldin. Epoch 2000 seni bekliyor."
+        }
+      }
+    }
+  },
   "index": {
     "meta": {
       "title": "Dünyadaki Her Varlık İçin Sermaye Piyasası",
@@ -6015,6 +8163,24 @@
       "bannerEyebrow": "Privacy Hack",
       "bannerDescription": "Solana üzerinde gizliliğin geleceğini inşa edin. Gizliliği koruyan uygulamalar ve araçlar oluştururken ödüller için yarışın.",
       "bannerLabel": "Kaydol"
+    },
+    "epochHero": {
+      "eyebrow": "Solana Mainnet Kutlaması",
+      "title": "Epoch 1000 \n<light>neredeyse geldi.</light>",
+      "titleArrived": "Epoch 1000 \n<light>burada.</light>",
+      "subtitle": "Solana'nın 1.000. epoch'una ve oraya ulaşan cüzdanlara canlı geri sayım.",
+      "subtitleArrived": "Solana mainnet 1.000. epoch'una ulaştı. Bunu başaran cüzdanları, geliştiricileri, validator'ları, uygulamaları ve kullanıcıları kutlayın.",
+      "cta": "Kutlamaya katıl",
+      "secondaryCta": "Cüzdanı kontrol et",
+      "statEpoch": "Epoch",
+      "statSlots": "Kalan slot",
+      "statProgress": "İlerleme",
+      "statEta": "TAV",
+      "statMilestone": "Kilometre Taşı",
+      "statReached": "Ulaşıldı",
+      "statSlot": "Slot",
+      "liveLabel": "Canlı",
+      "offline": "Senkronize ediliyor..."
     },
     "events": {
       "title": "Solana ile gerçek hayatta tanışın. <light>Bağlantılar kurun.</light>",
@@ -8359,7 +10525,7 @@
         "howToTransferFrom": "<h3>How to do <code>transferFrom()</code></h3>",
         "transferFromIntro": "<p>First, Let's look at this code for understanding logic:</p><p>On Solana, each token is identified by its unique Mint address, and users store their balances in an Associated Token Account (ATA). In a transaction, the ATA address is used as the sender or receiver for transferring tokens. Unlike on Ethereum, where you directly call an ERC-20 contract, Solana handles token transfer logic through its native system program.</p><p>We can make a transaction's transfer instruction through <a href=\"https://solana-labs.github.io/solana-program-library/token/js/functions/createTransferCheckedInstruction.html\" rel=\"noopener noreferrer\" target=\"_blank\">createTransferCheckedInstruction</a> and send it through <a href=\"https://solana-labs.github.io/solana-web3.js/classes/Connection.html#sendTransaction\" rel=\"noopener noreferrer\" target=\"_blank\">sendTransaction</a> from <a href=\"https://solana-labs.github.io/solana-program-library/token/js/modules.html\" rel=\"noopener noreferrer\" target=\"_blank\">@solana/spl-token</a>.</p><p><br></p>",
         "transferFromAta": "<p>How we can check <em>receiverTokenAddress</em> through <em>receiverAddress</em>? We can use <a href=\"https://solana-labs.github.io/solana-program-library/token/js/functions/getOrCreateAssociatedTokenAccount.html\" rel=\"noopener noreferrer\" target=\"_blank\">getOrCreateAssociatedTokenAccount</a>. It will retrieve the associated token account, or create it if it doesn't exist.</p>",
-        "exploreMore": "<p><em>Want to explore more features? Check out </em><a href=\"https://solana.com/developers/cookbook/tokens/create-nft\" rel=\"noopener noreferrer\" target=\"_blank\"><em>this guide</em></a><em>!</em></p>"
+        "exploreMore": "<p><em>Want to explore more features? Check out </em><a href=\"https://developers.metaplex.com/core\" rel=\"noopener noreferrer\" target=\"_blank\"><em>this guide</em></a><em>!</em></p>"
       }
     },
     "nodeComparison": "<p><strong>Node storing all data and participating in consensus</strong></p><ul><li><strong>Ethereum:</strong> Archive Node</li><li><strong>Solana:</strong> [n/a]</li></ul><p><strong>Node storing some data and participating in consensus</strong></p><ul><li><strong>Ethereum:</strong> Full Node</li><li><strong>Solana:</strong> Consensus Node</li></ul><p><strong>Node storing some data and not participating in consensus</strong></p><ul><li><strong>Ethereum:</strong> Light Node</li><li><strong>Solana:</strong> RPC Node</li></ul>",
@@ -8620,8 +10786,8 @@
         "<h3>What are the benefits of the Solana Account Model?</h3><p>One of the most significant benefits of the Solana Account Model is program reusability.</p><p>Take ERC20 for example. ERC20 defines an interface specification on Ethereum for tokens. Every time someone wants to make a new token, the developer will have to redeploy the ERC20 smart contract onto Ethereum with its specified values, incurring the high cost of the redeployment.</p><p>Solana is different. You do not have to redeploy another smart contract onto the blockchain when creating new tokens. Instead, you create a new account, known as the mint account, off of the Solana Token Program, where the account defines a set of values to give the number of tokens in circulation, decimal points, who can mint more tokens, and who can freeze tokens.</p>",
         "<p>\n  You do not need to write any Rust or smart contracts to deploy a new token on\n  Solana. Send a transaction to the Token Program to create a new token in your\n  language of choice, and the token will then appear in your wallet. With the\n  Solana Program Library CLI, you can do this in a single command:\n</p>\n",
         "<h2>Local Fee Markets</h2><p>Another fortunate side effect of having the Solana account model is the ability to model fees based on state contention. As mentioned earlier, transactions can be executed in parallel. However, they are only executed in parallel based on what accounts are being written to. For example, let's say there is a popular NFT mint going on Solana. Typically, this popularity would increase the prices for everyone using the chain, but instead, everyone not participating in the NFT mint is unaffected.</p><p>As the name suggests, fee markets are local per account. If you're sending a transfer of USDC to someone while everyone else is minting the hottest new NFT, you will be unaffected and continue paying the low fee you're used to on Solana. This works with any application in Solana, avoiding the common global fee market you're used to on Ethereum while lowering everyone's cost.</p>",
-        "<h3>How do fees work on Solana?</h3><p>Fees on Solana are broken up into a few categories: Base Fee, Priority Fee, and Rent.</p><p>The Base Fee can be calculated based on the number of signatures in a transaction. Each signature costs 5000 lamports (0.000000001&nbsp;<a href=\"https://solana.com/docs/terminology#sol\" rel=\"noopener noreferrer\" target=\"_blank\">sol</a> = 1 lamport). If your transaction requires 5 signatures, the base fee would be 25000 lamports. This base fee adds economic backpressure to the cluster's signature verification, which is one of the more compute-intensive actions. Half of the base fees are burnt, and half are rewarded to the validators.</p><p>The Priority Fee is an optional fee that anyone can add to a transaction to give priority over other transactions executing at the same time. Priority fee is measured based on the amount of compute units used in a transaction. Compute units are similar to Gas on Ethereum, a simple measurement of computing resources required for a transaction. Like Ethereum, the priority of your transaction is calculated based on the product of the compute unit price and the compute units used, or <code>priority fee = compute units * compute unit price</code>. Like base fees, half of priority fees are burnt, and half are rewarded to the validators.</p><p>The final fee, Rent, is more of a deposit than a fee. When you create accounts or allocate space on the network, you must deposit some SOL for the network to keep your account. Rent is calculated based on the number of bytes stored on the network, and an additional base fee is charged for allocating space. It is important to note that Rent fees are not lost; they can be collected if you close the account and allow the allocated space to be recollected by the cluster.</p>",
-        "<h3>How do transactions work on Solana?</h3><p>With each fee being paid when executing a transaction, it is good to understand how transactions work. A transaction consists of three parts:</p><ul><li>one or more instructions</li><li>an array of accounts to read or write from</li><li>one or more signatures</li><li>recent blockhash or nonce</li></ul><p>An&nbsp;<a href=\"https://solana.com/docs/terminology#instruction\" rel=\"noopener noreferrer\" target=\"_blank\">instruction</a>&nbsp;is the smallest execution logic on Solana. Instructions are a call to update the global Solana state. Instructions invoke programs that make calls to the Solana runtime to update the state (for example, calling the token program to transfer tokens from your account to another account). You can think of an instruction like a function call on an Ethereum smart contract.</p><p>A significant difference between Ethereum and Solana is the number of function calls in a single transaction due to the number of instructions. Having multiple instructions per transaction benefits developers as they do not have to create custom smart contracts to chain functions in a single transaction. Each instruction can be a separate function call, done in order in the transaction. Transactions are atomic, meaning if any of these instructions fails, the whole transaction will fail, and you will only pay the transaction fee. This is like failing a transaction due to not setting the correct slippage on Ethereum.</p><p>Another key difference to remember would be the use of a recent blockhash instead of an incremental nonce for transactions. When a wallet wants to make a transaction, a recent blockhash will be pulled from the cluster to create a valid transaction. This recent blockhash only makes the transaction valid for 150 blocks after the recent blockhash was retrieved. This prevents long-living transaction signatures from being executed at a much later date.</p>",
+        "<h3>How do fees work on Solana?</h3><p>Fees on Solana are broken up into a few categories: Base Fee, Priority Fee, and Rent.</p><p>The Base Fee can be calculated based on the number of signatures in a transaction. Each signature costs 5000 lamports (0.000000001&nbsp;<a href=\"https://solana.com/docs/references/terminology#sol\" rel=\"noopener noreferrer\" target=\"_blank\">sol</a> = 1 lamport). If your transaction requires 5 signatures, the base fee would be 25000 lamports. This base fee adds economic backpressure to the cluster's signature verification, which is one of the more compute-intensive actions. Half of the base fees are burnt, and half are rewarded to the validators.</p><p>The Priority Fee is an optional fee that anyone can add to a transaction to give priority over other transactions executing at the same time. Priority fee is measured based on the amount of compute units used in a transaction. Compute units are similar to Gas on Ethereum, a simple measurement of computing resources required for a transaction. Like Ethereum, the priority of your transaction is calculated based on the product of the compute unit price and the compute units used, or <code>priority fee = compute units * compute unit price</code>. Like base fees, half of priority fees are burnt, and half are rewarded to the validators.</p><p>The final fee, Rent, is more of a deposit than a fee. When you create accounts or allocate space on the network, you must deposit some SOL for the network to keep your account. Rent is calculated based on the number of bytes stored on the network, and an additional base fee is charged for allocating space. It is important to note that Rent fees are not lost; they can be collected if you close the account and allow the allocated space to be recollected by the cluster.</p>",
+        "<h3>How do transactions work on Solana?</h3><p>With each fee being paid when executing a transaction, it is good to understand how transactions work. A transaction consists of three parts:</p><ul><li>one or more instructions</li><li>an array of accounts to read or write from</li><li>one or more signatures</li><li>recent blockhash or nonce</li></ul><p>An&nbsp;<a href=\"https://solana.com/docs/references/terminology#instruction\" rel=\"noopener noreferrer\" target=\"_blank\">instruction</a>&nbsp;is the smallest execution logic on Solana. Instructions are a call to update the global Solana state. Instructions invoke programs that make calls to the Solana runtime to update the state (for example, calling the token program to transfer tokens from your account to another account). You can think of an instruction like a function call on an Ethereum smart contract.</p><p>A significant difference between Ethereum and Solana is the number of function calls in a single transaction due to the number of instructions. Having multiple instructions per transaction benefits developers as they do not have to create custom smart contracts to chain functions in a single transaction. Each instruction can be a separate function call, done in order in the transaction. Transactions are atomic, meaning if any of these instructions fails, the whole transaction will fail, and you will only pay the transaction fee. This is like failing a transaction due to not setting the correct slippage on Ethereum.</p><p>Another key difference to remember would be the use of a recent blockhash instead of an incremental nonce for transactions. When a wallet wants to make a transaction, a recent blockhash will be pulled from the cluster to create a valid transaction. This recent blockhash only makes the transaction valid for 150 blocks after the recent blockhash was retrieved. This prevents long-living transaction signatures from being executed at a much later date.</p>",
         "<h3>What are the limitations of transactions on Solana?</h3><p>Like Ethereum gas limitations, there are specific compute unit limitations on transactions for Solana. Each limitation can be found below:</p>",
         "<p>Solana has a <a href=\"https://solana.com/ru/docs/programs/limitations\" rel=\"noopener noreferrer\" target=\"_blank\">few additional caps</a> placed on transactions. Each account referenced may be at most 12,000,000 compute units used per block. This cap prevents people from write-locking a single account too many times in a single block, further preventing the local fee markets from being overrun by one account.</p><p>Another limit on transactions is the depth of instruction calls you can make in a single instruction. This limit is currently set to 4, meaning you can only call instructions at a depth of 4 before the transaction would revert. This makes re-entrancy issues nonexistent on Solana compared to something you’d have to worry about on Ethereum.</p>",
         "<h3>Where is the Mempool?</h3><p>Unlike Ethereum, Mempools don’t exist on Solana. Solana validators forward transactions to up to the following four leaders on the leader schedule. While Solana doesn’t have a mempool, it still has priority fees to help order transactions. Not having a mempool forces the transactions to hop from leader to leader until blockhash expiration, but it reduces the overhead of gossip communicating the mempool across the cluster.</p>",
@@ -8884,158 +11050,160 @@
   },
   "privacy": {
     "title": "Solana'da Gizlilik | Gizli İşlemler ve Sıfır Bilgi Kanıtları",
-    "description": "Solana'daki gizlilik yelpazesini keşfedin: takma adlı işlemlerden tamamen özel hesaplamaya kadar. Gizli Token Uzantıları, sıfır bilgi kanıtları ve gizlilik araçları ekosistemi hakkında bilgi edinin.",
+    "description": "Genel hesaplardan şifreli hesaplamaya kadar Solana'da gizliliği keşfedin. Confidential Token Extensions, ZK kanıtları ve gizlilik projeleri hakkında bilgi edinin.",
     "hero": {
       "title": "Solana'da Gizlilik",
-      "subtitle": "Takma adlı cüzdanlardan tamamen şifrelenmiş hesaplamaya kadar, Solana her gizlilik seviyesini destekler.",
+      "subtitle": "Solana birçok gizlilik modelini destekler: genel adresler, gizli tutarlar, bağlantısız ödemeler ve şifreli hesaplama.",
       "supportingText": "Gizlilik Araçlarını Keşfedin"
     },
     "spectrum": {
       "title": "Gizlilik Bir Yelpazedir",
-      "description": "Gizlilik hakkındaki çoğu tartışma yalnızca iki modu varsayar: açık veya gizli. Ancak gerçek sistemler daha nüanslıdır. Gizlilik iki eksen üzerinden anlaşılabilir: kimlik görünürlüğü ve veri görünürlüğü. Bu da dört farklı model oluşturur."
+      "description": "Gizlilik tek bir anahtarla açılıp kapanan bir şey değildir. Kimlik ve veri görünürlüğü bir arada kullanılabilir; bu da geliştiricilere farklı ürünler için farklı araçlar sunar."
     },
     "modes": {
       "pseudonymity": {
         "title": "Takma Ad Kullanımı",
-        "description": "Veri herkese açıktır, ancak kimlik değil. Takma ad kullanan bir sistem, herkesin işlemleri, bakiyeleri ve geçmişi incelemesine izin verir, ancak bunların hiçbiri sahibi açıklamayı seçmedikçe gerçek dünya ile ilişkilendirilmez.",
+        "description": "Veriler herkese açıktır, ancak kimlik değildir. Herkes aktiviteyi inceleyebilirken cüzdan sahibi bunu gerçek bir kişiyle ne zaman ilişkilendireceğine kendisi karar verir.",
         "items": [
-          "Solana'da bu varsayılandır. Her cüzdan adresi bir kriptografik açık anahtardır",
-          "Standart SPL token transferleri zincir üzerinde tamamen görünür, ancak hiçbir adres doğası gereği kimlik taşımaz"
+          "Bu, Solana'nın varsayılan modelidir: her cüzdan bir public key'dir",
+          "Standart SPL transferleri görünürdür, ancak adresler yerleşik bir kimlik taşımaz"
         ]
       },
       "confidentiality": {
         "title": "Gizlilik",
-        "description": "Katılımcılar bilinebilir, ancak işlemlerinin içeriği gizlidir. Tutarlar, bakiyeler ve transfer verileri şifrelenir, böylece yalnızca ilgili taraflar bunları okuyabilir. Gözlemciler, temel değerleri görmeden kuralların takip edildiğini doğrulayabilir.",
+        "description": "Katılımcılar bilinebilir, ancak tutarlar, bakiyeler veya transfer ayrıntıları gizli kalır. Gözlemciler kurallara uyulduğunu doğrulayabilir.",
         "items": [
-          "Solana'da, Gizli Token Uzantıları transfer tutarlarını ve bakiyelerini sıfır bilgi kanıtları kullanarak protokol seviyesinde şifreler",
-          "Ücret verilerini açığa çıkarmadan kurumsal ödemeler ve bordro",
-          "Tutarların gönderici ve alıcı arasında gizli kaldığı sabit koin transferleri",
-          "Ön koşuculardan gizli kalan ticaret stratejileri"
+          "Confidential Token Extensions, transfer tutarlarını ve bakiyelerini ZK kanıtlarıyla şifreler",
+          "Bordro ve iş ödemeleri gizli kalabilir",
+          "Stablecoin transferlerinde gönderici ile alıcı arasındaki tutarlar gizlenebilir"
         ]
       },
       "anonymity": {
         "title": "Anonimlik",
-        "description": "İşlemin kendisi görünür olabilir, ancak gönderici ve alıcı arasındaki bağlantı kriptografik olarak koparılmıştır. Hiçbir gözlemci kimin kime ödeme yaptığını belirleyemez. Bu takma ad kullanımının ötesine geçer: bir transferin gerçekleştiğini görebilseniz bile, bunu belirli bir adrese veya kişiye kadar izleyemezsiniz.",
+        "description": "İşlem görünür olabilir, ancak gönderici-alıcı bağlantısı koparılmıştır. Gözlemciler bir aktivitenin gerçekleştiğini görebilir; ancak kimin kime ödeme yaptığını takip edemez.",
         "items": [
-          "Solana'da yüksek işlem hacmi, ZK tabanlı anonimlik sistemlerini ölçekte pratik hale getirir",
-          "Daha yavaş zincirlerde darboğaz oluşturacak kanıt doğrulaması, Solana'nın 400ms slot süreleri içinde çalışır",
-          "Light Protocol gibi protokoller, gerçek dünya uygulamalarında anonim durum yönetimi sunar"
+          "Solana'nın işlem kapasitesi, ZK tabanlı anonimlik sistemlerinin ölçekli çalışmasına yardımcı olur",
+          "Kanıt doğrulama, hızlı uzlaşma pencereleri içinde çalışabilir",
+          "Light Protocol gibi protokoller, uygulamalar için anonim durum desteği sağlar"
         ]
       },
       "fullyPrivate": {
         "title": "Tam Gizlilik",
-        "description": "Ne kimlik ne de veri görünürdür. Hesaplama, güvenli ortamlar içinde şifrelenmiş girdiler üzerinde gerçekleşir. Zincir üzerinde yalnızca kanıtlar veya nihai sonuçlar yayınlanır. Zincir, temel verileri hiç görmeden doğruluğu onaylar.",
+        "description": "Ne kimlik ne de veri kamuya açıktır. Uygulamalar korumalı girdiler üzerinde hesaplama yapar, ardından zincir üzerinde kanıtlar veya nihai sonuçlar yayınlar.",
         "items": [
-          "Solana'da Arcium ve Inco gibi projeler, Solana programlarına şifrelenmiş çok taraflı hesaplama ve FHE getiriyor",
-          "Emir akışı, pozisyonlar ve stratejilerin şifreli kaldığı özel DeFi",
-          "Mühürlenmiş oylar ve gizli tekliflerle gizli DAO yönetişimi",
-          "Oyuncuların inceleyemediği gizli duruma sahip zincir üstü oyunlar"
+          "Arcium ve Inco gibi projeler, Solana uygulamalarına özel hesaplama imkânı sunar",
+          "Emir akışı, pozisyonlar ve stratejiler gizli tutulabilir",
+          "Oyunlar, Solana'dan ayrılmadan gizli durumu koruyabilir"
         ]
       }
     },
     "ecosystem": {
       "title": "Solana'da Gizlilik Ekosistemi",
+      "arcane": {
+        "title": "Arcane",
+        "description": "Alım satım, ödemeler ve zincir üzeri finansal ürünler için gizlilik altyapısı."
+      },
       "contra": {
         "title": "Contra",
-        "description": "Uçtan uca şifreleme ile Solana üzerinde tamamen özel işlemler ve hesaplama"
+        "description": "Solana uygulamaları için özel işlem ve hesaplama araçları."
       },
       "encrypt": {
         "title": "Encrypt.xyz",
-        "description": "Uçtan uca şifrelenmiş token transferleri sağlayan tamamen özel işlem altyapısı"
+        "description": "Şifrelenmiş token transferleri için özel aktarım altyapısı."
       },
       "privacyCash": {
         "title": "Privacy Cash",
-        "description": "Gönderen ve alıcı arasındaki bağlantıyı kesen anonim işlem protokolü"
-      },
-      "silentSwap": {
-        "title": "SilentSwap",
-        "description": "Kriptografik gönderen-alıcı bağlantısızlığı ile anonim token takasları"
+        "description": "Gönderici ile alıcı arasındaki bağlantıyı kesen özel ödeme çözümü."
       },
       "encifher": {
         "title": "Encifher",
-        "description": "Şifrelenmiş emir defterleri ve özel işlemlerle gizli DeFi protokolü"
+        "description": "Zincir üzeri özel finans için gizli DeFi araçları."
       },
       "magicBlock": {
         "title": "MagicBlock",
-        "description": "Şifrelenmiş oyun durumu ve gizli oyuncu eylemleriyle tamamen özel zincir üstü oyun"
+        "description": "Şifrelenmiş, gerçek zamanlı uygulama durumu için özel geçici rollup'lar."
       },
       "lightProtocol": {
         "title": "Light Protocol",
-        "description": "Ölçeklenebilir özel uygulamalar için ZK sıkıştırma ve anonim durum yönetimi"
+        "description": "Özel uygulamalar için ZK sıkıştırma ve anonim durum araçları."
       },
       "arcium": {
         "title": "Arcium",
-        "description": "Solana üzerinde şifrelenmiş çok taraflı hesaplama sağlayan tamamen özel hesaplama ağı"
+        "description": "Solana üzerinde özel hesaplama için şifreli MPC ağı."
       },
       "confidentialTransfer": {
         "title": "Gizli Transfer",
-        "description": "Transfer tutarlarını ve bakiyeleri protokol seviyesinde sıfır bilgi kanıtları kullanarak şifreleyen yerel Solana token uzantısı."
+        "description": "Şifrelenmiş transfer tutarları ve bakiyeler için Solana token uzantısı."
+      },
+      "heliusPrivacyProtocol": {
+        "title": "Helius Privacy Protocol",
+        "description": "Solana üzerinde özel ödemeler, piyasalar ve finans için ZK gizlilik katmanı."
       },
       "inco": {
         "title": "Inco",
-        "description": "Özel akıllı sözleşme yürütme için tamamen homomorfik şifreleme (FHE) ağı"
+        "description": "Özel işlemler, DeFi, oyun ve yönetişim için gizlilik katmanı."
       },
-      "zama": {
-        "title": "Zama",
-        "description": "Uçtan uca özel blokzincir hesaplaması için tamamen homomorfik şifreleme araçları"
+      "ligero": {
+        "title": "Ligero",
+        "description": "Özel iş ödemeleri için ZK destekli altyapı."
       }
     },
     "principles": {
       "title": "Tasarım İlkeleri",
       "programmable": {
         "title": "Gizlilik Programlanabilir Olmalıdır",
-        "description": "Geliştiriciler, uygulamaları için doğru gizlilik seviyesini seçebilmelidir. Bir bordro sisteminin gereksinimleri, halka açık bir yönetişim oylamasından farklıdır. Gizlilik temel yapı taşları, birleştirilebilir bileşenler olmalıdır; hepsi ya da hiçbiri anahtarları değil."
+        "description": "Geliştiriciler, uygulamalarının ihtiyaç duyduğu gizlilik düzeyini kendileri seçmelidir. Bordro, alım satım ve yönetişim süreçlerinin hepsi aynı açıklama modelini gerektirmez."
       },
       "coexist": {
         "title": "Gizlilik ve Uyumluluk Birlikte Gider",
-        "description": "Gizlilik, düzenlemelerden kaçınmak anlamına gelmez. Sıfır bilgi kanıtlarıyla kullanıcılar, bakiyeleri açığa çıkarmadan ödeme gücünü kanıtlayabilir, kimliklerini ifşa etmeden uygunluğu doğrulayabilir ve verileri halka açık hale getirmeden denetim gereksinimlerini karşılayabilir. Uyumlu gizlilik bir uzlaşma değil, daha iyi bir tasarımdır."
+        "description": "Gizlilik, denetimleri desteklemeye devam edebilir. ZK kanıtları ve seçici açıklama, ekiplerin ham verileri yayınlamadan olgusal bilgileri kanıtlamasına olanak tanır."
       },
       "performance": {
         "title": "Performans Önemlidir",
-        "description": "Gizlilik teknolojileri genellikle hesaplama açısından ağırdır. ZK kanıt üretimi ve doğrulama, homomorfik şifreleme ve güvenli çok taraflı hesaplama, önemli kaynaklar gerektirir. Solana'nın iş hacmi, bu temel yapı taşlarını gerçek dünya uygulamalarında kullanılabilir hale getirir."
+        "description": "Gizlilik, hesaplama maliyeti gerektirir. Solana'nın işlem kapasitesi, ZK kanıtlarını, MPC'yi ve şifreli durumu canlı uygulamalar için kullanılabilir kılar."
       }
     },
     "useCases": {
       "title": "Gizliliğin Açtığı Olanaklar",
-      "description": "Gizlilik sadece verileri gizlemekle ilgili değildir. Şeffaf zincirlerde var olamayan tamamen yeni uygulama kategorilerini mümkün kılar.",
+      "description": "Gizlilik yalnızca verileri saklamakla ilgili değildir. Uygulamaların zincir üzerinde hassas para, kimlik ve strateji işlemlerini yönetmesine olanak tanır.",
       "items": [
         {
           "title": "Özel Ödemeler",
-          "description": "Tutarları veya bakiyeleri halka açık hale getirmeden token gönderip alın. Maaş ödemeleri, iş işlemleri ve kişisel transferler için olmazsa olmazdır.",
+          "description": "Token'ları miktarları veya bakiyeleri kamuya açıklamadan gönderin.",
           "privacyType": "confidential"
         },
         {
           "title": "Özel Ticaret",
-          "description": "Strateji, pozisyon büyüklüğü veya zamanlamayı ön yüklemecilere ve MEV botlarına ifşa etmeden işlem gerçekleştirin. Gizli emir akışı hem bireysel hem de kurumsal yatırımcıları korur.",
+          "description": "Strateji, pozisyon büyüklüğü ve zamanlamayı halka açık mempool'lardan uzak tutun.",
           "privacyType": "confidential"
         },
         {
           "title": "Gizli Bordro",
-          "description": "Ücret verilerini halka açık hale getirmeden çalışanlara ve yüklenicilere zincir üzerinde ödeme yapın. İşverenler, bireysel tutarları gizli tutarken denetim yeteneğini korur.",
+          "description": "Ekiplere zincir üzerinde ödeme yapın; bireysel ücretleri gizli tutun.",
           "privacyType": "confidential"
         },
         {
           "title": "Özel DAO Oylaması",
-          "description": "Sonuçlar kesinleşene kadar bireysel seçimleri açığa çıkarmadan tekliflere oy verin. Oy satın almayı, sosyal baskıyı ve stratejik son dakika değişimlerini önler.",
+          "description": "Sonuçlar kesinleşene kadar bireysel oyları gizleyin.",
           "privacyType": "anonymous"
         },
         {
           "title": "Şifreli Kimlik",
-          "description": "Temel verileri ifşa etmeden yaş, vatandaşlık veya kimlik bilgisi sahipliği gibi özellikleri kanıtlayın. Sıfır-bilgi kimliği, uyumlu gizlilik sağlar.",
+          "description": "Temel verileri açıklamadan nitelikleri kanıtlayın.",
           "privacyType": "anonymous"
         },
         {
           "title": "Gizli AI Ajanları",
-          "description": "İşlem yapan, varlık tutan ve zincir üstü gözlemcilere özel mantık veya kullanıcı verilerini sızdırmadan stratejileri yürüten otonom ajanlar.",
+          "description": "Ajanların kullanıcı verilerini veya özel mantığı sızdırmadan işlem yapmasına izin verin.",
           "privacyType": "fullyPrivate"
         }
       ]
     },
     "cta": {
       "title": "Gizli Tokenlarla Geliştirin",
-      "description": "Gizli Token Extensions, Solana mainnet'te canlıdır. Bakiyeleri şifreleyin, transfer tutarlarını gizleyin ve sıfır-bilgi kanıtlarıyla doğrulayın; tümü protokol seviyesinde. Harici bağımlılık gerekmez.",
+      "description": "Confidential Token Extensions, Solana mainnet'te canlıdır. Protokol düzeyinde bakiyeleri şifreleyin, transfer miktarlarını gizleyin ve ZK kanıtlarıyla doğrulayın.",
       "button": "Kılavuzu Okuyun",
-      "buttonHref": "/developers/guides/token-extensions/confidential-transfer"
+      "buttonHref": "/docs/tokens/extensions/confidential-transfer"
     }
   },
   "skills": {

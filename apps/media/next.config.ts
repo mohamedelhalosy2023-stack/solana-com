@@ -3,26 +3,25 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs";
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+const assetPrefix = "/media-assets";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   trailingSlash: false,
-  assetPrefix: "/media-assets",
+  assetPrefix,
 
   env: {
     NEXT_PUBLIC_APP_NAME: "media",
   },
 
   images: {
+    path: `${assetPrefix}/_next/image`,
     localPatterns: [
       {
         pathname: "/uploads/**",
       },
       {
         pathname: "/media-assets/uploads/**",
-      },
-      {
-        pathname: "/builder/**",
       },
     ],
     remotePatterns: [
@@ -34,11 +33,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "*.cloudfront.net",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "assets.getriver.io",
         port: "",
       },
       {
@@ -64,6 +58,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "img.transistor.fm",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "media.rss.com",
         port: "",
       },
     ],
@@ -137,7 +136,12 @@ const nextConfig: NextConfig = {
   },
 
   outputFileTracingIncludes: {
-    "/*": ["./content/**/*", "./keystatic.config.tsx"],
+    "/*": [
+      "./content/**/*",
+      "./fonts/ABCDiatype-Regular.woff",
+      "./fonts/ABCDiatype-Medium.woff",
+      "./keystatic.config.tsx",
+    ],
   },
 
   experimental: {

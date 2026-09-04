@@ -5,10 +5,11 @@ import { getTranslations } from "next-intl/server";
 import faviconPng from "@solana-com/ui-chrome/assets/favicon.png";
 import faviconSvg from "@solana-com/ui-chrome/assets/favicon.svg";
 import appleTouchIcon from "@solana-com/ui-chrome/assets/apple-touch-icon.png";
+import { createDefaultSocialImage } from "@solana-com/ui-chrome/social-image";
 import { Page } from "fumadocs-core/source";
 
 export function getBaseMetadata(locale: string) {
-  const { siteMetadata, siteUrl } = config;
+  const { siteMetadata, publicUrl } = config;
   return {
     other: {
       language: locale,
@@ -20,16 +21,17 @@ export function getBaseMetadata(locale: string) {
     description: siteMetadata.description,
     openGraph: {
       type: "website",
-      images: [siteMetadata.socialShare],
+      images: [createDefaultSocialImage(siteMetadata.title)],
       locale,
     },
     twitter: {
       card: "summary_large_image",
       creator: siteMetadata.author,
+      images: [createDefaultSocialImage(siteMetadata.title)],
     },
     robots: "index, follow",
     manifest: "/site.webmanifest",
-    metadataBase: new URL(siteUrl),
+    metadataBase: new URL(publicUrl),
     icons: [
       {
         url: faviconPng.src,

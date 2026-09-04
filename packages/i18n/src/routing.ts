@@ -2,6 +2,8 @@ import { createNavigation } from "next-intl/navigation";
 import { defineRouting } from "next-intl/routing";
 import { locales, defaultLocale } from "./config";
 
+export { getAlternates } from "./alternates";
+
 export const routing = defineRouting({
   locales,
   defaultLocale,
@@ -37,17 +39,4 @@ export function pathsWithLocales<T>(paths: { params: T }[]) {
       }));
     })
   );
-}
-
-export function getAlternates(path: string, locale: string) {
-  const languages: Record<string, string> = {
-    "x-default": `/${path}`,
-  };
-  locales.forEach((l) => {
-    languages[l] = l === defaultLocale ? `/${path}` : `/${l}${path}`;
-  });
-  return {
-    canonical: locale === defaultLocale ? `/${path}` : `/${locale}${path}`,
-    languages,
-  };
 }

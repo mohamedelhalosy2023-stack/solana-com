@@ -1,10 +1,16 @@
 import faviconPng from "@solana-com/ui-chrome/assets/favicon.png";
+import {
+  DEFAULT_SOCIAL_IMAGE,
+  DEFAULT_SOCIAL_IMAGE_URL,
+} from "@solana-com/ui-chrome/social-image";
+
+const PUBLIC_SITE_URL = "https://solana.com";
 
 export const config = {
   siteMetadata: {
     title: `Solana`,
     description: `Fast. Decentralized. Scalable. Energy efficient. Solana can power thousands of transactions per second.`,
-    socialShare: `https://solana.com/social/solana.jpg`,
+    socialShare: DEFAULT_SOCIAL_IMAGE_URL,
     author: `@solana`,
     googleAnalytics: {
       trackingId: `G-94WS0LRZRS`,
@@ -18,10 +24,12 @@ export const config = {
       ? `http://localhost:3000`
       : (process.env.VERCEL_ENV != "production" && !!process.env.VERCEL_URL
           ? `https://${process.env.VERCEL_URL}`
-          : `https://solana.com`) || `https://solana.com`,
+          : PUBLIC_SITE_URL) || PUBLIC_SITE_URL,
 
-  shareImageWidth: 1000,
-  shareImageHeight: 523,
+  publicUrl: PUBLIC_SITE_URL,
+
+  shareImageWidth: DEFAULT_SOCIAL_IMAGE.width,
+  shareImageHeight: DEFAULT_SOCIAL_IMAGE.height,
   social: {
     twitter: {
       name: `solana`,

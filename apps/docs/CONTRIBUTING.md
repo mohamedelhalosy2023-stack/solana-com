@@ -87,7 +87,7 @@ up as a red CI run rather than rotted documentation.
 
 Run `pnpm --filter @workspace/docs-examples test` locally — needs the `surfpool`
 CLI installed via
-`cargo install --git https://github.com/txtx/surfpool --locked surfpool-cli`.
+`cargo install --git https://github.com/solana-foundation/surfpool --locked surfpool-cli`.
 
 ### Rust
 
@@ -106,21 +106,6 @@ Each Rust example is a member crate of the Cargo workspace at
 Run locally with `bash packages/docs-examples/scripts/run-rust-examples.sh` —
 spawns surfpool, ensures the fixture keypair exists, and cargo-runs every binary
 in the workspace.
-
-## Builder API
-
-The blog content located at `/news` and most of the landing pages under
-`/solutions` utilize Builder.io, a headless CMS integrated with our current
-Next.js project.
-
-```conf
-NEXT_PUBLIC_BUILDER_API_KEY=""
-NEXT_PUBLIC_BUILDER_NEWS_SETTINGS_ID=""
-```
-
-> Note from Builder [docs](https://www.builder.io/c/docs/using-your-api-key):
-> The Builder Public API Key is public, meaning that you don't have to keep it
-> private.
 
 ## RPC providers
 

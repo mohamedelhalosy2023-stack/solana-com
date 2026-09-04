@@ -2,6 +2,9 @@ import createNextIntlMiddleware from "next-intl/middleware";
 import { defineRouting } from "next-intl/routing";
 import { NextResponse, type NextRequest } from "next/server";
 import { locales, defaultLocale } from "./config";
+import { getLocaleFromPathname } from "./pathname";
+
+export { getLocaleFromPathname } from "./pathname";
 
 export const SHARED_LOCALE_COOKIE = "SOLANA_LOCALE";
 const SHARED_LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
@@ -39,11 +42,6 @@ export const routingWithoutDetection = defineRouting({
   localeDetection: false,
 });
 
-export function getLocaleFromPathname(pathname: string) {
-  const [, firstSegment] = pathname.split("/");
-  return firstSegment && locales.includes(firstSegment) ? firstSegment : null;
-}
-
 export function getPreferredLocaleCookie(value?: string | null) {
   return value && locales.includes(value) ? value : null;
 }
@@ -68,7 +66,7 @@ export function buildSharedLocaleCookie(locale: string) {
   ].join("; ");
 }
 
-function getEffectiveOrigin(req: NextRequest) {
+export function getEffectiveOrigin(req: NextRequest) {
   const url = req.nextUrl.clone();
   const forwardedHost = req.headers.get("x-forwarded-host");
   const forwardedProto = req.headers.get("x-forwarded-proto");
@@ -82,6 +80,36 @@ function getEffectiveOrigin(req: NextRequest) {
   }
 
   return url;
+}
+
+export function getFixedProxiedLocation({
+  currentHost,
+  forwardedHost,
+  forwardedProto,
+  location,
+}: {
+  currentHost: string;
+  forwardedHost: string;
+  forwardedProto?: string | null;
+  location: string;
+}) {
+  try {
+    const locationUrl = new URL(location);
+
+    if (locationUrl.host !== currentHost) {
+      return location;
+    }
+
+    locationUrl.host = forwardedHost;
+
+    if (forwardedProto) {
+      locationUrl.protocol = `${forwardedProto}:`;
+    }
+
+    return locationUrl.toString();
+  } catch {
+    return location.replace(currentHost, forwardedHost);
+  }
 }
 
 function getResponseLocale(req: NextRequest, response: Response) {
@@ -180,7 +208,12 @@ export function createMiddleware<
 
     // Fix redirect URL if present
     if (location) {
-      const fixedLocation = location.replace(currentHost, forwardedHost);
+      const fixedLocation = getFixedProxiedLocation({
+        currentHost,
+        forwardedHost,
+        forwardedProto: req.headers.get("x-forwarded-proto"),
+        location,
+      });
       fixedResponse.headers.set("location", fixedLocation);
     }
 
