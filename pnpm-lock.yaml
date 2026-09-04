@@ -1,8 +1,8 @@
 lockfileVersion: "9.0"
 
 settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
+  autoInstallPeers: true 
+  excludeLinksFromLockfile: false 
 
 catalogs:
   default:
@@ -1137,7 +1137,7 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(@solana/addresses@6.9.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/codecs-core@6.9.0(typescript@5.8.3))(@solana/codecs-strings@6.9.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/keys@6.9.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/signers@6.9.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/transactions@6.9.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))
       "@solana/kit":
-        specifier: ^6.8.0
+        specifier: ^6.9.0
         version: 6.9.0(bufferutil@4.1.0)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)(utf-8-validate@6.0.6)
       "@solana/kit-plugin-rpc":
         specifier: ^0.11.1
@@ -1148,9 +1148,11 @@ importers:
       "@solana/spl-memo":
         specifier: ^0.2.5
         version: 0.2.5(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@6.0.6))
+
       "@solana/spl-token-metadata":
         specifier: ^0.1.6
         version: 0.1.6(@solana/web3.js@1.98.4(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@6.0.6))(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)
+chore/migrate-spl-token-to-kit
       "@solana/web3.js":
         specifier: ^1.98.4
         version: 1.98.4(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@6.0.6)
@@ -1438,7 +1440,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
       graphql:
-        optional: true
+        optional: true 
 
   "@75lb/deep-merge@1.1.4":
     resolution:
@@ -1450,7 +1452,7 @@ packages:
       "@75lb/nature": latest
     peerDependenciesMeta:
       "@75lb/nature":
-        optional: true
+        optional: true 
 
   "@adobe/css-tools@4.4.4":
     resolution:
@@ -1494,7 +1496,7 @@ packages:
       zod: ^3.23.8
     peerDependenciesMeta:
       zod:
-        optional: true
+        optional: true 
 
   "@ai-sdk/ui-utils@1.2.11":
     resolution:
@@ -3678,9 +3680,9 @@ packages:
       react: 18.x.x || 19.x.x
     peerDependenciesMeta:
       "@types/mdx":
-        optional: true
+        optional: true 
       "@types/react":
-        optional: true
+        optional: true 
 
   "@graphql-typed-document-node/core@3.2.0":
     resolution:
@@ -4041,7 +4043,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/confirm@5.1.21":
     resolution:
@@ -4053,7 +4055,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/core@10.3.2":
     resolution:
@@ -4065,7 +4067,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/editor@4.2.23":
     resolution:
@@ -4077,7 +4079,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/expand@4.0.23":
     resolution:
@@ -4089,7 +4091,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/external-editor@1.0.3":
     resolution:
@@ -4101,7 +4103,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/figures@1.0.15":
     resolution:
@@ -4120,7 +4122,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/number@3.0.23":
     resolution:
@@ -4132,7 +4134,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/password@4.0.23":
     resolution:
@@ -4144,7 +4146,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/prompts@7.10.1":
     resolution:
@@ -4156,7 +4158,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/rawlist@4.1.11":
     resolution:
@@ -4168,7 +4170,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/search@3.2.2":
     resolution:
@@ -4180,7 +4182,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/select@4.4.2":
     resolution:
@@ -4192,7 +4194,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@inquirer/type@3.0.10":
     resolution:
@@ -4204,7 +4206,7 @@ packages:
       "@types/node": ">=18"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   "@internationalized/date@3.12.2":
     resolution:
@@ -4293,11 +4295,11 @@ packages:
       react-stately: 3.48.0
     peerDependenciesMeta:
       next:
-        optional: true
+        optional: true 
       react-aria:
-        optional: true
+        optional: true 
       react-stately:
-        optional: true
+        optional: true 
 
   "@keystatic/core@0.6.0":
     resolution:
@@ -4312,11 +4314,11 @@ packages:
       react-stately: 3.48.0
     peerDependenciesMeta:
       "@keystar/ui":
-        optional: true
+        optional: true 
       react-aria:
-        optional: true
+        optional: true 
       react-stately:
-        optional: true
+        optional: true 
 
   "@keystatic/next@5.0.4":
     resolution:
@@ -4340,9 +4342,9 @@ packages:
       react: "*"
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       react:
-        optional: true
+        optional: true 
 
   "@mdx-js/loader@3.1.1":
     resolution:
@@ -4353,7 +4355,7 @@ packages:
       webpack: ">=5"
     peerDependenciesMeta:
       webpack:
-        optional: true
+        optional: true 
 
   "@mdx-js/mdx@3.1.1":
     resolution:
@@ -4410,9 +4412,9 @@ packages:
       "@mdx-js/react": ">=0.15.0"
     peerDependenciesMeta:
       "@mdx-js/loader":
-        optional: true
+        optional: true 
       "@mdx-js/react":
-        optional: true
+        optional: true 
 
   "@next/swc-darwin-arm64@15.5.21":
     resolution:
@@ -5122,9 +5124,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-arrow@1.1.1":
     resolution:
@@ -5138,9 +5140,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-arrow@1.1.2":
     resolution:
@@ -5154,9 +5156,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-arrow@1.1.7":
     resolution:
@@ -5170,9 +5172,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-avatar@1.1.11":
     resolution:
@@ -5186,9 +5188,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-avatar@1.1.2":
     resolution:
@@ -5202,9 +5204,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-checkbox@1.1.3":
     resolution:
@@ -5218,9 +5220,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-collapsible@1.1.12":
     resolution:
@@ -5234,9 +5236,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-collection@1.1.7":
     resolution:
@@ -5250,9 +5252,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-compose-refs@1.1.1":
     resolution:
@@ -5264,7 +5266,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-compose-refs@1.1.2":
     resolution:
@@ -5276,7 +5278,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-context@1.1.1":
     resolution:
@@ -5288,7 +5290,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-context@1.1.2":
     resolution:
@@ -5300,7 +5302,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-context@1.1.3":
     resolution:
@@ -5312,7 +5314,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-dialog@1.1.15":
     resolution:
@@ -5326,9 +5328,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-direction@1.1.0":
     resolution:
@@ -5340,7 +5342,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-direction@1.1.1":
     resolution:
@@ -5352,7 +5354,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-dismissable-layer@1.1.11":
     resolution:
@@ -5366,9 +5368,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-dismissable-layer@1.1.3":
     resolution:
@@ -5382,9 +5384,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-dismissable-layer@1.1.5":
     resolution:
@@ -5398,9 +5400,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-dropdown-menu@2.1.16":
     resolution:
@@ -5414,9 +5416,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-focus-guards@1.1.1":
     resolution:
@@ -5428,7 +5430,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-focus-guards@1.1.3":
     resolution:
@@ -5440,7 +5442,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-focus-scope@1.1.2":
     resolution:
@@ -5454,9 +5456,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-focus-scope@1.1.7":
     resolution:
@@ -5470,9 +5472,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-hover-card@1.1.15":
     resolution:
@@ -5486,9 +5488,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-id@1.1.0":
     resolution:
@@ -5500,7 +5502,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-id@1.1.1":
     resolution:
@@ -5512,7 +5514,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-label@2.1.8":
     resolution:
@@ -5526,9 +5528,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-menu@2.1.16":
     resolution:
@@ -5542,9 +5544,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-navigation-menu@1.2.14":
     resolution:
@@ -5558,9 +5560,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-popover@1.1.15":
     resolution:
@@ -5574,9 +5576,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-popover@1.1.6":
     resolution:
@@ -5590,9 +5592,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-popper@1.2.1":
     resolution:
@@ -5606,9 +5608,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-popper@1.2.2":
     resolution:
@@ -5622,9 +5624,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-popper@1.2.8":
     resolution:
@@ -5638,9 +5640,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-portal@1.1.3":
     resolution:
@@ -5654,9 +5656,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-portal@1.1.4":
     resolution:
@@ -5670,9 +5672,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-portal@1.1.9":
     resolution:
@@ -5686,9 +5688,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-presence@1.1.2":
     resolution:
@@ -5702,9 +5704,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-presence@1.1.5":
     resolution:
@@ -5718,9 +5720,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-primitive@2.0.1":
     resolution:
@@ -5734,9 +5736,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-primitive@2.0.2":
     resolution:
@@ -5750,9 +5752,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-primitive@2.1.3":
     resolution:
@@ -5766,9 +5768,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-primitive@2.1.4":
     resolution:
@@ -5782,9 +5784,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-roving-focus@1.1.11":
     resolution:
@@ -5798,9 +5800,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-scroll-area@1.2.10":
     resolution:
@@ -5814,9 +5816,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-scroll-area@1.2.2":
     resolution:
@@ -5830,9 +5832,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-select@2.2.6":
     resolution:
@@ -5846,9 +5848,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-slot@1.1.1":
     resolution:
@@ -5860,7 +5862,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-slot@1.1.2":
     resolution:
@@ -5872,7 +5874,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-slot@1.2.3":
     resolution:
@@ -5884,7 +5886,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-slot@1.2.4":
     resolution:
@@ -5896,7 +5898,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-tabs@1.1.13":
     resolution:
@@ -5910,9 +5912,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-toggle-group@1.1.11":
     resolution:
@@ -5926,9 +5928,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-toggle@1.1.10":
     resolution:
@@ -5942,9 +5944,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-tooltip@1.1.6":
     resolution:
@@ -5958,9 +5960,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-tooltip@1.2.8":
     resolution:
@@ -5974,9 +5976,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-callback-ref@1.1.0":
     resolution:
@@ -5988,7 +5990,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-callback-ref@1.1.1":
     resolution:
@@ -6000,7 +6002,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-controllable-state@1.1.0":
     resolution:
@@ -6012,7 +6014,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-controllable-state@1.2.2":
     resolution:
@@ -6024,7 +6026,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-effect-event@0.0.2":
     resolution:
@@ -6036,7 +6038,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-escape-keydown@1.1.0":
     resolution:
@@ -6048,7 +6050,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-escape-keydown@1.1.1":
     resolution:
@@ -6060,7 +6062,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-is-hydrated@0.1.0":
     resolution:
@@ -6072,7 +6074,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-layout-effect@1.1.0":
     resolution:
@@ -6084,7 +6086,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-layout-effect@1.1.1":
     resolution:
@@ -6096,7 +6098,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-previous@1.1.0":
     resolution:
@@ -6108,7 +6110,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-previous@1.1.1":
     resolution:
@@ -6120,7 +6122,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-rect@1.1.0":
     resolution:
@@ -6132,7 +6134,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-rect@1.1.1":
     resolution:
@@ -6144,7 +6146,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-size@1.1.0":
     resolution:
@@ -6156,7 +6158,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-use-size@1.1.1":
     resolution:
@@ -6168,7 +6170,7 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-visually-hidden@1.1.1":
     resolution:
@@ -6182,9 +6184,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/react-visually-hidden@1.2.3":
     resolution:
@@ -6198,9 +6200,9 @@ packages:
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
       "@types/react-dom":
-        optional: true
+        optional: true 
 
   "@radix-ui/rect@1.1.0":
     resolution:
@@ -6298,7 +6300,7 @@ packages:
       rollup: ^2.68.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
-        optional: true
+        optional: true 
 
   "@rollup/pluginutils@5.3.0":
     resolution:
@@ -6310,7 +6312,7 @@ packages:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
-        optional: true
+        optional: true 
 
   "@rollup/rollup-android-arm-eabi@4.59.0":
     resolution:
@@ -6657,7 +6659,7 @@ packages:
         integrity: sha512-n2ZNb+5Z6AZKQSI0SusQ7ZzFL637mfw3Xh4C3PEyVSn9LiF683fX0TTq8OeGmNZQS4maYfS95IFD+XpydU0dEA==,
       }
     engines: { node: ">= 10" }
-    hasBin: true
+    hasBin: true 
 
   "@sentry/core@10.11.0":
     resolution:
@@ -6795,7 +6797,7 @@ packages:
         integrity: sha512-3NgmNyH3l/Hv6EvsWJbsvpcpUba6R8IREQ83nH83cyakCw7uM1arZKNfHwv1Wz6jgqrF/j4x5ELvR6PnK9nTcA==,
       }
     engines: { node: ">= 8.0.0" }
-    hasBin: true
+    hasBin: true 
 
   "@sindresorhus/slugify@1.1.2":
     resolution:
@@ -6892,7 +6894,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/accounts@6.9.0":
     resolution:
@@ -6904,7 +6906,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/addresses@5.5.1":
     resolution:
@@ -6916,7 +6918,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/addresses@6.9.0":
     resolution:
@@ -6928,7 +6930,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/assertions@5.5.1":
     resolution:
@@ -6940,7 +6942,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/assertions@6.9.0":
     resolution:
@@ -6952,7 +6954,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/buffer-layout-utils@0.3.0":
     resolution:
@@ -6995,7 +6997,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-core@6.9.0":
     resolution:
@@ -7007,7 +7009,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-data-structures@2.0.0-rc.1":
     resolution:
@@ -7027,7 +7029,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-data-structures@6.9.0":
     resolution:
@@ -7039,7 +7041,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-numbers@2.0.0-rc.1":
     resolution:
@@ -7068,7 +7070,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-numbers@6.9.0":
     resolution:
@@ -7080,7 +7082,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-strings@2.0.0-rc.1":
     resolution:
@@ -7102,9 +7104,9 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       fastestsmallesttextencoderdecoder:
-        optional: true
+        optional: true 
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs-strings@6.9.0":
     resolution:
@@ -7117,9 +7119,9 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       fastestsmallesttextencoderdecoder:
-        optional: true
+        optional: true 
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs@2.0.0-rc.1":
     resolution:
@@ -7139,7 +7141,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/codecs@6.9.0":
     resolution:
@@ -7151,14 +7153,14 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/errors@2.0.0-rc.1":
     resolution:
       {
         integrity: sha512-ejNvQ2oJ7+bcFAYWj225lyRkHnixuAeb7RQCixm+5mH4n1IA4Qya/9Bmfy5RAAHQzxK43clu3kZmL5eF9VGtYQ==,
       }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       typescript: ">=5"
 
@@ -7168,7 +7170,7 @@ packages:
         integrity: sha512-66RI9MAbwYV0UtP7kGcTBVLxJgUxoZGm8Fbc0ah+lGiAw17Gugco6+9GrJCV83VyF2mDWyYnYM9qdI3yjgpnaQ==,
       }
     engines: { node: ">=20.18.0" }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       typescript: ">=5.3.3"
 
@@ -7178,12 +7180,12 @@ packages:
         integrity: sha512-vFO3p+S7HoyyrcAectnXbdsMfwUzY2zYFUc2DEe5BwpiE9J1IAxPBGjOWO6hL1bbYdBrlmjNx8DXCslqS+Kcmg==,
       }
     engines: { node: ">=20.18.0" }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/errors@6.9.0":
     resolution:
@@ -7191,12 +7193,12 @@ packages:
         integrity: sha512-7i+b07KMnkbHvFlz7uWade3jvyc22UmVm8o9taxPK8YV3JNM/NkS8oQFvMac2MIaLPAlEs7I8MHyVLUal1yY4g==,
       }
     engines: { node: ">=20.18.0" }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/fast-stable-stringify@6.9.0":
     resolution:
@@ -7208,7 +7210,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/fixed-points@6.9.0":
     resolution:
@@ -7220,7 +7222,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/functional@6.9.0":
     resolution:
@@ -7232,7 +7234,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/instruction-plans@6.9.0":
     resolution:
@@ -7244,7 +7246,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/instructions@6.9.0":
     resolution:
@@ -7256,7 +7258,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/keychain-core@1.3.0":
     resolution:
@@ -7329,7 +7331,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/nominal-types@5.5.1":
     resolution:
@@ -7341,7 +7343,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/nominal-types@6.9.0":
     resolution:
@@ -7353,7 +7355,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/offchain-messages@6.9.0":
     resolution:
@@ -7365,7 +7367,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/options@2.0.0-rc.1":
     resolution:
@@ -7385,7 +7387,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/options@6.9.0":
     resolution:
@@ -7397,7 +7399,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/plugin-core@6.9.0":
     resolution:
@@ -7409,7 +7411,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/plugin-interfaces@6.9.0":
     resolution:
@@ -7421,7 +7423,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/program-client-core@6.9.0":
     resolution:
@@ -7433,7 +7435,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/programs@6.9.0":
     resolution:
@@ -7445,7 +7447,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/promises@6.9.0":
     resolution:
@@ -7457,7 +7459,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-api@6.9.0":
     resolution:
@@ -7469,7 +7471,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-parsed-types@6.9.0":
     resolution:
@@ -7481,7 +7483,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-spec-types@5.5.1":
     resolution:
@@ -7493,7 +7495,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-spec-types@6.9.0":
     resolution:
@@ -7505,7 +7507,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-spec@5.5.1":
     resolution:
@@ -7517,7 +7519,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-spec@6.9.0":
     resolution:
@@ -7529,7 +7531,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-subscriptions-api@6.9.0":
     resolution:
@@ -7541,7 +7543,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-subscriptions-channel-websocket@6.9.0":
     resolution:
@@ -7553,7 +7555,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-subscriptions-spec@6.9.0":
     resolution:
@@ -7565,7 +7567,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-subscriptions@6.9.0":
     resolution:
@@ -7577,7 +7579,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-transformers@6.9.0":
     resolution:
@@ -7589,7 +7591,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-transport-http@6.9.0":
     resolution:
@@ -7601,7 +7603,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-types@5.5.1":
     resolution:
@@ -7613,7 +7615,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc-types@6.9.0":
     resolution:
@@ -7625,7 +7627,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/rpc@6.9.0":
     resolution:
@@ -7637,7 +7639,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/signers@6.9.0":
     resolution:
@@ -7649,7 +7651,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/spl-memo@0.2.5":
     resolution:
@@ -7697,7 +7699,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/sysvars@5.5.1":
     resolution:
@@ -7709,7 +7711,7 @@ packages:
       typescript: ^5.0.0
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/sysvars@6.9.0":
     resolution:
@@ -7721,7 +7723,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/transaction-confirmation@6.9.0":
     resolution:
@@ -7733,7 +7735,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/transaction-messages@6.9.0":
     resolution:
@@ -7745,7 +7747,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/transactions@6.9.0":
     resolution:
@@ -7757,7 +7759,7 @@ packages:
       typescript: ">=5.4.0"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   "@solana/web3.js@1.98.4":
     resolution:
@@ -8021,7 +8023,7 @@ packages:
       "@swc/helpers": ">=0.5.17"
     peerDependenciesMeta:
       "@swc/helpers":
-        optional: true
+        optional: true 
 
   "@swc/counter@0.1.3":
     resolution:
@@ -8213,6 +8215,7 @@ packages:
         integrity: sha512-1YBOJfRHV4sXUmWsFSf5rQor4Ss82G8dQWLRbnk3GA4jeP8hQt1hxXh0tmflpC0dz3VgEv/1+qwPyLeWkQuPFA==,
       }
 
+  "@solana/buffer-layout@4.0.1":
   "@testing-library/dom@10.4.1":
     resolution:
       {
@@ -8221,12 +8224,14 @@ packages:
     engines: { node: ">=18" }
 
   "@testing-library/jest-dom@6.8.0":
+chore/migrate-spl-token-to-kit
     resolution:
       {
         integrity: sha512-WgXcWzVM6idy5JaftTVC8Vs83NKRmGJz4Hqs4oyOuO2J4r/y79vvKZsb+CaGyCSEbUPI6OsewfPd0G1A0/TUZQ==,
       }
     engines: { node: ">=14", npm: ">=6", yarn: ">=1" }
 
+  "@solana/codecs-core@2.3.0":
   "@testing-library/react@16.3.2":
     resolution:
       {
@@ -8246,6 +8251,7 @@ packages:
         optional: true
 
   "@toeverything/y-indexeddb@0.10.0-canary.9":
+ chore/migrate-spl-token-to-kit
     resolution:
       {
         integrity: sha512-3hzktNuOaXut/RgRjKNeqQura1zeYF+tSLSlWDc0rDBOrEpwD/1EOpKVCbgtl8ke7f4oinLfgBNk4HcwqaQUYQ==,
@@ -8259,6 +8265,7 @@ packages:
         integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==,
       }
 
+  "@solana/codecs-data-structures@6.9.0":
   "@ts-gql/tag@0.7.3":
     resolution:
       {
@@ -8269,11 +8276,13 @@ packages:
         ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || 14 || 15 || 16
 
   "@tsconfig/node10@1.0.11":
+     chore/migrate-spl-token-to-kit
     resolution:
       {
         integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==,
       }
 
+  "@solana/codecs-numbers@2.3.0":
   "@tsconfig/node12@1.0.11":
     resolution:
       {
@@ -8292,15 +8301,7 @@ packages:
         integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==,
       }
 
-  "@turbo/darwin-64@2.10.2":
-    resolution:
-      {
-        integrity: sha512-wBM3ObqOWnKUDmg7QfUFDkDHPFUAJmrYlYqmEM8jMPAPA/I6wRJIbWimeQUqhOiQ8xPKhzyWM+xaiUP0wz8FEQ==,
-      }
-    cpu: [x64]
-    os: [darwin]
-
-  "@turbo/darwin-arm64@2.10.2":
+  "@solana/codecs-strings@6.9.0":
     resolution:
       {
         integrity: sha512-/Cq0joWnuMjDPfhjbFP4sv+C/7gkQ415zlaO4XUzD5EZxbtrKgXKvuuydMvogG8GeUnN1aDltW71RlmEfpjbyw==,
@@ -8308,12 +8309,13 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  "@solana/codecs@6.9.0":
   "@turbo/gen@2.9.15":
     resolution:
       {
         integrity: sha512-ywed2U3ku8oPLpJKmwSpn82Tl7WCHo5W5dVyj0jj100fk3PexlaJt6Rr6mgk+62XjuiLVErSnxtFLwHUkm4erg==,
       }
-    hasBin: true
+    hasBin: true 
 
   "@turbo/linux-64@2.10.2":
     resolution:
@@ -8323,6 +8325,7 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  "@solana/errors@2.3.0":
   "@turbo/linux-arm64@2.10.2":
     resolution:
       {
@@ -8420,13 +8423,7 @@ packages:
         integrity: sha512-LFYWWd8nwfwEmTZG9PfQxd17HbNPksHBiJHaKuY1XeqscXacsS2tyoo6OdRsjf+NQYeB6XrNL3a25E3gH69lcg==,
       }
 
-  "@types/d3-color@3.1.0":
-    resolution:
-      {
-        integrity: sha512-HKuicPHJuvPgCD+np6Se9MQvS6OCbJmOjGvylzMJRlDwUXjKTTXs6Pwgk79O09Vj/ho3u1ofXnhFOaEWWPrlwA==,
-      }
-
-  "@types/d3-color@3.1.3":
+  "@solana/options@6.9.0":
     resolution:
       {
         integrity: sha512-iO90scth9WAbmgv7ogoq57O9YpKmFBbmoEoCHDB2xMBY0+/KVrqAaCDyCE16dUspeOvIxFFRI+0sEtqDqy2b4A==,
@@ -8546,6 +8543,7 @@ packages:
         integrity: sha512-oUzyO1/Zm6rsxKRHA1vH0NEDG58HrT5icx/azi9MF1TWdtttWl0UIUsjEQBBh+SIkrpd21ZjEv7ptxWys1ncsg==,
       }
 
+  "@solana/subscribable@6.9.0":
   "@types/d3-random@3.0.3":
     resolution:
       {
@@ -9195,9 +9193,9 @@ packages:
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       msw:
-        optional: true
+        optional: true 
       vite:
-        optional: true
+        optional: true 
 
   "@vitest/pretty-format@4.1.8":
     resolution:
@@ -9482,7 +9480,7 @@ packages:
         integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==,
       }
     engines: { node: ">=0.4.0" }
-    hasBin: true
+    hasBin: true 
 
   acorn@8.16.0:
     resolution:
@@ -9490,7 +9488,7 @@ packages:
         integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==,
       }
     engines: { node: ">=0.4.0" }
-    hasBin: true
+    hasBin: true 
 
   agent-base@6.0.2:
     resolution:
@@ -9524,7 +9522,7 @@ packages:
       zod: ^3.23.8
     peerDependenciesMeta:
       react:
-        optional: true
+        optional: true 
 
   ajv-formats@2.1.1:
     resolution:
@@ -9535,7 +9533,7 @@ packages:
       ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
-        optional: true
+        optional: true 
 
   ajv-keywords@5.1.0:
     resolution:
@@ -9629,7 +9627,7 @@ packages:
       {
         integrity: sha512-3gvCX0GDawWz6KFNC28p65U+zGh/LZ6ZNKWNu74N6CQlKzxeoWHpi4CgEQsgRSEMuyrIIXi1Ea2syja7dwcHvw==,
       }
-    hasBin: true
+    hasBin: true 
 
   arg@4.1.3:
     resolution:
@@ -9757,7 +9755,7 @@ packages:
       {
         integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==,
       }
-    hasBin: true
+    hasBin: true 
 
   async-function@1.0.0:
     resolution:
@@ -9790,7 +9788,7 @@ packages:
         integrity: sha512-FMhOoZV4+qR6aTUALKX2rEqGG+oyATvwBt9IIzVR5rMa2HRWPkxf+P+PAJLD1I/H5/II+HuZcBJYEFBpq39ong==,
       }
     engines: { node: ^10 || ^12 || >=14 }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       postcss: 8.5.18
 
@@ -9888,7 +9886,7 @@ packages:
         integrity: sha512-AjYpR78kDWAY3Efj+cDTFH9t9SCoL7OoTp1BOb0mQV7S+6CiLwnWM3FyxhJtdPufDFKzmCSFoUncKjWgJEZTCQ==,
       }
     engines: { node: ">=6.0.0" }
-    hasBin: true
+    hasBin: true 
 
   basic-ftp@5.3.1:
     resolution:
@@ -9979,7 +9977,7 @@ packages:
         integrity: sha512-4jYpcjabC606xJ3kw2QwGEZKX0Aw7sgQdZCvIK9dhVSPh76BKo+C+btT1RRofH7B+8iNpEbgGNVWiLki5q93yg==,
       }
     engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
-    hasBin: true
+    hasBin: true 
 
   browserslist@4.28.6:
     resolution:
@@ -9987,7 +9985,7 @@ packages:
         integrity: sha512-FQBYNK15VMslhLHpA7+n+n1GOlF1kId2xcCg7/j95f24AOF6VDYMNH4mFxF7KuaTdv627faazpOAjFzMrfJOUw==,
       }
     engines: { node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7 }
-    hasBin: true
+    hasBin: true 
 
   bs58@4.0.1:
     resolution:
@@ -10458,6 +10456,7 @@ packages:
         integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==,
       }
 
+  bignumber.js@9.3.1:
   concat-stream@2.0.0:
     resolution:
       {
@@ -10478,14 +10477,7 @@ packages:
       }
     engines: { node: ^14.18.0 || >=16.10.0 }
 
-  content-type@1.0.5:
-    resolution:
-      {
-        integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==,
-      }
-    engines: { node: ">= 0.6" }
-
-  convert-source-map@1.9.0:
+  bip39@3.1.0:
     resolution:
       {
         integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==,
@@ -10545,7 +10537,7 @@ packages:
       typescript: ">=4.9.5"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   countup.js@2.9.0:
     resolution:
@@ -10683,7 +10675,7 @@ packages:
         integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==,
       }
     engines: { node: ">=4" }
-    hasBin: true
+    hasBin: true 
 
   csso@4.2.0:
     resolution:
@@ -10830,7 +10822,7 @@ packages:
         integrity: sha512-UG6OvdI5afDIFP9w4G0mNq50dSOsXHJaRE8arAS5o9ApWnIElp8GZw1Dun8vP8OyHOZ/QJUKUJwxiiCCnUwm+Q==,
       }
     engines: { node: ">=12" }
-    hasBin: true
+    hasBin: true 
 
   d3-ease@3.0.1:
     resolution:
@@ -11033,6 +11025,7 @@ packages:
       }
     engines: { node: ">=18" }
 
+  commander@13.1.0:
   data-view-buffer@1.0.2:
     resolution:
       {
@@ -11095,7 +11088,7 @@ packages:
       supports-color: "*"
     peerDependenciesMeta:
       supports-color:
-        optional: true
+        optional: true 
 
   debug@4.4.3:
     resolution:
@@ -11107,7 +11100,7 @@ packages:
       supports-color: "*"
     peerDependenciesMeta:
       supports-color:
-        optional: true
+        optional: true 
 
   decimal.js@10.6.0:
     resolution:
@@ -11195,7 +11188,7 @@ packages:
         integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==,
       }
     engines: { node: ">=0.10" }
-    hasBin: true
+    hasBin: true 
 
   detect-libc@2.1.2:
     resolution:
@@ -11247,7 +11240,7 @@ packages:
       {
         integrity: sha512-GYqKi1aH7PJXxdhTeZBFrg8vUBeKXi+cNprXsC1kpJcbcVnV9wBsrOu1cQEdG0WeQwlfHiy3XvnKfIrJ2R0NzQ==,
       }
-    hasBin: true
+    hasBin: true 
 
   dlv@1.1.3:
     resolution:
@@ -11600,7 +11593,7 @@ packages:
         integrity: sha512-HrJrvZv5ayxBzPfwphOoNzkzOIIlifzk0KJrGK2c8R4+LKpMtpYLQeUdjnwjWv/LZlkH2laZk+4w78pi99D4Vw==,
       }
     engines: { node: ">=18" }
-    hasBin: true
+    hasBin: true 
 
   escalade@3.2.0:
     resolution:
@@ -11642,14 +11635,14 @@ packages:
         integrity: sha512-2NlIDTwUWJN0mRPQOdtQBzbUHvdGY2P1VXSyU83Q3xKxM7WHX2Ql8dKq782Q9TgQUNOLEzEYu9bzLNj1q88I5w==,
       }
     engines: { node: ">=6.0" }
-    hasBin: true
+    hasBin: true 
 
   eslint-config-prettier@10.1.8:
     resolution:
       {
         integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==,
       }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       eslint: ">=7.0.0"
 
@@ -11664,7 +11657,7 @@ packages:
       remark-lint-file-extension: "*"
     peerDependenciesMeta:
       remark-lint-file-extension:
-        optional: true
+        optional: true 
 
   eslint-plugin-mdx@3.7.0:
     resolution:
@@ -11750,12 +11743,12 @@ packages:
         integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       jiti: "*"
     peerDependenciesMeta:
       jiti:
-        optional: true
+        optional: true 
 
   espree@10.4.0:
     resolution:
@@ -11770,7 +11763,7 @@ packages:
         integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==,
       }
     engines: { node: ">=4" }
-    hasBin: true
+    hasBin: true 
 
   esquery@1.6.0:
     resolution:
@@ -11994,7 +11987,7 @@ packages:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
       picomatch:
-        optional: true
+        optional: true 
 
   fecha@4.2.3:
     resolution:
@@ -12170,11 +12163,11 @@ packages:
       react-dom: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       "@emotion/is-prop-valid":
-        optional: true
+        optional: true 
       react:
-        optional: true
+        optional: true 
       react-dom:
-        optional: true
+        optional: true 
 
   fs-minipass@3.0.3:
     resolution:
@@ -12221,28 +12214,28 @@ packages:
       react-router: 7.x.x
     peerDependenciesMeta:
       "@mixedbread/sdk":
-        optional: true
+        optional: true 
       "@oramacloud/client":
-        optional: true
+        optional: true 
       "@types/react":
-        optional: true
+        optional: true 
       algoliasearch:
-        optional: true
+        optional: true 
       next:
-        optional: true
+        optional: true 
       react:
-        optional: true
+        optional: true 
       react-dom:
-        optional: true
+        optional: true 
       react-router:
-        optional: true
+        optional: true 
 
   fumadocs-mdx@12.0.3:
     resolution:
       {
         integrity: sha512-OYqbHSmzkejG+iUMlZJJOitaVbCgBdo/REc/9Sq1WaZ1vq6bH9PCFU0cKJlRdHbQSGRfVg5EJJy5uKy5+iNFGQ==,
       }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       "@fumadocs/mdx-remote": ^1.4.0
       fumadocs-core: ^14.0.0 || ^15.0.0
@@ -12251,13 +12244,13 @@ packages:
       vite: 6.x.x || 7.x.x
     peerDependenciesMeta:
       "@fumadocs/mdx-remote":
-        optional: true
+        optional: true 
       next:
-        optional: true
+        optional: true 
       react:
-        optional: true
+        optional: true 
       vite:
-        optional: true
+        optional: true 
 
   fumadocs-ui@14.7.7:
     resolution:
@@ -12272,7 +12265,7 @@ packages:
       tailwindcss: ^3.4.14
     peerDependenciesMeta:
       tailwindcss:
-        optional: true
+        optional: true 
 
   function-bind@1.1.2:
     resolution:
@@ -12399,7 +12392,7 @@ packages:
       security vulnerabilities, which have been fixed in the current version.
       Please update. Support for old versions may be purchased (at exorbitant
       rates) by contacting i@izs.me
-    hasBin: true
+    hasBin: true 
 
   glob@13.0.6:
     resolution:
@@ -12709,7 +12702,7 @@ packages:
       react: 0.14 || 15 || 16 || 17 || 18 || 19
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   html-url-attributes@3.0.1:
     resolution:
@@ -12781,7 +12774,7 @@ packages:
         integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==,
       }
     engines: { node: ">=18" }
-    hasBin: true
+    hasBin: true 
 
   iconv-lite@0.6.3:
     resolution:
@@ -12797,6 +12790,7 @@ packages:
       }
     engines: { node: ">=0.10.0" }
 
+  fill-range@7.1.1:
   icu-minify@4.13.0:
     resolution:
       {
@@ -12848,7 +12842,7 @@ packages:
         integrity: sha512-IRqXKlaXwgSMAMtpNzZa1ZAe8m+Sa1770Dhk8VkSsP9LS+iHD62Zd8FQKs8fbPiagBE7BzoFX23cxFnwshpV6w==,
       }
     engines: { node: ">=16.x" }
-    hasBin: true
+    hasBin: true 
 
   immer@9.0.21:
     resolution:
@@ -13040,7 +13034,7 @@ packages:
         integrity: sha512-F+i2BKsFrH66iaUFc0woD8sLy8getkwTwtOBjvs56Cx4CgJDeKQeqfz8wAYiSb8JOprWhHH5p77PbmYCvvUuXQ==,
       }
     engines: { node: ">=8" }
-    hasBin: true
+    hasBin: true 
 
   is-empty@1.2.0:
     resolution:
@@ -13319,7 +13313,7 @@ packages:
         integrity: sha512-AauzHcUcqs8OBnCHOkJY280VaTiCm57AbuO7lqzcw7JapGj50BisE3xhksye4zlTSR1+1tAz67wLTl8tEH1obQ==,
       }
     engines: { node: ">=8" }
-    hasBin: true
+    hasBin: true 
 
   jest-worker@27.5.1:
     resolution:
@@ -13333,14 +13327,14 @@ packages:
       {
         integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==,
       }
-    hasBin: true
+    hasBin: true 
 
   jiti@2.6.1:
     resolution:
       {
         integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==,
       }
-    hasBin: true
+    hasBin: true 
 
   jose@4.15.9:
     resolution:
@@ -13372,14 +13366,14 @@ packages:
       {
         integrity: sha512-ttBQIIQPDeLjpPOohtUdXuXUVoA2uIB6fEH9HyJ7234s5mBJ5wTx20njxplLZQgLaOfpmPQA7X2t5AX6tIPbog==,
       }
-    hasBin: true
+    hasBin: true 
 
   js-yaml@4.3.0:
     resolution:
       {
         integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==,
       }
-    hasBin: true
+    hasBin: true 
 
   jsdom@26.1.0:
     resolution:
@@ -13391,7 +13385,7 @@ packages:
       canvas: ^3.0.0
     peerDependenciesMeta:
       canvas:
-        optional: true
+        optional: true 
 
   jsesc@3.0.2:
     resolution:
@@ -13399,7 +13393,7 @@ packages:
         integrity: sha512-xKqzzWXDttJuOcawBt4KnKHHIf5oQ/Cxax+0PWFG+DFDgHNAdi+TXECADI+RYiFUMmx8792xsMbbgXj4CwnP4g==,
       }
     engines: { node: ">=6" }
-    hasBin: true
+    hasBin: true 
 
   jsesc@3.1.0:
     resolution:
@@ -13407,7 +13401,7 @@ packages:
         integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==,
       }
     engines: { node: ">=6" }
-    hasBin: true
+    hasBin: true 
 
   json-bigint@1.0.0:
     resolution:
@@ -13483,7 +13477,7 @@ packages:
         integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==,
       }
     engines: { node: ">=6" }
-    hasBin: true
+    hasBin: true 
 
   jsondiffpatch@0.6.0:
     resolution:
@@ -13491,7 +13485,7 @@ packages:
         integrity: sha512-3QItJOXp2AP1uv7waBkao5nCvhEv+QmJAd38Ybq7wNI74Q+BBmnLn4EDKz6yI9xGAIQoUF87qHt+kc1IVxB4zQ==,
       }
     engines: { node: ^18.0.0 || >=20.0.0 }
-    hasBin: true
+    hasBin: true 
 
   jsonp@0.2.1:
     resolution:
@@ -13523,14 +13517,14 @@ packages:
       {
         integrity: sha512-Eeo8Ys1doU1z+x8AZsPpQu+p/QcZBI5PeOo7QGQdy2x2m0MU/hYagBbGOmXwr5KVbEfVuWv9LpnQWeehogurjg==,
       }
-    hasBin: true
+    hasBin: true 
 
   katex@0.17.0:
     resolution:
       {
         integrity: sha512-Vdw0ATsQ9V+LuegM/BTwQqV/6cTl5lbGcIrU+BCgLxyf6bo38ybOr372tuSIxir3CN720flu1meYR6XzNMwQnw==,
       }
-    hasBin: true
+    hasBin: true 
 
   keyv@4.5.4:
     resolution:
@@ -13588,7 +13582,7 @@ packages:
         integrity: sha512-DeXj9X5xDCjgKLU/7RR+/HQEVzuuEUiwldwOGsHK/sfAfELGWEyTcf0x+uOvCvK3O2zPmZePXWL85vtia6GyZw==,
       }
     engines: { node: ">=16" }
-    hasBin: true
+    hasBin: true 
 
   lightningcss-android-arm64@1.32.0:
     resolution:
@@ -13732,7 +13726,7 @@ packages:
         integrity: sha512-YUSOLq9VeRNAo/CTaVmhGDKG+LBtA8KF1X4K5+ykMSwWST1vDxJRB2kv2COgLb1fvpCo+A/y9A0G0znNVmdx4w==,
       }
     engines: { node: ">=18.12.0" }
-    hasBin: true
+    hasBin: true 
 
   listr2@8.3.3:
     resolution:
@@ -13841,7 +13835,7 @@ packages:
       {
         integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==,
       }
-    hasBin: true
+    hasBin: true 
 
   lower-case@2.0.2:
     resolution:
@@ -13927,7 +13921,7 @@ packages:
       {
         integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==,
       }
-    hasBin: true
+    hasBin: true 
 
   lz4-napi@2.9.1:
     resolution:
@@ -13974,7 +13968,7 @@ packages:
         integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==,
       }
     engines: { node: ">= 18" }
-    hasBin: true
+    hasBin: true 
 
   marked@16.4.2:
     resolution:
@@ -13982,7 +13976,7 @@ packages:
         integrity: sha512-TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==,
       }
     engines: { node: ">= 20" }
-    hasBin: true
+    hasBin: true 
 
   match-sorter@6.3.4:
     resolution:
@@ -14512,11 +14506,11 @@ packages:
       react-dom: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       "@emotion/is-prop-valid":
-        optional: true
+        optional: true 
       react:
-        optional: true
+        optional: true 
       react-dom:
-        optional: true
+        optional: true 
 
   mrmime@2.0.1:
     resolution:
@@ -14556,7 +14550,7 @@ packages:
         integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==,
       }
     engines: { node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1 }
-    hasBin: true
+    hasBin: true 
 
   nanoid@5.1.6:
     resolution:
@@ -14564,7 +14558,7 @@ packages:
         integrity: sha512-c7+7RQ+dMB5dPwwCp4ee1/iV/q2P6aK1mTZcfr1BTuVlyW9hJYiMPybJCcnBlQtuSmTIWNeazm/zqNoZSSElBg==,
       }
     engines: { node: ^18 || >=20 }
-    hasBin: true
+    hasBin: true 
 
   natural-compare@1.4.0:
     resolution:
@@ -14609,7 +14603,7 @@ packages:
       typescript: "*"
     peerDependenciesMeta:
       typescript:
-        optional: true
+        optional: true 
 
   next-mdx-remote@6.0.0:
     resolution:
@@ -14645,7 +14639,7 @@ packages:
         integrity: sha512-/TsdBtkWLhkl+NVL3Uqws2UphNd6IPzOtzSk1fHaf+0P7GQKLZDUytyhns/Ykbzdy9+YRjwG7ONvrHaaTDdFqQ==,
       }
     engines: { node: ^18.18.0 || ^19.8.0 || >= 20.0.0 }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       "@opentelemetry/api": ^1.1.0
       "@playwright/test": ^1.51.1
@@ -14655,13 +14649,13 @@ packages:
       sass: ^1.3.0
     peerDependenciesMeta:
       "@opentelemetry/api":
-        optional: true
+        optional: true 
       "@playwright/test":
-        optional: true
+        optional: true 
       babel-plugin-react-compiler:
-        optional: true
+        optional: true 
       sass:
-        optional: true
+        optional: true 
 
   no-case@3.0.4:
     resolution:
@@ -14700,7 +14694,7 @@ packages:
       encoding: ^0.1.0
     peerDependenciesMeta:
       encoding:
-        optional: true
+        optional: true 
 
   node-fetch@3.3.2:
     resolution:
@@ -14714,7 +14708,7 @@ packages:
       {
         integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==,
       }
-    hasBin: true
+    hasBin: true 
 
   node-int64@0.4.0:
     resolution:
@@ -14741,7 +14735,7 @@ packages:
         integrity: sha512-taM24ViiimT/XntxbPyJQzCG+p4EKOpgD3mxFwW38mGjVUrfERQOeY4EDHjdnptttfHuHQXFx+lTP08Q+mLa/w==,
       }
     engines: { node: ^14.17.0 || ^16.13.0 || >=18.0.0 }
-    hasBin: true
+    hasBin: true 
 
   normalize-package-data@6.0.2:
     resolution:
@@ -14819,15 +14813,15 @@ packages:
       react-router-dom: ^6 || ^7
     peerDependenciesMeta:
       "@remix-run/react":
-        optional: true
+        optional: true 
       "@tanstack/react-router":
-        optional: true
+        optional: true 
       next:
-        optional: true
+        optional: true 
       react-router:
-        optional: true
+        optional: true 
       react-router-dom:
-        optional: true
+        optional: true 
 
   nwsapi@2.2.22:
     resolution:
@@ -14955,19 +14949,19 @@ packages:
       {
         integrity: sha512-drt0lHZBd2lMyORckOXFPQTmnGLWSLt8VK0W9BhOKWpMFBEoHMoz5gxMPmVq5icp+sOrsbMnsmZTVHUlKvD1Ow==,
       }
-    hasBin: true
+    hasBin: true 
     peerDependencies:
       zod: ^3.23.8
     peerDependenciesMeta:
       zod:
-        optional: true
+        optional: true 
 
   opener@1.5.2:
     resolution:
       {
         integrity: sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==,
       }
-    hasBin: true
+    hasBin: true 
 
   openid-client@5.7.1:
     resolution:
@@ -15224,7 +15218,7 @@ packages:
         integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==,
       }
     engines: { node: ">=0.10" }
-    hasBin: true
+    hasBin: true 
 
   pify@2.3.0:
     resolution:
@@ -15252,7 +15246,7 @@ packages:
         integrity: sha512-yZkEtftgwS8CsfYo7nm0KE8jsvm6i/PTgVtB8DL726wNf6H2IMsDuxCpJj59KDaxCtSnrWan2AeDqM7JBaultg==,
       }
     engines: { node: ">=18" }
-    hasBin: true
+    hasBin: true 
 
   playwright@1.58.2:
     resolution:
@@ -15260,7 +15254,7 @@ packages:
         integrity: sha512-vA30H8Nvkq/cPBnNw4Q8TWz1EJyqgpuinBcHET0YVJVFldr8JDNiU9LaWAE1KqSkRYazuaBhTpB5ZzShOezQ6A==,
       }
     engines: { node: ">=18" }
-    hasBin: true
+    hasBin: true 
 
   po-parser@2.1.1:
     resolution:
@@ -15478,13 +15472,13 @@ packages:
       yaml: ^2.4.2
     peerDependenciesMeta:
       jiti:
-        optional: true
+        optional: true 
       postcss:
-        optional: true
+        optional: true 
       tsx:
-        optional: true
-      yaml:
-        optional: true
+        optional: true 
+      yaml: 
+        optional: true 
 
   postcss-logical@8.1.0:
     resolution:
@@ -15655,9 +15649,9 @@ packages:
       rrweb-snapshot: 2.0.0-alpha.17
     peerDependenciesMeta:
       "@rrweb/types":
-        optional: true
+        optional: true 
       rrweb-snapshot:
-        optional: true
+        optional: true 
 
   preact@10.27.3:
     resolution:
@@ -15678,7 +15672,7 @@ packages:
         integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==,
       }
     engines: { node: ">=14" }
-    hasBin: true
+    hasBin: true 
 
   pretty-format@27.5.1:
     resolution:
@@ -15725,7 +15719,7 @@ packages:
       bluebird: "*"
     peerDependenciesMeta:
       bluebird:
-        optional: true
+        optional: true 
 
   promise-retry@2.0.1:
     resolution:
@@ -15947,7 +15941,7 @@ packages:
       react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       react-dom:
-        optional: true
+        optional: true 
 
   react-is@16.13.1:
     resolution:
@@ -16013,7 +16007,7 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   react-remove-scroll@2.7.1:
     resolution:
@@ -16026,7 +16020,7 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   react-resizable-panels@2.1.9:
     resolution:
@@ -16108,7 +16102,7 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     peerDependenciesMeta:
       "@types/react":
-        optional: true
+        optional: true 
 
   react-svg@16.3.0:
     resolution:
@@ -16147,7 +16141,7 @@ packages:
       react-dom: ">=16.13"
     peerDependenciesMeta:
       react-dom:
-        optional: true
+        optional: true 
 
   react@19.2.1:
     resolution:
@@ -16305,7 +16299,7 @@ packages:
       {
         integrity: sha512-cnE+y8bz4NhMjISKbgeVJtqNbtf5QpjZP+Bslo+UqkIt9QPnX9q095eiRRASJG1/tz6dlNr6Z5NsBiWYokp6EQ==,
       }
-    hasBin: true
+    hasBin: true 
 
   rehype-raw@7.0.0:
     resolution:
@@ -16414,21 +16408,21 @@ packages:
         integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==,
       }
     engines: { node: ">= 0.4" }
-    hasBin: true
+    hasBin: true 
 
   resolve@1.22.8:
     resolution:
       {
         integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==,
       }
-    hasBin: true
+    hasBin: true 
 
   resolve@2.0.0-next.5:
     resolution:
       {
         integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==,
       }
-    hasBin: true
+    hasBin: true 
 
   restore-cursor@5.1.0:
     resolution:
@@ -16469,7 +16463,7 @@ packages:
         integrity: sha512-2oMpl67a3zCH9H79LeMcbDhXW/UmWG/y2zuqnF2jQq5uq9TbM9TVyXvA4+t+ne2IIkBdrLpAaRQAvo7YI/Yyeg==,
       }
     engines: { node: ">=18.0.0", npm: ">=8.0.0" }
-    hasBin: true
+    hasBin: true 
 
   rope-sequence@1.3.4:
     resolution:
@@ -16571,7 +16565,7 @@ packages:
         integrity: sha512-ffmsdbwqb3XeyR8jJR6KelIXARM9bFQe8A6Q3W4Klmwy5Ckd5gz7jgUNHo4UOqutU5Sk1DtKLbpDP0nLCg1xqQ==,
       }
     engines: { node: ">=14.0.0" }
-    hasBin: true
+    hasBin: true 
 
   satori@0.16.0:
     resolution:
@@ -16643,7 +16637,7 @@ packages:
       {
         integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==,
       }
-    hasBin: true
+    hasBin: true 
 
   semver@7.7.4:
     resolution:
@@ -16651,7 +16645,7 @@ packages:
         integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==,
       }
     engines: { node: ">=10" }
-    hasBin: true
+    hasBin: true 
 
   semver@7.8.5:
     resolution:
@@ -16659,7 +16653,7 @@ packages:
         integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==,
       }
     engines: { node: ">=10" }
-    hasBin: true
+    hasBin: true 
 
   server-only@0.0.1:
     resolution:
@@ -16704,7 +16698,7 @@ packages:
       "@types/node": "*"
     peerDependenciesMeta:
       "@types/node":
-        optional: true
+        optional: true 
 
   shebang-command@2.0.0:
     resolution:
@@ -17435,7 +17429,7 @@ packages:
       esbuild:
         optional: true
       html-minifier-terser:
-        optional: true
+        optional: true 
       lightningcss:
         optional: true
       postcss:
@@ -22893,11 +22887,6 @@ snapshots:
     dependencies:
       buffer: 6.0.3
 
-  "@solana/codecs-core@2.0.0-rc.1(typescript@5.8.3)":
-    dependencies:
-      "@solana/errors": 2.0.0-rc.1(typescript@5.8.3)
-      typescript: 5.8.3
-
   "@solana/codecs-core@2.3.0(typescript@5.8.3)":
     dependencies:
       "@solana/errors": 2.3.0(typescript@5.8.3)
@@ -22936,12 +22925,6 @@ snapshots:
       "@solana/codecs-numbers": 6.9.0(typescript@5.8.3)
       "@solana/errors": 6.9.0(typescript@5.8.3)
     optionalDependencies:
-      typescript: 5.8.3
-
-  "@solana/codecs-numbers@2.0.0-rc.1(typescript@5.8.3)":
-    dependencies:
-      "@solana/codecs-core": 2.0.0-rc.1(typescript@5.8.3)
-      "@solana/errors": 2.0.0-rc.1(typescript@5.8.3)
       typescript: 5.8.3
 
   "@solana/codecs-numbers@2.3.0(typescript@5.8.3)":
@@ -23025,12 +23008,6 @@ snapshots:
       typescript: 5.8.3
     transitivePeerDependencies:
       - fastestsmallesttextencoderdecoder
-
-  "@solana/errors@2.0.0-rc.1(typescript@5.8.3)":
-    dependencies:
-      chalk: 5.6.2
-      commander: 12.1.0
-      typescript: 5.8.3
 
   "@solana/errors@2.3.0(typescript@5.8.3)":
     dependencies:
@@ -23652,8 +23629,7 @@ snapshots:
       snake-case: 3.0.4
     transitivePeerDependencies:
       - supports-color
-      - typescript
-
+      
   "@svgr/hast-util-to-babel-ast@8.0.0":
     dependencies:
       "@babel/types": 7.28.4
@@ -24983,17 +24959,9 @@ snapshots:
 
   basic-ftp@5.3.1: {}
 
-  bigint-buffer@1.1.5:
-    dependencies:
-      bindings: 1.5.0
-
   bignumber.js@9.3.1: {}
 
   binary-extensions@2.3.0: {}
-
-  bindings@1.5.0:
-    dependencies:
-      file-uri-to-path: 1.0.0
 
   bip39@3.1.0:
     dependencies:
@@ -25271,8 +25239,6 @@ snapshots:
       chalk-template: 0.4.0
       table-layout: 4.1.1
       typical: 7.3.0
-
-  commander@12.1.0: {}
 
   commander@13.1.0: {}
 
@@ -26324,8 +26290,6 @@ snapshots:
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
-
-  file-uri-to-path@1.0.0: {}
 
   fill-range@7.1.1:
     dependencies:
